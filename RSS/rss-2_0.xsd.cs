@@ -59,10 +59,10 @@ namespace RSS {
         /// Regular expression: (channel, any)
         /// </para>
         /// </summary>
-        public virtual RssChannel channel {
+        public virtual RSS.RssChannel channel {
             get {
                 XElement x = this.GetElement(System.Xml.Linq.XName.Get("channel", ""));
-                return ((RssChannel)(x));
+                return ((RSS.RssChannel)(x));
             }
             set {
                 this.SetElement(System.Xml.Linq.XName.Get("channel", ""), value);
@@ -156,7 +156,7 @@ namespace RSS {
         }
         
         private static void BuildElementDictionary() {
-            localElementDictionary.Add(System.Xml.Linq.XName.Get("channel", ""), typeof(RssChannel));
+            localElementDictionary.Add(System.Xml.Linq.XName.Get("channel", ""), typeof(RSS.RssChannel));
         }
         
         FSM IXMetaData.GetValidationStates() {
@@ -194,22 +194,22 @@ namespace RSS {
         private XSimpleList<string> authorField;
         
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
-        private XTypedList<Category> categoryField;
+        private XTypedList<RSS.Category> categoryField;
         
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         private XSimpleList<System.Uri> commentsField;
         
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
-        private XTypedList<Enclosure> enclosureField;
+        private XTypedList<RSS.Enclosure> enclosureField;
         
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
-        private XTypedList<Guid> guidField;
+        private XTypedList<RSS.Guid> guidField;
         
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         private XSimpleList<string> pubDateField;
         
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
-        private XTypedList<Source> sourceField;
+        private XTypedList<RSS.Source> sourceField;
         
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         private static Dictionary<System.Xml.Linq.XName, System.Type> localElementDictionary = new Dictionary<System.Xml.Linq.XName, System.Type>();
@@ -393,10 +393,10 @@ namespace RSS {
         /// Regular expression: ((title? | description? | link? | author? | category? | comments? | enclosure? | guid? | pubDate? | source? | any)+)
         /// </para>
         /// </summary>
-        public virtual IList<Category> category {
+        public virtual IList<RSS.Category> category {
             get {
                 if ((this.categoryField == null)) {
-                    this.categoryField = new XTypedList<Category>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("category", ""));
+                    this.categoryField = new XTypedList<RSS.Category>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("category", ""));
                 }
                 return this.categoryField;
             }
@@ -406,10 +406,10 @@ namespace RSS {
                 }
                 else {
                     if ((this.categoryField == null)) {
-                        this.categoryField = XTypedList<Category>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("category", ""));
+                        this.categoryField = XTypedList<RSS.Category>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("category", ""));
                     }
                     else {
-                        XTypedServices.SetList<Category>(this.categoryField, value);
+                        XTypedServices.SetList<RSS.Category>(this.categoryField, value);
                     }
                 }
             }
@@ -465,10 +465,10 @@ namespace RSS {
         /// Regular expression: ((title? | description? | link? | author? | category? | comments? | enclosure? | guid? | pubDate? | source? | any)+)
         /// </para>
         /// </summary>
-        public virtual IList<Enclosure> enclosure {
+        public virtual IList<RSS.Enclosure> enclosure {
             get {
                 if ((this.enclosureField == null)) {
-                    this.enclosureField = new XTypedList<Enclosure>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("enclosure", ""));
+                    this.enclosureField = new XTypedList<RSS.Enclosure>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("enclosure", ""));
                 }
                 return this.enclosureField;
             }
@@ -478,10 +478,10 @@ namespace RSS {
                 }
                 else {
                     if ((this.enclosureField == null)) {
-                        this.enclosureField = XTypedList<Enclosure>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("enclosure", ""));
+                        this.enclosureField = XTypedList<RSS.Enclosure>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("enclosure", ""));
                     }
                     else {
-                        XTypedServices.SetList<Enclosure>(this.enclosureField, value);
+                        XTypedServices.SetList<RSS.Enclosure>(this.enclosureField, value);
                     }
                 }
             }
@@ -501,10 +501,10 @@ namespace RSS {
         /// Regular expression: ((title? | description? | link? | author? | category? | comments? | enclosure? | guid? | pubDate? | source? | any)+)
         /// </para>
         /// </summary>
-        public virtual IList<Guid> guid {
+        public virtual IList<RSS.Guid> guid {
             get {
                 if ((this.guidField == null)) {
-                    this.guidField = new XTypedList<Guid>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("guid", ""));
+                    this.guidField = new XTypedList<RSS.Guid>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("guid", ""));
                 }
                 return this.guidField;
             }
@@ -514,10 +514,10 @@ namespace RSS {
                 }
                 else {
                     if ((this.guidField == null)) {
-                        this.guidField = XTypedList<Guid>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("guid", ""));
+                        this.guidField = XTypedList<RSS.Guid>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("guid", ""));
                     }
                     else {
-                        XTypedServices.SetList<Guid>(this.guidField, value);
+                        XTypedServices.SetList<RSS.Guid>(this.guidField, value);
                     }
                 }
             }
@@ -573,10 +573,10 @@ namespace RSS {
         /// Regular expression: ((title? | description? | link? | author? | category? | comments? | enclosure? | guid? | pubDate? | source? | any)+)
         /// </para>
         /// </summary>
-        public virtual IList<Source> source {
+        public virtual IList<RSS.Source> source {
             get {
                 if ((this.sourceField == null)) {
-                    this.sourceField = new XTypedList<Source>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("source", ""));
+                    this.sourceField = new XTypedList<RSS.Source>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("source", ""));
                 }
                 return this.sourceField;
             }
@@ -586,10 +586,10 @@ namespace RSS {
                 }
                 else {
                     if ((this.sourceField == null)) {
-                        this.sourceField = XTypedList<Source>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("source", ""));
+                        this.sourceField = XTypedList<RSS.Source>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("source", ""));
                     }
                     else {
-                        XTypedServices.SetList<Source>(this.sourceField, value);
+                        XTypedServices.SetList<RSS.Source>(this.sourceField, value);
                     }
                 }
             }
@@ -643,12 +643,12 @@ namespace RSS {
             localElementDictionary.Add(System.Xml.Linq.XName.Get("description", ""), typeof(string));
             localElementDictionary.Add(System.Xml.Linq.XName.Get("link", ""), typeof(System.Uri));
             localElementDictionary.Add(System.Xml.Linq.XName.Get("author", ""), typeof(string));
-            localElementDictionary.Add(System.Xml.Linq.XName.Get("category", ""), typeof(Category));
+            localElementDictionary.Add(System.Xml.Linq.XName.Get("category", ""), typeof(RSS.Category));
             localElementDictionary.Add(System.Xml.Linq.XName.Get("comments", ""), typeof(System.Uri));
-            localElementDictionary.Add(System.Xml.Linq.XName.Get("enclosure", ""), typeof(Enclosure));
-            localElementDictionary.Add(System.Xml.Linq.XName.Get("guid", ""), typeof(Guid));
+            localElementDictionary.Add(System.Xml.Linq.XName.Get("enclosure", ""), typeof(RSS.Enclosure));
+            localElementDictionary.Add(System.Xml.Linq.XName.Get("guid", ""), typeof(RSS.Guid));
             localElementDictionary.Add(System.Xml.Linq.XName.Get("pubDate", ""), typeof(string));
-            localElementDictionary.Add(System.Xml.Linq.XName.Get("source", ""), typeof(Source));
+            localElementDictionary.Add(System.Xml.Linq.XName.Get("source", ""), typeof(RSS.Source));
         }
         
         FSM IXMetaData.GetValidationStates() {
@@ -720,7 +720,7 @@ namespace RSS {
         private XSimpleList<string> lastBuildDateField;
         
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
-        private XTypedList<Category> categoryField;
+        private XTypedList<RSS.Category> categoryField;
         
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         private XSimpleList<string> generatorField;
@@ -729,28 +729,28 @@ namespace RSS {
         private XSimpleList<System.Uri> docsField;
         
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
-        private XTypedList<Cloud> cloudField;
+        private XTypedList<RSS.Cloud> cloudField;
         
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         private XSimpleList<decimal> ttlField;
         
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
-        private XTypedList<Image> imageField;
+        private XTypedList<RSS.Image> imageField;
         
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         private XSimpleList<string> ratingField;
         
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
-        private XTypedList<TextInput> textInputField;
+        private XTypedList<RSS.TextInput> textInputField;
         
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
-        private XTypedList<SkipHoursList> skipHoursField;
+        private XTypedList<RSS.SkipHoursList> skipHoursField;
         
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
-        private XTypedList<SkipDaysList> skipDaysField;
+        private XTypedList<RSS.SkipDaysList> skipDaysField;
         
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
-        private XTypedList<RssItem> itemField;
+        private XTypedList<RSS.RssItem> itemField;
         
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         private static Dictionary<System.Xml.Linq.XName, System.Type> localElementDictionary = new Dictionary<System.Xml.Linq.XName, System.Type>();
@@ -1111,10 +1111,10 @@ namespace RSS {
         /// Regular expression: ((title | link | description | language? | copyright? | managingEditor? | webMaster? | pubDate? | lastBuildDate? | category? | generator? | docs? | cloud? | ttl? | image? | rating? | textInput? | skipHours? | skipDays? | any)+, item+, any)
         /// </para>
         /// </summary>
-        public virtual IList<Category> category {
+        public virtual IList<RSS.Category> category {
             get {
                 if ((this.categoryField == null)) {
-                    this.categoryField = new XTypedList<Category>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("category", ""));
+                    this.categoryField = new XTypedList<RSS.Category>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("category", ""));
                 }
                 return this.categoryField;
             }
@@ -1124,10 +1124,10 @@ namespace RSS {
                 }
                 else {
                     if ((this.categoryField == null)) {
-                        this.categoryField = XTypedList<Category>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("category", ""));
+                        this.categoryField = XTypedList<RSS.Category>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("category", ""));
                     }
                     else {
-                        XTypedServices.SetList<Category>(this.categoryField, value);
+                        XTypedServices.SetList<RSS.Category>(this.categoryField, value);
                     }
                 }
             }
@@ -1219,10 +1219,10 @@ namespace RSS {
         /// Regular expression: ((title | link | description | language? | copyright? | managingEditor? | webMaster? | pubDate? | lastBuildDate? | category? | generator? | docs? | cloud? | ttl? | image? | rating? | textInput? | skipHours? | skipDays? | any)+, item+, any)
         /// </para>
         /// </summary>
-        public virtual IList<Cloud> cloud {
+        public virtual IList<RSS.Cloud> cloud {
             get {
                 if ((this.cloudField == null)) {
-                    this.cloudField = new XTypedList<Cloud>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("cloud", ""));
+                    this.cloudField = new XTypedList<RSS.Cloud>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("cloud", ""));
                 }
                 return this.cloudField;
             }
@@ -1232,10 +1232,10 @@ namespace RSS {
                 }
                 else {
                     if ((this.cloudField == null)) {
-                        this.cloudField = XTypedList<Cloud>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("cloud", ""));
+                        this.cloudField = XTypedList<RSS.Cloud>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("cloud", ""));
                     }
                     else {
-                        XTypedServices.SetList<Cloud>(this.cloudField, value);
+                        XTypedServices.SetList<RSS.Cloud>(this.cloudField, value);
                     }
                 }
             }
@@ -1291,10 +1291,10 @@ namespace RSS {
         /// Regular expression: ((title | link | description | language? | copyright? | managingEditor? | webMaster? | pubDate? | lastBuildDate? | category? | generator? | docs? | cloud? | ttl? | image? | rating? | textInput? | skipHours? | skipDays? | any)+, item+, any)
         /// </para>
         /// </summary>
-        public virtual IList<Image> image {
+        public virtual IList<RSS.Image> image {
             get {
                 if ((this.imageField == null)) {
-                    this.imageField = new XTypedList<Image>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("image", ""));
+                    this.imageField = new XTypedList<RSS.Image>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("image", ""));
                 }
                 return this.imageField;
             }
@@ -1304,10 +1304,10 @@ namespace RSS {
                 }
                 else {
                     if ((this.imageField == null)) {
-                        this.imageField = XTypedList<Image>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("image", ""));
+                        this.imageField = XTypedList<RSS.Image>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("image", ""));
                     }
                     else {
-                        XTypedServices.SetList<Image>(this.imageField, value);
+                        XTypedServices.SetList<RSS.Image>(this.imageField, value);
                     }
                 }
             }
@@ -1363,10 +1363,10 @@ namespace RSS {
         /// Regular expression: ((title | link | description | language? | copyright? | managingEditor? | webMaster? | pubDate? | lastBuildDate? | category? | generator? | docs? | cloud? | ttl? | image? | rating? | textInput? | skipHours? | skipDays? | any)+, item+, any)
         /// </para>
         /// </summary>
-        public virtual IList<TextInput> textInput {
+        public virtual IList<RSS.TextInput> textInput {
             get {
                 if ((this.textInputField == null)) {
-                    this.textInputField = new XTypedList<TextInput>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("textInput", ""));
+                    this.textInputField = new XTypedList<RSS.TextInput>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("textInput", ""));
                 }
                 return this.textInputField;
             }
@@ -1376,10 +1376,10 @@ namespace RSS {
                 }
                 else {
                     if ((this.textInputField == null)) {
-                        this.textInputField = XTypedList<TextInput>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("textInput", ""));
+                        this.textInputField = XTypedList<RSS.TextInput>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("textInput", ""));
                     }
                     else {
-                        XTypedServices.SetList<TextInput>(this.textInputField, value);
+                        XTypedServices.SetList<RSS.TextInput>(this.textInputField, value);
                     }
                 }
             }
@@ -1399,10 +1399,10 @@ namespace RSS {
         /// Regular expression: ((title | link | description | language? | copyright? | managingEditor? | webMaster? | pubDate? | lastBuildDate? | category? | generator? | docs? | cloud? | ttl? | image? | rating? | textInput? | skipHours? | skipDays? | any)+, item+, any)
         /// </para>
         /// </summary>
-        public virtual IList<SkipHoursList> skipHours {
+        public virtual IList<RSS.SkipHoursList> skipHours {
             get {
                 if ((this.skipHoursField == null)) {
-                    this.skipHoursField = new XTypedList<SkipHoursList>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("skipHours", ""));
+                    this.skipHoursField = new XTypedList<RSS.SkipHoursList>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("skipHours", ""));
                 }
                 return this.skipHoursField;
             }
@@ -1412,10 +1412,10 @@ namespace RSS {
                 }
                 else {
                     if ((this.skipHoursField == null)) {
-                        this.skipHoursField = XTypedList<SkipHoursList>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("skipHours", ""));
+                        this.skipHoursField = XTypedList<RSS.SkipHoursList>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("skipHours", ""));
                     }
                     else {
-                        XTypedServices.SetList<SkipHoursList>(this.skipHoursField, value);
+                        XTypedServices.SetList<RSS.SkipHoursList>(this.skipHoursField, value);
                     }
                 }
             }
@@ -1435,10 +1435,10 @@ namespace RSS {
         /// Regular expression: ((title | link | description | language? | copyright? | managingEditor? | webMaster? | pubDate? | lastBuildDate? | category? | generator? | docs? | cloud? | ttl? | image? | rating? | textInput? | skipHours? | skipDays? | any)+, item+, any)
         /// </para>
         /// </summary>
-        public virtual IList<SkipDaysList> skipDays {
+        public virtual IList<RSS.SkipDaysList> skipDays {
             get {
                 if ((this.skipDaysField == null)) {
-                    this.skipDaysField = new XTypedList<SkipDaysList>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("skipDays", ""));
+                    this.skipDaysField = new XTypedList<RSS.SkipDaysList>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("skipDays", ""));
                 }
                 return this.skipDaysField;
             }
@@ -1448,10 +1448,10 @@ namespace RSS {
                 }
                 else {
                     if ((this.skipDaysField == null)) {
-                        this.skipDaysField = XTypedList<SkipDaysList>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("skipDays", ""));
+                        this.skipDaysField = XTypedList<RSS.SkipDaysList>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("skipDays", ""));
                     }
                     else {
-                        XTypedServices.SetList<SkipDaysList>(this.skipDaysField, value);
+                        XTypedServices.SetList<RSS.SkipDaysList>(this.skipDaysField, value);
                     }
                 }
             }
@@ -1476,10 +1476,10 @@ namespace RSS {
         /// Regular expression: ((title | link | description | language? | copyright? | managingEditor? | webMaster? | pubDate? | lastBuildDate? | category? | generator? | docs? | cloud? | ttl? | image? | rating? | textInput? | skipHours? | skipDays? | any)+, item+, any)
         /// </para>
         /// </summary>
-        public virtual IList<RssItem> item {
+        public virtual IList<RSS.RssItem> item {
             get {
                 if ((this.itemField == null)) {
-                    this.itemField = new XTypedList<RssItem>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("item", ""));
+                    this.itemField = new XTypedList<RSS.RssItem>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("item", ""));
                 }
                 return this.itemField;
             }
@@ -1489,10 +1489,10 @@ namespace RSS {
                 }
                 else {
                     if ((this.itemField == null)) {
-                        this.itemField = XTypedList<RssItem>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("item", ""));
+                        this.itemField = XTypedList<RSS.RssItem>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("item", ""));
                     }
                     else {
-                        XTypedServices.SetList<RssItem>(this.itemField, value);
+                        XTypedServices.SetList<RSS.RssItem>(this.itemField, value);
                     }
                 }
             }
@@ -1540,17 +1540,17 @@ namespace RSS {
             localElementDictionary.Add(System.Xml.Linq.XName.Get("webMaster", ""), typeof(string));
             localElementDictionary.Add(System.Xml.Linq.XName.Get("pubDate", ""), typeof(string));
             localElementDictionary.Add(System.Xml.Linq.XName.Get("lastBuildDate", ""), typeof(string));
-            localElementDictionary.Add(System.Xml.Linq.XName.Get("category", ""), typeof(Category));
+            localElementDictionary.Add(System.Xml.Linq.XName.Get("category", ""), typeof(RSS.Category));
             localElementDictionary.Add(System.Xml.Linq.XName.Get("generator", ""), typeof(string));
             localElementDictionary.Add(System.Xml.Linq.XName.Get("docs", ""), typeof(System.Uri));
-            localElementDictionary.Add(System.Xml.Linq.XName.Get("cloud", ""), typeof(Cloud));
+            localElementDictionary.Add(System.Xml.Linq.XName.Get("cloud", ""), typeof(RSS.Cloud));
             localElementDictionary.Add(System.Xml.Linq.XName.Get("ttl", ""), typeof(decimal));
-            localElementDictionary.Add(System.Xml.Linq.XName.Get("image", ""), typeof(Image));
+            localElementDictionary.Add(System.Xml.Linq.XName.Get("image", ""), typeof(RSS.Image));
             localElementDictionary.Add(System.Xml.Linq.XName.Get("rating", ""), typeof(string));
-            localElementDictionary.Add(System.Xml.Linq.XName.Get("textInput", ""), typeof(TextInput));
-            localElementDictionary.Add(System.Xml.Linq.XName.Get("skipHours", ""), typeof(SkipHoursList));
-            localElementDictionary.Add(System.Xml.Linq.XName.Get("skipDays", ""), typeof(SkipDaysList));
-            localElementDictionary.Add(System.Xml.Linq.XName.Get("item", ""), typeof(RssItem));
+            localElementDictionary.Add(System.Xml.Linq.XName.Get("textInput", ""), typeof(RSS.TextInput));
+            localElementDictionary.Add(System.Xml.Linq.XName.Get("skipHours", ""), typeof(RSS.SkipHoursList));
+            localElementDictionary.Add(System.Xml.Linq.XName.Get("skipDays", ""), typeof(RSS.SkipDaysList));
+            localElementDictionary.Add(System.Xml.Linq.XName.Get("item", ""), typeof(RSS.RssItem));
         }
         
         FSM IXMetaData.GetValidationStates() {

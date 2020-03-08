@@ -28,37 +28,37 @@ namespace W3C.XSD {
     public partial class schema : XTypedElement, IXMetaData {
         
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
-        private XTypedList<include> includeField;
+        private XTypedList<W3C.XSD.include> includeField;
         
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
-        private XTypedList<import> importField;
+        private XTypedList<W3C.XSD.import> importField;
         
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
-        private XTypedList<redefine> redefineField;
+        private XTypedList<W3C.XSD.redefine> redefineField;
         
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
-        private XTypedList<annotation> annotationField;
+        private XTypedList<W3C.XSD.annotation> annotationField;
         
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
-        private XTypedList<simpleType> simpleTypeField;
+        private XTypedList<W3C.XSD.simpleType> simpleTypeField;
         
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
-        private XTypedList<complexType> complexTypeField;
+        private XTypedList<W3C.XSD.complexType> complexTypeField;
         
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
-        private XTypedList<group> groupField;
+        private XTypedList<W3C.XSD.group> groupField;
         
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
-        private XTypedList<attributeGroup> attributeGroupField;
+        private XTypedList<W3C.XSD.attributeGroup> attributeGroupField;
         
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
-        private XTypedList<element> elementField;
+        private XTypedList<W3C.XSD.element> elementField;
         
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
-        private XTypedList<attribute> attributeField;
+        private XTypedList<W3C.XSD.attribute> attributeField;
         
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
-        private XTypedList<notation> notationField;
+        private XTypedList<W3C.XSD.notation> notationField;
         
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         private static string[] finalDefaultDefaultValue = new string[] {
@@ -102,10 +102,10 @@ namespace W3C.XSD {
         /// Regular expression: ((include | import | redefine | annotation)*, ((simpleType | complexType | group | attributeGroup | element | attribute | notation), annotation*)*)
         /// </para>
         /// </summary>
-        public virtual IList<include> include {
+        public virtual IList<W3C.XSD.include> include {
             get {
                 if ((this.includeField == null)) {
-                    this.includeField = new XTypedList<include>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("include", "http://www.w3.org/2001/XMLSchema"));
+                    this.includeField = new XTypedList<W3C.XSD.include>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("include", "http://www.w3.org/2001/XMLSchema"));
                 }
                 return this.includeField;
             }
@@ -115,10 +115,10 @@ namespace W3C.XSD {
                 }
                 else {
                     if ((this.includeField == null)) {
-                        this.includeField = XTypedList<include>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("include", "http://www.w3.org/2001/XMLSchema"));
+                        this.includeField = XTypedList<W3C.XSD.include>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("include", "http://www.w3.org/2001/XMLSchema"));
                     }
                     else {
-                        XTypedServices.SetList<include>(this.includeField, value);
+                        XTypedServices.SetList<W3C.XSD.include>(this.includeField, value);
                     }
                 }
             }
@@ -135,10 +135,10 @@ namespace W3C.XSD {
         /// Regular expression: ((include | import | redefine | annotation)*, ((simpleType | complexType | group | attributeGroup | element | attribute | notation), annotation*)*)
         /// </para>
         /// </summary>
-        public virtual IList<import> import {
+        public virtual IList<W3C.XSD.import> import {
             get {
                 if ((this.importField == null)) {
-                    this.importField = new XTypedList<import>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("import", "http://www.w3.org/2001/XMLSchema"));
+                    this.importField = new XTypedList<W3C.XSD.import>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("import", "http://www.w3.org/2001/XMLSchema"));
                 }
                 return this.importField;
             }
@@ -148,10 +148,10 @@ namespace W3C.XSD {
                 }
                 else {
                     if ((this.importField == null)) {
-                        this.importField = XTypedList<import>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("import", "http://www.w3.org/2001/XMLSchema"));
+                        this.importField = XTypedList<W3C.XSD.import>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("import", "http://www.w3.org/2001/XMLSchema"));
                     }
                     else {
-                        XTypedServices.SetList<import>(this.importField, value);
+                        XTypedServices.SetList<W3C.XSD.import>(this.importField, value);
                     }
                 }
             }
@@ -168,10 +168,10 @@ namespace W3C.XSD {
         /// Regular expression: ((include | import | redefine | annotation)*, ((simpleType | complexType | group | attributeGroup | element | attribute | notation), annotation*)*)
         /// </para>
         /// </summary>
-        public virtual IList<redefine> redefine {
+        public virtual IList<W3C.XSD.redefine> redefine {
             get {
                 if ((this.redefineField == null)) {
-                    this.redefineField = new XTypedList<redefine>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("redefine", "http://www.w3.org/2001/XMLSchema"));
+                    this.redefineField = new XTypedList<W3C.XSD.redefine>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("redefine", "http://www.w3.org/2001/XMLSchema"));
                 }
                 return this.redefineField;
             }
@@ -181,10 +181,10 @@ namespace W3C.XSD {
                 }
                 else {
                     if ((this.redefineField == null)) {
-                        this.redefineField = XTypedList<redefine>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("redefine", "http://www.w3.org/2001/XMLSchema"));
+                        this.redefineField = XTypedList<W3C.XSD.redefine>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("redefine", "http://www.w3.org/2001/XMLSchema"));
                     }
                     else {
-                        XTypedServices.SetList<redefine>(this.redefineField, value);
+                        XTypedServices.SetList<W3C.XSD.redefine>(this.redefineField, value);
                     }
                 }
             }
@@ -201,10 +201,10 @@ namespace W3C.XSD {
         /// Regular expression: ((include | import | redefine | annotation)*, ((simpleType | complexType | group | attributeGroup | element | attribute | notation), annotation*)*)
         /// </para>
         /// </summary>
-        public virtual IList<annotation> annotation {
+        public virtual IList<W3C.XSD.annotation> annotation {
             get {
                 if ((this.annotationField == null)) {
-                    this.annotationField = new XTypedList<annotation>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("annotation", "http://www.w3.org/2001/XMLSchema"));
+                    this.annotationField = new XTypedList<W3C.XSD.annotation>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("annotation", "http://www.w3.org/2001/XMLSchema"));
                 }
                 return this.annotationField;
             }
@@ -214,10 +214,10 @@ namespace W3C.XSD {
                 }
                 else {
                     if ((this.annotationField == null)) {
-                        this.annotationField = XTypedList<annotation>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("annotation", "http://www.w3.org/2001/XMLSchema"));
+                        this.annotationField = XTypedList<W3C.XSD.annotation>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("annotation", "http://www.w3.org/2001/XMLSchema"));
                     }
                     else {
-                        XTypedServices.SetList<annotation>(this.annotationField, value);
+                        XTypedServices.SetList<W3C.XSD.annotation>(this.annotationField, value);
                     }
                 }
             }
@@ -234,10 +234,10 @@ namespace W3C.XSD {
         /// Regular expression: ((include | import | redefine | annotation)*, ((simpleType | complexType | group | attributeGroup | element | attribute | notation), annotation*)*)
         /// </para>
         /// </summary>
-        public virtual IList<simpleType> simpleType {
+        public virtual IList<W3C.XSD.simpleType> simpleType {
             get {
                 if ((this.simpleTypeField == null)) {
-                    this.simpleTypeField = new XTypedList<simpleType>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("simpleType", "http://www.w3.org/2001/XMLSchema"));
+                    this.simpleTypeField = new XTypedList<W3C.XSD.simpleType>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("simpleType", "http://www.w3.org/2001/XMLSchema"));
                 }
                 return this.simpleTypeField;
             }
@@ -247,10 +247,10 @@ namespace W3C.XSD {
                 }
                 else {
                     if ((this.simpleTypeField == null)) {
-                        this.simpleTypeField = XTypedList<simpleType>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("simpleType", "http://www.w3.org/2001/XMLSchema"));
+                        this.simpleTypeField = XTypedList<W3C.XSD.simpleType>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("simpleType", "http://www.w3.org/2001/XMLSchema"));
                     }
                     else {
-                        XTypedServices.SetList<simpleType>(this.simpleTypeField, value);
+                        XTypedServices.SetList<W3C.XSD.simpleType>(this.simpleTypeField, value);
                     }
                 }
             }
@@ -267,10 +267,10 @@ namespace W3C.XSD {
         /// Regular expression: ((include | import | redefine | annotation)*, ((simpleType | complexType | group | attributeGroup | element | attribute | notation), annotation*)*)
         /// </para>
         /// </summary>
-        public virtual IList<complexType> complexType {
+        public virtual IList<W3C.XSD.complexType> complexType {
             get {
                 if ((this.complexTypeField == null)) {
-                    this.complexTypeField = new XTypedList<complexType>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("complexType", "http://www.w3.org/2001/XMLSchema"));
+                    this.complexTypeField = new XTypedList<W3C.XSD.complexType>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("complexType", "http://www.w3.org/2001/XMLSchema"));
                 }
                 return this.complexTypeField;
             }
@@ -280,10 +280,10 @@ namespace W3C.XSD {
                 }
                 else {
                     if ((this.complexTypeField == null)) {
-                        this.complexTypeField = XTypedList<complexType>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("complexType", "http://www.w3.org/2001/XMLSchema"));
+                        this.complexTypeField = XTypedList<W3C.XSD.complexType>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("complexType", "http://www.w3.org/2001/XMLSchema"));
                     }
                     else {
-                        XTypedServices.SetList<complexType>(this.complexTypeField, value);
+                        XTypedServices.SetList<W3C.XSD.complexType>(this.complexTypeField, value);
                     }
                 }
             }
@@ -300,10 +300,10 @@ namespace W3C.XSD {
         /// Regular expression: ((include | import | redefine | annotation)*, ((simpleType | complexType | group | attributeGroup | element | attribute | notation), annotation*)*)
         /// </para>
         /// </summary>
-        public virtual IList<group> group {
+        public virtual IList<W3C.XSD.group> group {
             get {
                 if ((this.groupField == null)) {
-                    this.groupField = new XTypedList<group>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("group", "http://www.w3.org/2001/XMLSchema"));
+                    this.groupField = new XTypedList<W3C.XSD.group>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("group", "http://www.w3.org/2001/XMLSchema"));
                 }
                 return this.groupField;
             }
@@ -313,10 +313,10 @@ namespace W3C.XSD {
                 }
                 else {
                     if ((this.groupField == null)) {
-                        this.groupField = XTypedList<group>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("group", "http://www.w3.org/2001/XMLSchema"));
+                        this.groupField = XTypedList<W3C.XSD.group>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("group", "http://www.w3.org/2001/XMLSchema"));
                     }
                     else {
-                        XTypedServices.SetList<group>(this.groupField, value);
+                        XTypedServices.SetList<W3C.XSD.group>(this.groupField, value);
                     }
                 }
             }
@@ -333,10 +333,10 @@ namespace W3C.XSD {
         /// Regular expression: ((include | import | redefine | annotation)*, ((simpleType | complexType | group | attributeGroup | element | attribute | notation), annotation*)*)
         /// </para>
         /// </summary>
-        public virtual IList<attributeGroup> attributeGroup {
+        public virtual IList<W3C.XSD.attributeGroup> attributeGroup {
             get {
                 if ((this.attributeGroupField == null)) {
-                    this.attributeGroupField = new XTypedList<attributeGroup>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("attributeGroup", "http://www.w3.org/2001/XMLSchema"));
+                    this.attributeGroupField = new XTypedList<W3C.XSD.attributeGroup>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("attributeGroup", "http://www.w3.org/2001/XMLSchema"));
                 }
                 return this.attributeGroupField;
             }
@@ -346,10 +346,10 @@ namespace W3C.XSD {
                 }
                 else {
                     if ((this.attributeGroupField == null)) {
-                        this.attributeGroupField = XTypedList<attributeGroup>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("attributeGroup", "http://www.w3.org/2001/XMLSchema"));
+                        this.attributeGroupField = XTypedList<W3C.XSD.attributeGroup>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("attributeGroup", "http://www.w3.org/2001/XMLSchema"));
                     }
                     else {
-                        XTypedServices.SetList<attributeGroup>(this.attributeGroupField, value);
+                        XTypedServices.SetList<W3C.XSD.attributeGroup>(this.attributeGroupField, value);
                     }
                 }
             }
@@ -366,10 +366,10 @@ namespace W3C.XSD {
         /// Regular expression: ((include | import | redefine | annotation)*, ((simpleType | complexType | group | attributeGroup | element | attribute | notation), annotation*)*)
         /// </para>
         /// </summary>
-        public virtual IList<element> element {
+        public virtual IList<W3C.XSD.element> element {
             get {
                 if ((this.elementField == null)) {
-                    this.elementField = new XTypedList<element>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("element", "http://www.w3.org/2001/XMLSchema"));
+                    this.elementField = new XTypedList<W3C.XSD.element>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("element", "http://www.w3.org/2001/XMLSchema"));
                 }
                 return this.elementField;
             }
@@ -379,10 +379,10 @@ namespace W3C.XSD {
                 }
                 else {
                     if ((this.elementField == null)) {
-                        this.elementField = XTypedList<element>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("element", "http://www.w3.org/2001/XMLSchema"));
+                        this.elementField = XTypedList<W3C.XSD.element>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("element", "http://www.w3.org/2001/XMLSchema"));
                     }
                     else {
-                        XTypedServices.SetList<element>(this.elementField, value);
+                        XTypedServices.SetList<W3C.XSD.element>(this.elementField, value);
                     }
                 }
             }
@@ -399,10 +399,10 @@ namespace W3C.XSD {
         /// Regular expression: ((include | import | redefine | annotation)*, ((simpleType | complexType | group | attributeGroup | element | attribute | notation), annotation*)*)
         /// </para>
         /// </summary>
-        public virtual IList<attribute> attribute {
+        public virtual IList<W3C.XSD.attribute> attribute {
             get {
                 if ((this.attributeField == null)) {
-                    this.attributeField = new XTypedList<attribute>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("attribute", "http://www.w3.org/2001/XMLSchema"));
+                    this.attributeField = new XTypedList<W3C.XSD.attribute>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("attribute", "http://www.w3.org/2001/XMLSchema"));
                 }
                 return this.attributeField;
             }
@@ -412,10 +412,10 @@ namespace W3C.XSD {
                 }
                 else {
                     if ((this.attributeField == null)) {
-                        this.attributeField = XTypedList<attribute>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("attribute", "http://www.w3.org/2001/XMLSchema"));
+                        this.attributeField = XTypedList<W3C.XSD.attribute>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("attribute", "http://www.w3.org/2001/XMLSchema"));
                     }
                     else {
-                        XTypedServices.SetList<attribute>(this.attributeField, value);
+                        XTypedServices.SetList<W3C.XSD.attribute>(this.attributeField, value);
                     }
                 }
             }
@@ -432,10 +432,10 @@ namespace W3C.XSD {
         /// Regular expression: ((include | import | redefine | annotation)*, ((simpleType | complexType | group | attributeGroup | element | attribute | notation), annotation*)*)
         /// </para>
         /// </summary>
-        public virtual IList<notation> notation {
+        public virtual IList<W3C.XSD.notation> notation {
             get {
                 if ((this.notationField == null)) {
-                    this.notationField = new XTypedList<notation>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("notation", "http://www.w3.org/2001/XMLSchema"));
+                    this.notationField = new XTypedList<W3C.XSD.notation>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("notation", "http://www.w3.org/2001/XMLSchema"));
                 }
                 return this.notationField;
             }
@@ -445,10 +445,10 @@ namespace W3C.XSD {
                 }
                 else {
                     if ((this.notationField == null)) {
-                        this.notationField = XTypedList<notation>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("notation", "http://www.w3.org/2001/XMLSchema"));
+                        this.notationField = XTypedList<W3C.XSD.notation>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("notation", "http://www.w3.org/2001/XMLSchema"));
                     }
                     else {
-                        XTypedServices.SetList<notation>(this.notationField, value);
+                        XTypedServices.SetList<W3C.XSD.notation>(this.notationField, value);
                     }
                 }
             }
@@ -631,17 +631,17 @@ namespace W3C.XSD {
         }
         
         private static void BuildElementDictionary() {
-            localElementDictionary.Add(System.Xml.Linq.XName.Get("include", "http://www.w3.org/2001/XMLSchema"), typeof(include));
-            localElementDictionary.Add(System.Xml.Linq.XName.Get("import", "http://www.w3.org/2001/XMLSchema"), typeof(import));
-            localElementDictionary.Add(System.Xml.Linq.XName.Get("redefine", "http://www.w3.org/2001/XMLSchema"), typeof(redefine));
-            localElementDictionary.Add(System.Xml.Linq.XName.Get("annotation", "http://www.w3.org/2001/XMLSchema"), typeof(annotation));
-            localElementDictionary.Add(System.Xml.Linq.XName.Get("simpleType", "http://www.w3.org/2001/XMLSchema"), typeof(simpleType));
-            localElementDictionary.Add(System.Xml.Linq.XName.Get("complexType", "http://www.w3.org/2001/XMLSchema"), typeof(complexType));
-            localElementDictionary.Add(System.Xml.Linq.XName.Get("group", "http://www.w3.org/2001/XMLSchema"), typeof(group));
-            localElementDictionary.Add(System.Xml.Linq.XName.Get("attributeGroup", "http://www.w3.org/2001/XMLSchema"), typeof(attributeGroup));
-            localElementDictionary.Add(System.Xml.Linq.XName.Get("element", "http://www.w3.org/2001/XMLSchema"), typeof(element));
-            localElementDictionary.Add(System.Xml.Linq.XName.Get("attribute", "http://www.w3.org/2001/XMLSchema"), typeof(attribute));
-            localElementDictionary.Add(System.Xml.Linq.XName.Get("notation", "http://www.w3.org/2001/XMLSchema"), typeof(notation));
+            localElementDictionary.Add(System.Xml.Linq.XName.Get("include", "http://www.w3.org/2001/XMLSchema"), typeof(W3C.XSD.include));
+            localElementDictionary.Add(System.Xml.Linq.XName.Get("import", "http://www.w3.org/2001/XMLSchema"), typeof(W3C.XSD.import));
+            localElementDictionary.Add(System.Xml.Linq.XName.Get("redefine", "http://www.w3.org/2001/XMLSchema"), typeof(W3C.XSD.redefine));
+            localElementDictionary.Add(System.Xml.Linq.XName.Get("annotation", "http://www.w3.org/2001/XMLSchema"), typeof(W3C.XSD.annotation));
+            localElementDictionary.Add(System.Xml.Linq.XName.Get("simpleType", "http://www.w3.org/2001/XMLSchema"), typeof(W3C.XSD.simpleType));
+            localElementDictionary.Add(System.Xml.Linq.XName.Get("complexType", "http://www.w3.org/2001/XMLSchema"), typeof(W3C.XSD.complexType));
+            localElementDictionary.Add(System.Xml.Linq.XName.Get("group", "http://www.w3.org/2001/XMLSchema"), typeof(W3C.XSD.group));
+            localElementDictionary.Add(System.Xml.Linq.XName.Get("attributeGroup", "http://www.w3.org/2001/XMLSchema"), typeof(W3C.XSD.attributeGroup));
+            localElementDictionary.Add(System.Xml.Linq.XName.Get("element", "http://www.w3.org/2001/XMLSchema"), typeof(W3C.XSD.element));
+            localElementDictionary.Add(System.Xml.Linq.XName.Get("attribute", "http://www.w3.org/2001/XMLSchema"), typeof(W3C.XSD.attribute));
+            localElementDictionary.Add(System.Xml.Linq.XName.Get("notation", "http://www.w3.org/2001/XMLSchema"), typeof(W3C.XSD.notation));
         }
         
         ContentModelEntity IXMetaData.GetContentModel() {
@@ -681,10 +681,10 @@ namespace W3C.XSD {
         /// Regular expression: (annotation?, (restriction | extension))
         /// </para>
         /// </summary>
-        public virtual annotation annotation {
+        public virtual W3C.XSD.annotation annotation {
             get {
                 XElement x = this.GetElement(System.Xml.Linq.XName.Get("annotation", "http://www.w3.org/2001/XMLSchema"));
-                return ((annotation)(x));
+                return ((W3C.XSD.annotation)(x));
             }
             set {
                 this.SetElement(System.Xml.Linq.XName.Get("annotation", "http://www.w3.org/2001/XMLSchema"), value);
@@ -702,10 +702,10 @@ namespace W3C.XSD {
         /// Regular expression: (annotation?, (restriction | extension))
         /// </para>
         /// </summary>
-        public virtual complexRestrictionType restriction {
+        public virtual W3C.XSD.complexRestrictionType restriction {
             get {
                 XElement x = this.GetElement(System.Xml.Linq.XName.Get("restriction", "http://www.w3.org/2001/XMLSchema"));
-                return ((complexRestrictionType)(x));
+                return ((W3C.XSD.complexRestrictionType)(x));
             }
             set {
                 this.SetElement(System.Xml.Linq.XName.Get("restriction", "http://www.w3.org/2001/XMLSchema"), value);
@@ -723,10 +723,10 @@ namespace W3C.XSD {
         /// Regular expression: (annotation?, (restriction | extension))
         /// </para>
         /// </summary>
-        public virtual extensionType extension {
+        public virtual W3C.XSD.extensionType extension {
             get {
                 XElement x = this.GetElement(System.Xml.Linq.XName.Get("extension", "http://www.w3.org/2001/XMLSchema"));
-                return ((extensionType)(x));
+                return ((W3C.XSD.extensionType)(x));
             }
             set {
                 this.SetElement(System.Xml.Linq.XName.Get("extension", "http://www.w3.org/2001/XMLSchema"), value);
@@ -827,9 +827,9 @@ namespace W3C.XSD {
         }
         
         private static void BuildElementDictionary() {
-            localElementDictionary.Add(System.Xml.Linq.XName.Get("annotation", "http://www.w3.org/2001/XMLSchema"), typeof(annotation));
-            localElementDictionary.Add(System.Xml.Linq.XName.Get("restriction", "http://www.w3.org/2001/XMLSchema"), typeof(complexRestrictionType));
-            localElementDictionary.Add(System.Xml.Linq.XName.Get("extension", "http://www.w3.org/2001/XMLSchema"), typeof(extensionType));
+            localElementDictionary.Add(System.Xml.Linq.XName.Get("annotation", "http://www.w3.org/2001/XMLSchema"), typeof(W3C.XSD.annotation));
+            localElementDictionary.Add(System.Xml.Linq.XName.Get("restriction", "http://www.w3.org/2001/XMLSchema"), typeof(W3C.XSD.complexRestrictionType));
+            localElementDictionary.Add(System.Xml.Linq.XName.Get("extension", "http://www.w3.org/2001/XMLSchema"), typeof(W3C.XSD.extensionType));
         }
         
         ContentModelEntity IXMetaData.GetContentModel() {
@@ -869,10 +869,10 @@ namespace W3C.XSD {
         /// Regular expression: (annotation?, (restriction | extension))
         /// </para>
         /// </summary>
-        public virtual annotation annotation {
+        public virtual W3C.XSD.annotation annotation {
             get {
                 XElement x = this.GetElement(System.Xml.Linq.XName.Get("annotation", "http://www.w3.org/2001/XMLSchema"));
-                return ((annotation)(x));
+                return ((W3C.XSD.annotation)(x));
             }
             set {
                 this.SetElement(System.Xml.Linq.XName.Get("annotation", "http://www.w3.org/2001/XMLSchema"), value);
@@ -890,10 +890,10 @@ namespace W3C.XSD {
         /// Regular expression: (annotation?, (restriction | extension))
         /// </para>
         /// </summary>
-        public virtual simpleRestrictionType restriction {
+        public virtual W3C.XSD.simpleRestrictionType restriction {
             get {
                 XElement x = this.GetElement(System.Xml.Linq.XName.Get("restriction", "http://www.w3.org/2001/XMLSchema"));
-                return ((simpleRestrictionType)(x));
+                return ((W3C.XSD.simpleRestrictionType)(x));
             }
             set {
                 this.SetElement(System.Xml.Linq.XName.Get("restriction", "http://www.w3.org/2001/XMLSchema"), value);
@@ -911,10 +911,10 @@ namespace W3C.XSD {
         /// Regular expression: (annotation?, (restriction | extension))
         /// </para>
         /// </summary>
-        public virtual simpleExtensionType extension {
+        public virtual W3C.XSD.simpleExtensionType extension {
             get {
                 XElement x = this.GetElement(System.Xml.Linq.XName.Get("extension", "http://www.w3.org/2001/XMLSchema"));
-                return ((simpleExtensionType)(x));
+                return ((W3C.XSD.simpleExtensionType)(x));
             }
             set {
                 this.SetElement(System.Xml.Linq.XName.Get("extension", "http://www.w3.org/2001/XMLSchema"), value);
@@ -993,9 +993,9 @@ namespace W3C.XSD {
         }
         
         private static void BuildElementDictionary() {
-            localElementDictionary.Add(System.Xml.Linq.XName.Get("annotation", "http://www.w3.org/2001/XMLSchema"), typeof(annotation));
-            localElementDictionary.Add(System.Xml.Linq.XName.Get("restriction", "http://www.w3.org/2001/XMLSchema"), typeof(simpleRestrictionType));
-            localElementDictionary.Add(System.Xml.Linq.XName.Get("extension", "http://www.w3.org/2001/XMLSchema"), typeof(simpleExtensionType));
+            localElementDictionary.Add(System.Xml.Linq.XName.Get("annotation", "http://www.w3.org/2001/XMLSchema"), typeof(W3C.XSD.annotation));
+            localElementDictionary.Add(System.Xml.Linq.XName.Get("restriction", "http://www.w3.org/2001/XMLSchema"), typeof(W3C.XSD.simpleRestrictionType));
+            localElementDictionary.Add(System.Xml.Linq.XName.Get("extension", "http://www.w3.org/2001/XMLSchema"), typeof(W3C.XSD.simpleExtensionType));
         }
         
         ContentModelEntity IXMetaData.GetContentModel() {
@@ -1051,10 +1051,10 @@ namespace W3C.XSD {
         /// Regular expression: (annotation?)
         /// </para>
         /// </summary>
-        public virtual annotation annotation {
+        public virtual W3C.XSD.annotation annotation {
             get {
                 XElement x = this.GetElement(System.Xml.Linq.XName.Get("annotation", "http://www.w3.org/2001/XMLSchema"));
-                return ((annotation)(x));
+                return ((W3C.XSD.annotation)(x));
             }
             set {
                 this.SetElement(System.Xml.Linq.XName.Get("annotation", "http://www.w3.org/2001/XMLSchema"), value);
@@ -1193,7 +1193,7 @@ namespace W3C.XSD {
         }
         
         private static void BuildElementDictionary() {
-            localElementDictionary.Add(System.Xml.Linq.XName.Get("annotation", "http://www.w3.org/2001/XMLSchema"), typeof(annotation));
+            localElementDictionary.Add(System.Xml.Linq.XName.Get("annotation", "http://www.w3.org/2001/XMLSchema"), typeof(W3C.XSD.annotation));
         }
         
         ContentModelEntity IXMetaData.GetContentModel() {
@@ -1237,10 +1237,10 @@ namespace W3C.XSD {
         /// Regular expression: (annotation?)
         /// </para>
         /// </summary>
-        public virtual annotation annotation {
+        public virtual W3C.XSD.annotation annotation {
             get {
                 XElement x = this.GetElement(System.Xml.Linq.XName.Get("annotation", "http://www.w3.org/2001/XMLSchema"));
-                return ((annotation)(x));
+                return ((W3C.XSD.annotation)(x));
             }
             set {
                 this.SetElement(System.Xml.Linq.XName.Get("annotation", "http://www.w3.org/2001/XMLSchema"), value);
@@ -1334,7 +1334,7 @@ namespace W3C.XSD {
         }
         
         private static void BuildElementDictionary() {
-            localElementDictionary.Add(System.Xml.Linq.XName.Get("annotation", "http://www.w3.org/2001/XMLSchema"), typeof(annotation));
+            localElementDictionary.Add(System.Xml.Linq.XName.Get("annotation", "http://www.w3.org/2001/XMLSchema"), typeof(W3C.XSD.annotation));
         }
         
         ContentModelEntity IXMetaData.GetContentModel() {
@@ -1350,19 +1350,19 @@ namespace W3C.XSD {
     public partial class redefine : XTypedElement, IXMetaData {
         
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
-        private XTypedList<annotation> annotationField;
+        private XTypedList<W3C.XSD.annotation> annotationField;
         
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
-        private XTypedList<simpleType> simpleTypeField;
+        private XTypedList<W3C.XSD.simpleType> simpleTypeField;
         
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
-        private XTypedList<complexType> complexTypeField;
+        private XTypedList<W3C.XSD.complexType> complexTypeField;
         
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
-        private XTypedList<group> groupField;
+        private XTypedList<W3C.XSD.group> groupField;
         
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
-        private XTypedList<attributeGroup> attributeGroupField;
+        private XTypedList<W3C.XSD.attributeGroup> attributeGroupField;
         
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         private static Dictionary<System.Xml.Linq.XName, System.Type> localElementDictionary = new Dictionary<System.Xml.Linq.XName, System.Type>();
@@ -1389,10 +1389,10 @@ namespace W3C.XSD {
         /// Regular expression: (annotation | simpleType | complexType | group | attributeGroup)*
         /// </para>
         /// </summary>
-        public virtual IList<annotation> annotation {
+        public virtual IList<W3C.XSD.annotation> annotation {
             get {
                 if ((this.annotationField == null)) {
-                    this.annotationField = new XTypedList<annotation>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("annotation", "http://www.w3.org/2001/XMLSchema"));
+                    this.annotationField = new XTypedList<W3C.XSD.annotation>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("annotation", "http://www.w3.org/2001/XMLSchema"));
                 }
                 return this.annotationField;
             }
@@ -1402,10 +1402,10 @@ namespace W3C.XSD {
                 }
                 else {
                     if ((this.annotationField == null)) {
-                        this.annotationField = XTypedList<annotation>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("annotation", "http://www.w3.org/2001/XMLSchema"));
+                        this.annotationField = XTypedList<W3C.XSD.annotation>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("annotation", "http://www.w3.org/2001/XMLSchema"));
                     }
                     else {
-                        XTypedServices.SetList<annotation>(this.annotationField, value);
+                        XTypedServices.SetList<W3C.XSD.annotation>(this.annotationField, value);
                     }
                 }
             }
@@ -1419,10 +1419,10 @@ namespace W3C.XSD {
         /// Regular expression: (annotation | simpleType | complexType | group | attributeGroup)*
         /// </para>
         /// </summary>
-        public virtual IList<simpleType> simpleType {
+        public virtual IList<W3C.XSD.simpleType> simpleType {
             get {
                 if ((this.simpleTypeField == null)) {
-                    this.simpleTypeField = new XTypedList<simpleType>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("simpleType", "http://www.w3.org/2001/XMLSchema"));
+                    this.simpleTypeField = new XTypedList<W3C.XSD.simpleType>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("simpleType", "http://www.w3.org/2001/XMLSchema"));
                 }
                 return this.simpleTypeField;
             }
@@ -1432,10 +1432,10 @@ namespace W3C.XSD {
                 }
                 else {
                     if ((this.simpleTypeField == null)) {
-                        this.simpleTypeField = XTypedList<simpleType>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("simpleType", "http://www.w3.org/2001/XMLSchema"));
+                        this.simpleTypeField = XTypedList<W3C.XSD.simpleType>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("simpleType", "http://www.w3.org/2001/XMLSchema"));
                     }
                     else {
-                        XTypedServices.SetList<simpleType>(this.simpleTypeField, value);
+                        XTypedServices.SetList<W3C.XSD.simpleType>(this.simpleTypeField, value);
                     }
                 }
             }
@@ -1449,10 +1449,10 @@ namespace W3C.XSD {
         /// Regular expression: (annotation | simpleType | complexType | group | attributeGroup)*
         /// </para>
         /// </summary>
-        public virtual IList<complexType> complexType {
+        public virtual IList<W3C.XSD.complexType> complexType {
             get {
                 if ((this.complexTypeField == null)) {
-                    this.complexTypeField = new XTypedList<complexType>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("complexType", "http://www.w3.org/2001/XMLSchema"));
+                    this.complexTypeField = new XTypedList<W3C.XSD.complexType>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("complexType", "http://www.w3.org/2001/XMLSchema"));
                 }
                 return this.complexTypeField;
             }
@@ -1462,10 +1462,10 @@ namespace W3C.XSD {
                 }
                 else {
                     if ((this.complexTypeField == null)) {
-                        this.complexTypeField = XTypedList<complexType>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("complexType", "http://www.w3.org/2001/XMLSchema"));
+                        this.complexTypeField = XTypedList<W3C.XSD.complexType>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("complexType", "http://www.w3.org/2001/XMLSchema"));
                     }
                     else {
-                        XTypedServices.SetList<complexType>(this.complexTypeField, value);
+                        XTypedServices.SetList<W3C.XSD.complexType>(this.complexTypeField, value);
                     }
                 }
             }
@@ -1479,10 +1479,10 @@ namespace W3C.XSD {
         /// Regular expression: (annotation | simpleType | complexType | group | attributeGroup)*
         /// </para>
         /// </summary>
-        public virtual IList<group> group {
+        public virtual IList<W3C.XSD.group> group {
             get {
                 if ((this.groupField == null)) {
-                    this.groupField = new XTypedList<group>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("group", "http://www.w3.org/2001/XMLSchema"));
+                    this.groupField = new XTypedList<W3C.XSD.group>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("group", "http://www.w3.org/2001/XMLSchema"));
                 }
                 return this.groupField;
             }
@@ -1492,10 +1492,10 @@ namespace W3C.XSD {
                 }
                 else {
                     if ((this.groupField == null)) {
-                        this.groupField = XTypedList<group>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("group", "http://www.w3.org/2001/XMLSchema"));
+                        this.groupField = XTypedList<W3C.XSD.group>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("group", "http://www.w3.org/2001/XMLSchema"));
                     }
                     else {
-                        XTypedServices.SetList<group>(this.groupField, value);
+                        XTypedServices.SetList<W3C.XSD.group>(this.groupField, value);
                     }
                 }
             }
@@ -1509,10 +1509,10 @@ namespace W3C.XSD {
         /// Regular expression: (annotation | simpleType | complexType | group | attributeGroup)*
         /// </para>
         /// </summary>
-        public virtual IList<attributeGroup> attributeGroup {
+        public virtual IList<W3C.XSD.attributeGroup> attributeGroup {
             get {
                 if ((this.attributeGroupField == null)) {
-                    this.attributeGroupField = new XTypedList<attributeGroup>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("attributeGroup", "http://www.w3.org/2001/XMLSchema"));
+                    this.attributeGroupField = new XTypedList<W3C.XSD.attributeGroup>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("attributeGroup", "http://www.w3.org/2001/XMLSchema"));
                 }
                 return this.attributeGroupField;
             }
@@ -1522,10 +1522,10 @@ namespace W3C.XSD {
                 }
                 else {
                     if ((this.attributeGroupField == null)) {
-                        this.attributeGroupField = XTypedList<attributeGroup>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("attributeGroup", "http://www.w3.org/2001/XMLSchema"));
+                        this.attributeGroupField = XTypedList<W3C.XSD.attributeGroup>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("attributeGroup", "http://www.w3.org/2001/XMLSchema"));
                     }
                     else {
-                        XTypedServices.SetList<attributeGroup>(this.attributeGroupField, value);
+                        XTypedServices.SetList<W3C.XSD.attributeGroup>(this.attributeGroupField, value);
                     }
                 }
             }
@@ -1618,11 +1618,11 @@ namespace W3C.XSD {
         }
         
         private static void BuildElementDictionary() {
-            localElementDictionary.Add(System.Xml.Linq.XName.Get("annotation", "http://www.w3.org/2001/XMLSchema"), typeof(annotation));
-            localElementDictionary.Add(System.Xml.Linq.XName.Get("simpleType", "http://www.w3.org/2001/XMLSchema"), typeof(simpleType));
-            localElementDictionary.Add(System.Xml.Linq.XName.Get("complexType", "http://www.w3.org/2001/XMLSchema"), typeof(complexType));
-            localElementDictionary.Add(System.Xml.Linq.XName.Get("group", "http://www.w3.org/2001/XMLSchema"), typeof(group));
-            localElementDictionary.Add(System.Xml.Linq.XName.Get("attributeGroup", "http://www.w3.org/2001/XMLSchema"), typeof(attributeGroup));
+            localElementDictionary.Add(System.Xml.Linq.XName.Get("annotation", "http://www.w3.org/2001/XMLSchema"), typeof(W3C.XSD.annotation));
+            localElementDictionary.Add(System.Xml.Linq.XName.Get("simpleType", "http://www.w3.org/2001/XMLSchema"), typeof(W3C.XSD.simpleType));
+            localElementDictionary.Add(System.Xml.Linq.XName.Get("complexType", "http://www.w3.org/2001/XMLSchema"), typeof(W3C.XSD.complexType));
+            localElementDictionary.Add(System.Xml.Linq.XName.Get("group", "http://www.w3.org/2001/XMLSchema"), typeof(W3C.XSD.group));
+            localElementDictionary.Add(System.Xml.Linq.XName.Get("attributeGroup", "http://www.w3.org/2001/XMLSchema"), typeof(W3C.XSD.attributeGroup));
         }
         
         ContentModelEntity IXMetaData.GetContentModel() {
@@ -1666,10 +1666,10 @@ namespace W3C.XSD {
         /// Regular expression: (annotation?)
         /// </para>
         /// </summary>
-        public virtual annotation annotation {
+        public virtual W3C.XSD.annotation annotation {
             get {
                 XElement x = this.GetElement(System.Xml.Linq.XName.Get("annotation", "http://www.w3.org/2001/XMLSchema"));
-                return ((annotation)(x));
+                return ((W3C.XSD.annotation)(x));
             }
             set {
                 this.SetElement(System.Xml.Linq.XName.Get("annotation", "http://www.w3.org/2001/XMLSchema"), value);
@@ -1778,7 +1778,7 @@ namespace W3C.XSD {
         }
         
         private static void BuildElementDictionary() {
-            localElementDictionary.Add(System.Xml.Linq.XName.Get("annotation", "http://www.w3.org/2001/XMLSchema"), typeof(annotation));
+            localElementDictionary.Add(System.Xml.Linq.XName.Get("annotation", "http://www.w3.org/2001/XMLSchema"), typeof(W3C.XSD.annotation));
         }
         
         ContentModelEntity IXMetaData.GetContentModel() {
@@ -1822,10 +1822,10 @@ namespace W3C.XSD {
         /// Regular expression: (annotation?)
         /// </para>
         /// </summary>
-        public virtual annotation annotation {
+        public virtual W3C.XSD.annotation annotation {
             get {
                 XElement x = this.GetElement(System.Xml.Linq.XName.Get("annotation", "http://www.w3.org/2001/XMLSchema"));
-                return ((annotation)(x));
+                return ((W3C.XSD.annotation)(x));
             }
             set {
                 this.SetElement(System.Xml.Linq.XName.Get("annotation", "http://www.w3.org/2001/XMLSchema"), value);
@@ -1919,7 +1919,7 @@ namespace W3C.XSD {
         }
         
         private static void BuildElementDictionary() {
-            localElementDictionary.Add(System.Xml.Linq.XName.Get("annotation", "http://www.w3.org/2001/XMLSchema"), typeof(annotation));
+            localElementDictionary.Add(System.Xml.Linq.XName.Get("annotation", "http://www.w3.org/2001/XMLSchema"), typeof(W3C.XSD.annotation));
         }
         
         ContentModelEntity IXMetaData.GetContentModel() {
@@ -1963,10 +1963,10 @@ namespace W3C.XSD {
         /// Regular expression: (annotation?)
         /// </para>
         /// </summary>
-        public virtual annotation annotation {
+        public virtual W3C.XSD.annotation annotation {
             get {
                 XElement x = this.GetElement(System.Xml.Linq.XName.Get("annotation", "http://www.w3.org/2001/XMLSchema"));
-                return ((annotation)(x));
+                return ((W3C.XSD.annotation)(x));
             }
             set {
                 this.SetElement(System.Xml.Linq.XName.Get("annotation", "http://www.w3.org/2001/XMLSchema"), value);
@@ -2060,7 +2060,7 @@ namespace W3C.XSD {
         }
         
         private static void BuildElementDictionary() {
-            localElementDictionary.Add(System.Xml.Linq.XName.Get("annotation", "http://www.w3.org/2001/XMLSchema"), typeof(annotation));
+            localElementDictionary.Add(System.Xml.Linq.XName.Get("annotation", "http://www.w3.org/2001/XMLSchema"), typeof(W3C.XSD.annotation));
         }
         
         ContentModelEntity IXMetaData.GetContentModel() {
@@ -2076,7 +2076,7 @@ namespace W3C.XSD {
     public partial class keyref : XTypedElement, IXMetaData {
         
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
-        private XTypedList<field> fieldField;
+        private XTypedList<W3C.XSD.field> fieldField;
         
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         private static Dictionary<System.Xml.Linq.XName, System.Type> localElementDictionary = new Dictionary<System.Xml.Linq.XName, System.Type>();
@@ -2107,10 +2107,10 @@ namespace W3C.XSD {
         /// Regular expression: (annotation?, selector, field+)
         /// </para>
         /// </summary>
-        public virtual annotation annotation {
+        public virtual W3C.XSD.annotation annotation {
             get {
                 XElement x = this.GetElement(System.Xml.Linq.XName.Get("annotation", "http://www.w3.org/2001/XMLSchema"));
-                return ((annotation)(x));
+                return ((W3C.XSD.annotation)(x));
             }
             set {
                 this.SetElement(System.Xml.Linq.XName.Get("annotation", "http://www.w3.org/2001/XMLSchema"), value);
@@ -2125,10 +2125,10 @@ namespace W3C.XSD {
         /// Regular expression: (annotation?, selector, field+)
         /// </para>
         /// </summary>
-        public virtual selector selector {
+        public virtual W3C.XSD.selector selector {
             get {
                 XElement x = this.GetElement(System.Xml.Linq.XName.Get("selector", "http://www.w3.org/2001/XMLSchema"));
-                return ((selector)(x));
+                return ((W3C.XSD.selector)(x));
             }
             set {
                 this.SetElement(System.Xml.Linq.XName.Get("selector", "http://www.w3.org/2001/XMLSchema"), value);
@@ -2143,10 +2143,10 @@ namespace W3C.XSD {
         /// Regular expression: (annotation?, selector, field+)
         /// </para>
         /// </summary>
-        public virtual IList<field> field {
+        public virtual IList<W3C.XSD.field> field {
             get {
                 if ((this.fieldField == null)) {
-                    this.fieldField = new XTypedList<field>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("field", "http://www.w3.org/2001/XMLSchema"));
+                    this.fieldField = new XTypedList<W3C.XSD.field>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("field", "http://www.w3.org/2001/XMLSchema"));
                 }
                 return this.fieldField;
             }
@@ -2156,10 +2156,10 @@ namespace W3C.XSD {
                 }
                 else {
                     if ((this.fieldField == null)) {
-                        this.fieldField = XTypedList<field>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("field", "http://www.w3.org/2001/XMLSchema"));
+                        this.fieldField = XTypedList<W3C.XSD.field>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("field", "http://www.w3.org/2001/XMLSchema"));
                     }
                     else {
-                        XTypedServices.SetList<field>(this.fieldField, value);
+                        XTypedServices.SetList<W3C.XSD.field>(this.fieldField, value);
                     }
                 }
             }
@@ -2267,9 +2267,9 @@ namespace W3C.XSD {
         }
         
         private static void BuildElementDictionary() {
-            localElementDictionary.Add(System.Xml.Linq.XName.Get("annotation", "http://www.w3.org/2001/XMLSchema"), typeof(annotation));
-            localElementDictionary.Add(System.Xml.Linq.XName.Get("selector", "http://www.w3.org/2001/XMLSchema"), typeof(selector));
-            localElementDictionary.Add(System.Xml.Linq.XName.Get("field", "http://www.w3.org/2001/XMLSchema"), typeof(field));
+            localElementDictionary.Add(System.Xml.Linq.XName.Get("annotation", "http://www.w3.org/2001/XMLSchema"), typeof(W3C.XSD.annotation));
+            localElementDictionary.Add(System.Xml.Linq.XName.Get("selector", "http://www.w3.org/2001/XMLSchema"), typeof(W3C.XSD.selector));
+            localElementDictionary.Add(System.Xml.Linq.XName.Get("field", "http://www.w3.org/2001/XMLSchema"), typeof(W3C.XSD.field));
         }
         
         ContentModelEntity IXMetaData.GetContentModel() {
@@ -2313,10 +2313,10 @@ namespace W3C.XSD {
         /// Regular expression: (annotation?)
         /// </para>
         /// </summary>
-        public virtual annotation annotation {
+        public virtual W3C.XSD.annotation annotation {
             get {
                 XElement x = this.GetElement(System.Xml.Linq.XName.Get("annotation", "http://www.w3.org/2001/XMLSchema"));
-                return ((annotation)(x));
+                return ((W3C.XSD.annotation)(x));
             }
             set {
                 this.SetElement(System.Xml.Linq.XName.Get("annotation", "http://www.w3.org/2001/XMLSchema"), value);
@@ -2440,7 +2440,7 @@ namespace W3C.XSD {
         }
         
         private static void BuildElementDictionary() {
-            localElementDictionary.Add(System.Xml.Linq.XName.Get("annotation", "http://www.w3.org/2001/XMLSchema"), typeof(annotation));
+            localElementDictionary.Add(System.Xml.Linq.XName.Get("annotation", "http://www.w3.org/2001/XMLSchema"), typeof(W3C.XSD.annotation));
         }
         
         ContentModelEntity IXMetaData.GetContentModel() {
@@ -2691,10 +2691,10 @@ namespace W3C.XSD {
     public partial class annotation : XTypedElement, IXMetaData {
         
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
-        private XTypedList<appinfo> appinfoField;
+        private XTypedList<W3C.XSD.appinfo> appinfoField;
         
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
-        private XTypedList<documentation> documentationField;
+        private XTypedList<W3C.XSD.documentation> documentationField;
         
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         private static Dictionary<System.Xml.Linq.XName, System.Type> localElementDictionary = new Dictionary<System.Xml.Linq.XName, System.Type>();
@@ -2721,10 +2721,10 @@ namespace W3C.XSD {
         /// Regular expression: (appinfo | documentation)*
         /// </para>
         /// </summary>
-        public virtual IList<appinfo> appinfo {
+        public virtual IList<W3C.XSD.appinfo> appinfo {
             get {
                 if ((this.appinfoField == null)) {
-                    this.appinfoField = new XTypedList<appinfo>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("appinfo", "http://www.w3.org/2001/XMLSchema"));
+                    this.appinfoField = new XTypedList<W3C.XSD.appinfo>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("appinfo", "http://www.w3.org/2001/XMLSchema"));
                 }
                 return this.appinfoField;
             }
@@ -2734,10 +2734,10 @@ namespace W3C.XSD {
                 }
                 else {
                     if ((this.appinfoField == null)) {
-                        this.appinfoField = XTypedList<appinfo>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("appinfo", "http://www.w3.org/2001/XMLSchema"));
+                        this.appinfoField = XTypedList<W3C.XSD.appinfo>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("appinfo", "http://www.w3.org/2001/XMLSchema"));
                     }
                     else {
-                        XTypedServices.SetList<appinfo>(this.appinfoField, value);
+                        XTypedServices.SetList<W3C.XSD.appinfo>(this.appinfoField, value);
                     }
                 }
             }
@@ -2751,10 +2751,10 @@ namespace W3C.XSD {
         /// Regular expression: (appinfo | documentation)*
         /// </para>
         /// </summary>
-        public virtual IList<documentation> documentation {
+        public virtual IList<W3C.XSD.documentation> documentation {
             get {
                 if ((this.documentationField == null)) {
-                    this.documentationField = new XTypedList<documentation>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("documentation", "http://www.w3.org/2001/XMLSchema"));
+                    this.documentationField = new XTypedList<W3C.XSD.documentation>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("documentation", "http://www.w3.org/2001/XMLSchema"));
                 }
                 return this.documentationField;
             }
@@ -2764,10 +2764,10 @@ namespace W3C.XSD {
                 }
                 else {
                     if ((this.documentationField == null)) {
-                        this.documentationField = XTypedList<documentation>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("documentation", "http://www.w3.org/2001/XMLSchema"));
+                        this.documentationField = XTypedList<W3C.XSD.documentation>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("documentation", "http://www.w3.org/2001/XMLSchema"));
                     }
                     else {
-                        XTypedServices.SetList<documentation>(this.documentationField, value);
+                        XTypedServices.SetList<W3C.XSD.documentation>(this.documentationField, value);
                     }
                 }
             }
@@ -2845,8 +2845,8 @@ namespace W3C.XSD {
         }
         
         private static void BuildElementDictionary() {
-            localElementDictionary.Add(System.Xml.Linq.XName.Get("appinfo", "http://www.w3.org/2001/XMLSchema"), typeof(appinfo));
-            localElementDictionary.Add(System.Xml.Linq.XName.Get("documentation", "http://www.w3.org/2001/XMLSchema"), typeof(documentation));
+            localElementDictionary.Add(System.Xml.Linq.XName.Get("appinfo", "http://www.w3.org/2001/XMLSchema"), typeof(W3C.XSD.appinfo));
+            localElementDictionary.Add(System.Xml.Linq.XName.Get("documentation", "http://www.w3.org/2001/XMLSchema"), typeof(W3C.XSD.documentation));
         }
         
         ContentModelEntity IXMetaData.GetContentModel() {
@@ -2868,40 +2868,40 @@ namespace W3C.XSD {
     public partial class restriction : XTypedElement, IXMetaData {
         
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
-        private XTypedList<minExclusive> minExclusiveField;
+        private XTypedList<W3C.XSD.minExclusive> minExclusiveField;
         
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
-        private XTypedList<minInclusive> minInclusiveField;
+        private XTypedList<W3C.XSD.minInclusive> minInclusiveField;
         
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
-        private XTypedList<maxExclusive> maxExclusiveField;
+        private XTypedList<W3C.XSD.maxExclusive> maxExclusiveField;
         
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
-        private XTypedList<maxInclusive> maxInclusiveField;
+        private XTypedList<W3C.XSD.maxInclusive> maxInclusiveField;
         
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
-        private XTypedList<totalDigits> totalDigitsField;
+        private XTypedList<W3C.XSD.totalDigits> totalDigitsField;
         
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
-        private XTypedList<fractionDigits> fractionDigitsField;
+        private XTypedList<W3C.XSD.fractionDigits> fractionDigitsField;
         
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
-        private XTypedList<length> lengthField;
+        private XTypedList<W3C.XSD.length> lengthField;
         
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
-        private XTypedList<minLength> minLengthField;
+        private XTypedList<W3C.XSD.minLength> minLengthField;
         
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
-        private XTypedList<maxLength> maxLengthField;
+        private XTypedList<W3C.XSD.maxLength> maxLengthField;
         
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
-        private XTypedList<enumeration> enumerationField;
+        private XTypedList<W3C.XSD.enumeration> enumerationField;
         
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
-        private XTypedList<whiteSpace> whiteSpaceField;
+        private XTypedList<W3C.XSD.whiteSpace> whiteSpaceField;
         
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
-        private XTypedList<pattern> patternField;
+        private XTypedList<W3C.XSD.pattern> patternField;
         
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         private static Dictionary<System.Xml.Linq.XName, System.Type> localElementDictionary = new Dictionary<System.Xml.Linq.XName, System.Type>();
@@ -2934,10 +2934,10 @@ namespace W3C.XSD {
         /// Regular expression: (annotation?, simpleType?, (minExclusive | minInclusive | maxExclusive | maxInclusive | totalDigits | fractionDigits | length | minLength | maxLength | enumeration | whiteSpace | pattern)*)
         /// </para>
         /// </summary>
-        public virtual annotation annotation {
+        public virtual W3C.XSD.annotation annotation {
             get {
                 XElement x = this.GetElement(System.Xml.Linq.XName.Get("annotation", "http://www.w3.org/2001/XMLSchema"));
-                return ((annotation)(x));
+                return ((W3C.XSD.annotation)(x));
             }
             set {
                 this.SetElement(System.Xml.Linq.XName.Get("annotation", "http://www.w3.org/2001/XMLSchema"), value);
@@ -2952,10 +2952,10 @@ namespace W3C.XSD {
         /// Regular expression: (annotation?, simpleType?, (minExclusive | minInclusive | maxExclusive | maxInclusive | totalDigits | fractionDigits | length | minLength | maxLength | enumeration | whiteSpace | pattern)*)
         /// </para>
         /// </summary>
-        public virtual localSimpleType simpleType {
+        public virtual W3C.XSD.localSimpleType simpleType {
             get {
                 XElement x = this.GetElement(System.Xml.Linq.XName.Get("simpleType", "http://www.w3.org/2001/XMLSchema"));
-                return ((localSimpleType)(x));
+                return ((W3C.XSD.localSimpleType)(x));
             }
             set {
                 this.SetElement(System.Xml.Linq.XName.Get("simpleType", "http://www.w3.org/2001/XMLSchema"), value);
@@ -2973,10 +2973,10 @@ namespace W3C.XSD {
         /// Regular expression: (annotation?, simpleType?, (minExclusive | minInclusive | maxExclusive | maxInclusive | totalDigits | fractionDigits | length | minLength | maxLength | enumeration | whiteSpace | pattern)*)
         /// </para>
         /// </summary>
-        public virtual IList<minExclusive> minExclusive {
+        public virtual IList<W3C.XSD.minExclusive> minExclusive {
             get {
                 if ((this.minExclusiveField == null)) {
-                    this.minExclusiveField = new XTypedList<minExclusive>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("minExclusive", "http://www.w3.org/2001/XMLSchema"));
+                    this.minExclusiveField = new XTypedList<W3C.XSD.minExclusive>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("minExclusive", "http://www.w3.org/2001/XMLSchema"));
                 }
                 return this.minExclusiveField;
             }
@@ -2986,10 +2986,10 @@ namespace W3C.XSD {
                 }
                 else {
                     if ((this.minExclusiveField == null)) {
-                        this.minExclusiveField = XTypedList<minExclusive>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("minExclusive", "http://www.w3.org/2001/XMLSchema"));
+                        this.minExclusiveField = XTypedList<W3C.XSD.minExclusive>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("minExclusive", "http://www.w3.org/2001/XMLSchema"));
                     }
                     else {
-                        XTypedServices.SetList<minExclusive>(this.minExclusiveField, value);
+                        XTypedServices.SetList<W3C.XSD.minExclusive>(this.minExclusiveField, value);
                     }
                 }
             }
@@ -3006,10 +3006,10 @@ namespace W3C.XSD {
         /// Regular expression: (annotation?, simpleType?, (minExclusive | minInclusive | maxExclusive | maxInclusive | totalDigits | fractionDigits | length | minLength | maxLength | enumeration | whiteSpace | pattern)*)
         /// </para>
         /// </summary>
-        public virtual IList<minInclusive> minInclusive {
+        public virtual IList<W3C.XSD.minInclusive> minInclusive {
             get {
                 if ((this.minInclusiveField == null)) {
-                    this.minInclusiveField = new XTypedList<minInclusive>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("minInclusive", "http://www.w3.org/2001/XMLSchema"));
+                    this.minInclusiveField = new XTypedList<W3C.XSD.minInclusive>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("minInclusive", "http://www.w3.org/2001/XMLSchema"));
                 }
                 return this.minInclusiveField;
             }
@@ -3019,10 +3019,10 @@ namespace W3C.XSD {
                 }
                 else {
                     if ((this.minInclusiveField == null)) {
-                        this.minInclusiveField = XTypedList<minInclusive>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("minInclusive", "http://www.w3.org/2001/XMLSchema"));
+                        this.minInclusiveField = XTypedList<W3C.XSD.minInclusive>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("minInclusive", "http://www.w3.org/2001/XMLSchema"));
                     }
                     else {
-                        XTypedServices.SetList<minInclusive>(this.minInclusiveField, value);
+                        XTypedServices.SetList<W3C.XSD.minInclusive>(this.minInclusiveField, value);
                     }
                 }
             }
@@ -3039,10 +3039,10 @@ namespace W3C.XSD {
         /// Regular expression: (annotation?, simpleType?, (minExclusive | minInclusive | maxExclusive | maxInclusive | totalDigits | fractionDigits | length | minLength | maxLength | enumeration | whiteSpace | pattern)*)
         /// </para>
         /// </summary>
-        public virtual IList<maxExclusive> maxExclusive {
+        public virtual IList<W3C.XSD.maxExclusive> maxExclusive {
             get {
                 if ((this.maxExclusiveField == null)) {
-                    this.maxExclusiveField = new XTypedList<maxExclusive>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("maxExclusive", "http://www.w3.org/2001/XMLSchema"));
+                    this.maxExclusiveField = new XTypedList<W3C.XSD.maxExclusive>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("maxExclusive", "http://www.w3.org/2001/XMLSchema"));
                 }
                 return this.maxExclusiveField;
             }
@@ -3052,10 +3052,10 @@ namespace W3C.XSD {
                 }
                 else {
                     if ((this.maxExclusiveField == null)) {
-                        this.maxExclusiveField = XTypedList<maxExclusive>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("maxExclusive", "http://www.w3.org/2001/XMLSchema"));
+                        this.maxExclusiveField = XTypedList<W3C.XSD.maxExclusive>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("maxExclusive", "http://www.w3.org/2001/XMLSchema"));
                     }
                     else {
-                        XTypedServices.SetList<maxExclusive>(this.maxExclusiveField, value);
+                        XTypedServices.SetList<W3C.XSD.maxExclusive>(this.maxExclusiveField, value);
                     }
                 }
             }
@@ -3072,10 +3072,10 @@ namespace W3C.XSD {
         /// Regular expression: (annotation?, simpleType?, (minExclusive | minInclusive | maxExclusive | maxInclusive | totalDigits | fractionDigits | length | minLength | maxLength | enumeration | whiteSpace | pattern)*)
         /// </para>
         /// </summary>
-        public virtual IList<maxInclusive> maxInclusive {
+        public virtual IList<W3C.XSD.maxInclusive> maxInclusive {
             get {
                 if ((this.maxInclusiveField == null)) {
-                    this.maxInclusiveField = new XTypedList<maxInclusive>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("maxInclusive", "http://www.w3.org/2001/XMLSchema"));
+                    this.maxInclusiveField = new XTypedList<W3C.XSD.maxInclusive>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("maxInclusive", "http://www.w3.org/2001/XMLSchema"));
                 }
                 return this.maxInclusiveField;
             }
@@ -3085,10 +3085,10 @@ namespace W3C.XSD {
                 }
                 else {
                     if ((this.maxInclusiveField == null)) {
-                        this.maxInclusiveField = XTypedList<maxInclusive>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("maxInclusive", "http://www.w3.org/2001/XMLSchema"));
+                        this.maxInclusiveField = XTypedList<W3C.XSD.maxInclusive>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("maxInclusive", "http://www.w3.org/2001/XMLSchema"));
                     }
                     else {
-                        XTypedServices.SetList<maxInclusive>(this.maxInclusiveField, value);
+                        XTypedServices.SetList<W3C.XSD.maxInclusive>(this.maxInclusiveField, value);
                     }
                 }
             }
@@ -3105,10 +3105,10 @@ namespace W3C.XSD {
         /// Regular expression: (annotation?, simpleType?, (minExclusive | minInclusive | maxExclusive | maxInclusive | totalDigits | fractionDigits | length | minLength | maxLength | enumeration | whiteSpace | pattern)*)
         /// </para>
         /// </summary>
-        public virtual IList<totalDigits> totalDigits {
+        public virtual IList<W3C.XSD.totalDigits> totalDigits {
             get {
                 if ((this.totalDigitsField == null)) {
-                    this.totalDigitsField = new XTypedList<totalDigits>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("totalDigits", "http://www.w3.org/2001/XMLSchema"));
+                    this.totalDigitsField = new XTypedList<W3C.XSD.totalDigits>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("totalDigits", "http://www.w3.org/2001/XMLSchema"));
                 }
                 return this.totalDigitsField;
             }
@@ -3118,10 +3118,10 @@ namespace W3C.XSD {
                 }
                 else {
                     if ((this.totalDigitsField == null)) {
-                        this.totalDigitsField = XTypedList<totalDigits>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("totalDigits", "http://www.w3.org/2001/XMLSchema"));
+                        this.totalDigitsField = XTypedList<W3C.XSD.totalDigits>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("totalDigits", "http://www.w3.org/2001/XMLSchema"));
                     }
                     else {
-                        XTypedServices.SetList<totalDigits>(this.totalDigitsField, value);
+                        XTypedServices.SetList<W3C.XSD.totalDigits>(this.totalDigitsField, value);
                     }
                 }
             }
@@ -3138,10 +3138,10 @@ namespace W3C.XSD {
         /// Regular expression: (annotation?, simpleType?, (minExclusive | minInclusive | maxExclusive | maxInclusive | totalDigits | fractionDigits | length | minLength | maxLength | enumeration | whiteSpace | pattern)*)
         /// </para>
         /// </summary>
-        public virtual IList<fractionDigits> fractionDigits {
+        public virtual IList<W3C.XSD.fractionDigits> fractionDigits {
             get {
                 if ((this.fractionDigitsField == null)) {
-                    this.fractionDigitsField = new XTypedList<fractionDigits>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("fractionDigits", "http://www.w3.org/2001/XMLSchema"));
+                    this.fractionDigitsField = new XTypedList<W3C.XSD.fractionDigits>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("fractionDigits", "http://www.w3.org/2001/XMLSchema"));
                 }
                 return this.fractionDigitsField;
             }
@@ -3151,10 +3151,10 @@ namespace W3C.XSD {
                 }
                 else {
                     if ((this.fractionDigitsField == null)) {
-                        this.fractionDigitsField = XTypedList<fractionDigits>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("fractionDigits", "http://www.w3.org/2001/XMLSchema"));
+                        this.fractionDigitsField = XTypedList<W3C.XSD.fractionDigits>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("fractionDigits", "http://www.w3.org/2001/XMLSchema"));
                     }
                     else {
-                        XTypedServices.SetList<fractionDigits>(this.fractionDigitsField, value);
+                        XTypedServices.SetList<W3C.XSD.fractionDigits>(this.fractionDigitsField, value);
                     }
                 }
             }
@@ -3171,10 +3171,10 @@ namespace W3C.XSD {
         /// Regular expression: (annotation?, simpleType?, (minExclusive | minInclusive | maxExclusive | maxInclusive | totalDigits | fractionDigits | length | minLength | maxLength | enumeration | whiteSpace | pattern)*)
         /// </para>
         /// </summary>
-        public virtual IList<length> length {
+        public virtual IList<W3C.XSD.length> length {
             get {
                 if ((this.lengthField == null)) {
-                    this.lengthField = new XTypedList<length>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("length", "http://www.w3.org/2001/XMLSchema"));
+                    this.lengthField = new XTypedList<W3C.XSD.length>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("length", "http://www.w3.org/2001/XMLSchema"));
                 }
                 return this.lengthField;
             }
@@ -3184,10 +3184,10 @@ namespace W3C.XSD {
                 }
                 else {
                     if ((this.lengthField == null)) {
-                        this.lengthField = XTypedList<length>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("length", "http://www.w3.org/2001/XMLSchema"));
+                        this.lengthField = XTypedList<W3C.XSD.length>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("length", "http://www.w3.org/2001/XMLSchema"));
                     }
                     else {
-                        XTypedServices.SetList<length>(this.lengthField, value);
+                        XTypedServices.SetList<W3C.XSD.length>(this.lengthField, value);
                     }
                 }
             }
@@ -3204,10 +3204,10 @@ namespace W3C.XSD {
         /// Regular expression: (annotation?, simpleType?, (minExclusive | minInclusive | maxExclusive | maxInclusive | totalDigits | fractionDigits | length | minLength | maxLength | enumeration | whiteSpace | pattern)*)
         /// </para>
         /// </summary>
-        public virtual IList<minLength> minLength {
+        public virtual IList<W3C.XSD.minLength> minLength {
             get {
                 if ((this.minLengthField == null)) {
-                    this.minLengthField = new XTypedList<minLength>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("minLength", "http://www.w3.org/2001/XMLSchema"));
+                    this.minLengthField = new XTypedList<W3C.XSD.minLength>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("minLength", "http://www.w3.org/2001/XMLSchema"));
                 }
                 return this.minLengthField;
             }
@@ -3217,10 +3217,10 @@ namespace W3C.XSD {
                 }
                 else {
                     if ((this.minLengthField == null)) {
-                        this.minLengthField = XTypedList<minLength>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("minLength", "http://www.w3.org/2001/XMLSchema"));
+                        this.minLengthField = XTypedList<W3C.XSD.minLength>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("minLength", "http://www.w3.org/2001/XMLSchema"));
                     }
                     else {
-                        XTypedServices.SetList<minLength>(this.minLengthField, value);
+                        XTypedServices.SetList<W3C.XSD.minLength>(this.minLengthField, value);
                     }
                 }
             }
@@ -3237,10 +3237,10 @@ namespace W3C.XSD {
         /// Regular expression: (annotation?, simpleType?, (minExclusive | minInclusive | maxExclusive | maxInclusive | totalDigits | fractionDigits | length | minLength | maxLength | enumeration | whiteSpace | pattern)*)
         /// </para>
         /// </summary>
-        public virtual IList<maxLength> maxLength {
+        public virtual IList<W3C.XSD.maxLength> maxLength {
             get {
                 if ((this.maxLengthField == null)) {
-                    this.maxLengthField = new XTypedList<maxLength>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("maxLength", "http://www.w3.org/2001/XMLSchema"));
+                    this.maxLengthField = new XTypedList<W3C.XSD.maxLength>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("maxLength", "http://www.w3.org/2001/XMLSchema"));
                 }
                 return this.maxLengthField;
             }
@@ -3250,10 +3250,10 @@ namespace W3C.XSD {
                 }
                 else {
                     if ((this.maxLengthField == null)) {
-                        this.maxLengthField = XTypedList<maxLength>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("maxLength", "http://www.w3.org/2001/XMLSchema"));
+                        this.maxLengthField = XTypedList<W3C.XSD.maxLength>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("maxLength", "http://www.w3.org/2001/XMLSchema"));
                     }
                     else {
-                        XTypedServices.SetList<maxLength>(this.maxLengthField, value);
+                        XTypedServices.SetList<W3C.XSD.maxLength>(this.maxLengthField, value);
                     }
                 }
             }
@@ -3270,10 +3270,10 @@ namespace W3C.XSD {
         /// Regular expression: (annotation?, simpleType?, (minExclusive | minInclusive | maxExclusive | maxInclusive | totalDigits | fractionDigits | length | minLength | maxLength | enumeration | whiteSpace | pattern)*)
         /// </para>
         /// </summary>
-        public virtual IList<enumeration> enumeration {
+        public virtual IList<W3C.XSD.enumeration> enumeration {
             get {
                 if ((this.enumerationField == null)) {
-                    this.enumerationField = new XTypedList<enumeration>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("enumeration", "http://www.w3.org/2001/XMLSchema"));
+                    this.enumerationField = new XTypedList<W3C.XSD.enumeration>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("enumeration", "http://www.w3.org/2001/XMLSchema"));
                 }
                 return this.enumerationField;
             }
@@ -3283,10 +3283,10 @@ namespace W3C.XSD {
                 }
                 else {
                     if ((this.enumerationField == null)) {
-                        this.enumerationField = XTypedList<enumeration>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("enumeration", "http://www.w3.org/2001/XMLSchema"));
+                        this.enumerationField = XTypedList<W3C.XSD.enumeration>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("enumeration", "http://www.w3.org/2001/XMLSchema"));
                     }
                     else {
-                        XTypedServices.SetList<enumeration>(this.enumerationField, value);
+                        XTypedServices.SetList<W3C.XSD.enumeration>(this.enumerationField, value);
                     }
                 }
             }
@@ -3303,10 +3303,10 @@ namespace W3C.XSD {
         /// Regular expression: (annotation?, simpleType?, (minExclusive | minInclusive | maxExclusive | maxInclusive | totalDigits | fractionDigits | length | minLength | maxLength | enumeration | whiteSpace | pattern)*)
         /// </para>
         /// </summary>
-        public virtual IList<whiteSpace> whiteSpace {
+        public virtual IList<W3C.XSD.whiteSpace> whiteSpace {
             get {
                 if ((this.whiteSpaceField == null)) {
-                    this.whiteSpaceField = new XTypedList<whiteSpace>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("whiteSpace", "http://www.w3.org/2001/XMLSchema"));
+                    this.whiteSpaceField = new XTypedList<W3C.XSD.whiteSpace>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("whiteSpace", "http://www.w3.org/2001/XMLSchema"));
                 }
                 return this.whiteSpaceField;
             }
@@ -3316,10 +3316,10 @@ namespace W3C.XSD {
                 }
                 else {
                     if ((this.whiteSpaceField == null)) {
-                        this.whiteSpaceField = XTypedList<whiteSpace>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("whiteSpace", "http://www.w3.org/2001/XMLSchema"));
+                        this.whiteSpaceField = XTypedList<W3C.XSD.whiteSpace>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("whiteSpace", "http://www.w3.org/2001/XMLSchema"));
                     }
                     else {
-                        XTypedServices.SetList<whiteSpace>(this.whiteSpaceField, value);
+                        XTypedServices.SetList<W3C.XSD.whiteSpace>(this.whiteSpaceField, value);
                     }
                 }
             }
@@ -3336,10 +3336,10 @@ namespace W3C.XSD {
         /// Regular expression: (annotation?, simpleType?, (minExclusive | minInclusive | maxExclusive | maxInclusive | totalDigits | fractionDigits | length | minLength | maxLength | enumeration | whiteSpace | pattern)*)
         /// </para>
         /// </summary>
-        public virtual IList<pattern> pattern {
+        public virtual IList<W3C.XSD.pattern> pattern {
             get {
                 if ((this.patternField == null)) {
-                    this.patternField = new XTypedList<pattern>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("pattern", "http://www.w3.org/2001/XMLSchema"));
+                    this.patternField = new XTypedList<W3C.XSD.pattern>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("pattern", "http://www.w3.org/2001/XMLSchema"));
                 }
                 return this.patternField;
             }
@@ -3349,10 +3349,10 @@ namespace W3C.XSD {
                 }
                 else {
                     if ((this.patternField == null)) {
-                        this.patternField = XTypedList<pattern>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("pattern", "http://www.w3.org/2001/XMLSchema"));
+                        this.patternField = XTypedList<W3C.XSD.pattern>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("pattern", "http://www.w3.org/2001/XMLSchema"));
                     }
                     else {
-                        XTypedServices.SetList<pattern>(this.patternField, value);
+                        XTypedServices.SetList<W3C.XSD.pattern>(this.patternField, value);
                     }
                 }
             }
@@ -3445,20 +3445,20 @@ namespace W3C.XSD {
         }
         
         private static void BuildElementDictionary() {
-            localElementDictionary.Add(System.Xml.Linq.XName.Get("annotation", "http://www.w3.org/2001/XMLSchema"), typeof(annotation));
-            localElementDictionary.Add(System.Xml.Linq.XName.Get("simpleType", "http://www.w3.org/2001/XMLSchema"), typeof(localSimpleType));
-            localElementDictionary.Add(System.Xml.Linq.XName.Get("minExclusive", "http://www.w3.org/2001/XMLSchema"), typeof(minExclusive));
-            localElementDictionary.Add(System.Xml.Linq.XName.Get("minInclusive", "http://www.w3.org/2001/XMLSchema"), typeof(minInclusive));
-            localElementDictionary.Add(System.Xml.Linq.XName.Get("maxExclusive", "http://www.w3.org/2001/XMLSchema"), typeof(maxExclusive));
-            localElementDictionary.Add(System.Xml.Linq.XName.Get("maxInclusive", "http://www.w3.org/2001/XMLSchema"), typeof(maxInclusive));
-            localElementDictionary.Add(System.Xml.Linq.XName.Get("totalDigits", "http://www.w3.org/2001/XMLSchema"), typeof(totalDigits));
-            localElementDictionary.Add(System.Xml.Linq.XName.Get("fractionDigits", "http://www.w3.org/2001/XMLSchema"), typeof(fractionDigits));
-            localElementDictionary.Add(System.Xml.Linq.XName.Get("length", "http://www.w3.org/2001/XMLSchema"), typeof(length));
-            localElementDictionary.Add(System.Xml.Linq.XName.Get("minLength", "http://www.w3.org/2001/XMLSchema"), typeof(minLength));
-            localElementDictionary.Add(System.Xml.Linq.XName.Get("maxLength", "http://www.w3.org/2001/XMLSchema"), typeof(maxLength));
-            localElementDictionary.Add(System.Xml.Linq.XName.Get("enumeration", "http://www.w3.org/2001/XMLSchema"), typeof(enumeration));
-            localElementDictionary.Add(System.Xml.Linq.XName.Get("whiteSpace", "http://www.w3.org/2001/XMLSchema"), typeof(whiteSpace));
-            localElementDictionary.Add(System.Xml.Linq.XName.Get("pattern", "http://www.w3.org/2001/XMLSchema"), typeof(pattern));
+            localElementDictionary.Add(System.Xml.Linq.XName.Get("annotation", "http://www.w3.org/2001/XMLSchema"), typeof(W3C.XSD.annotation));
+            localElementDictionary.Add(System.Xml.Linq.XName.Get("simpleType", "http://www.w3.org/2001/XMLSchema"), typeof(W3C.XSD.localSimpleType));
+            localElementDictionary.Add(System.Xml.Linq.XName.Get("minExclusive", "http://www.w3.org/2001/XMLSchema"), typeof(W3C.XSD.minExclusive));
+            localElementDictionary.Add(System.Xml.Linq.XName.Get("minInclusive", "http://www.w3.org/2001/XMLSchema"), typeof(W3C.XSD.minInclusive));
+            localElementDictionary.Add(System.Xml.Linq.XName.Get("maxExclusive", "http://www.w3.org/2001/XMLSchema"), typeof(W3C.XSD.maxExclusive));
+            localElementDictionary.Add(System.Xml.Linq.XName.Get("maxInclusive", "http://www.w3.org/2001/XMLSchema"), typeof(W3C.XSD.maxInclusive));
+            localElementDictionary.Add(System.Xml.Linq.XName.Get("totalDigits", "http://www.w3.org/2001/XMLSchema"), typeof(W3C.XSD.totalDigits));
+            localElementDictionary.Add(System.Xml.Linq.XName.Get("fractionDigits", "http://www.w3.org/2001/XMLSchema"), typeof(W3C.XSD.fractionDigits));
+            localElementDictionary.Add(System.Xml.Linq.XName.Get("length", "http://www.w3.org/2001/XMLSchema"), typeof(W3C.XSD.length));
+            localElementDictionary.Add(System.Xml.Linq.XName.Get("minLength", "http://www.w3.org/2001/XMLSchema"), typeof(W3C.XSD.minLength));
+            localElementDictionary.Add(System.Xml.Linq.XName.Get("maxLength", "http://www.w3.org/2001/XMLSchema"), typeof(W3C.XSD.maxLength));
+            localElementDictionary.Add(System.Xml.Linq.XName.Get("enumeration", "http://www.w3.org/2001/XMLSchema"), typeof(W3C.XSD.enumeration));
+            localElementDictionary.Add(System.Xml.Linq.XName.Get("whiteSpace", "http://www.w3.org/2001/XMLSchema"), typeof(W3C.XSD.whiteSpace));
+            localElementDictionary.Add(System.Xml.Linq.XName.Get("pattern", "http://www.w3.org/2001/XMLSchema"), typeof(W3C.XSD.pattern));
         }
         
         ContentModelEntity IXMetaData.GetContentModel() {
@@ -3514,10 +3514,10 @@ namespace W3C.XSD {
         /// Regular expression: (annotation?, simpleType?)
         /// </para>
         /// </summary>
-        public virtual annotation annotation {
+        public virtual W3C.XSD.annotation annotation {
             get {
                 XElement x = this.GetElement(System.Xml.Linq.XName.Get("annotation", "http://www.w3.org/2001/XMLSchema"));
-                return ((annotation)(x));
+                return ((W3C.XSD.annotation)(x));
             }
             set {
                 this.SetElement(System.Xml.Linq.XName.Get("annotation", "http://www.w3.org/2001/XMLSchema"), value);
@@ -3532,10 +3532,10 @@ namespace W3C.XSD {
         /// Regular expression: (annotation?, simpleType?)
         /// </para>
         /// </summary>
-        public virtual localSimpleType simpleType {
+        public virtual W3C.XSD.localSimpleType simpleType {
             get {
                 XElement x = this.GetElement(System.Xml.Linq.XName.Get("simpleType", "http://www.w3.org/2001/XMLSchema"));
-                return ((localSimpleType)(x));
+                return ((W3C.XSD.localSimpleType)(x));
             }
             set {
                 this.SetElement(System.Xml.Linq.XName.Get("simpleType", "http://www.w3.org/2001/XMLSchema"), value);
@@ -3629,8 +3629,8 @@ namespace W3C.XSD {
         }
         
         private static void BuildElementDictionary() {
-            localElementDictionary.Add(System.Xml.Linq.XName.Get("annotation", "http://www.w3.org/2001/XMLSchema"), typeof(annotation));
-            localElementDictionary.Add(System.Xml.Linq.XName.Get("simpleType", "http://www.w3.org/2001/XMLSchema"), typeof(localSimpleType));
+            localElementDictionary.Add(System.Xml.Linq.XName.Get("annotation", "http://www.w3.org/2001/XMLSchema"), typeof(W3C.XSD.annotation));
+            localElementDictionary.Add(System.Xml.Linq.XName.Get("simpleType", "http://www.w3.org/2001/XMLSchema"), typeof(W3C.XSD.localSimpleType));
         }
         
         ContentModelEntity IXMetaData.GetContentModel() {
@@ -3652,7 +3652,7 @@ namespace W3C.XSD {
     public partial class union : XTypedElement, IXMetaData {
         
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
-        private XTypedList<localSimpleType> simpleTypeField;
+        private XTypedList<W3C.XSD.localSimpleType> simpleTypeField;
         
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         private static Dictionary<System.Xml.Linq.XName, System.Type> localElementDictionary = new Dictionary<System.Xml.Linq.XName, System.Type>();
@@ -3689,10 +3689,10 @@ namespace W3C.XSD {
         /// Regular expression: (annotation?, simpleType*)
         /// </para>
         /// </summary>
-        public virtual annotation annotation {
+        public virtual W3C.XSD.annotation annotation {
             get {
                 XElement x = this.GetElement(System.Xml.Linq.XName.Get("annotation", "http://www.w3.org/2001/XMLSchema"));
-                return ((annotation)(x));
+                return ((W3C.XSD.annotation)(x));
             }
             set {
                 this.SetElement(System.Xml.Linq.XName.Get("annotation", "http://www.w3.org/2001/XMLSchema"), value);
@@ -3707,10 +3707,10 @@ namespace W3C.XSD {
         /// Regular expression: (annotation?, simpleType*)
         /// </para>
         /// </summary>
-        public virtual IList<localSimpleType> simpleType {
+        public virtual IList<W3C.XSD.localSimpleType> simpleType {
             get {
                 if ((this.simpleTypeField == null)) {
-                    this.simpleTypeField = new XTypedList<localSimpleType>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("simpleType", "http://www.w3.org/2001/XMLSchema"));
+                    this.simpleTypeField = new XTypedList<W3C.XSD.localSimpleType>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("simpleType", "http://www.w3.org/2001/XMLSchema"));
                 }
                 return this.simpleTypeField;
             }
@@ -3720,10 +3720,10 @@ namespace W3C.XSD {
                 }
                 else {
                     if ((this.simpleTypeField == null)) {
-                        this.simpleTypeField = XTypedList<localSimpleType>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("simpleType", "http://www.w3.org/2001/XMLSchema"));
+                        this.simpleTypeField = XTypedList<W3C.XSD.localSimpleType>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("simpleType", "http://www.w3.org/2001/XMLSchema"));
                     }
                     else {
-                        XTypedServices.SetList<localSimpleType>(this.simpleTypeField, value);
+                        XTypedServices.SetList<W3C.XSD.localSimpleType>(this.simpleTypeField, value);
                     }
                 }
             }
@@ -3816,8 +3816,8 @@ namespace W3C.XSD {
         }
         
         private static void BuildElementDictionary() {
-            localElementDictionary.Add(System.Xml.Linq.XName.Get("annotation", "http://www.w3.org/2001/XMLSchema"), typeof(annotation));
-            localElementDictionary.Add(System.Xml.Linq.XName.Get("simpleType", "http://www.w3.org/2001/XMLSchema"), typeof(localSimpleType));
+            localElementDictionary.Add(System.Xml.Linq.XName.Get("annotation", "http://www.w3.org/2001/XMLSchema"), typeof(W3C.XSD.annotation));
+            localElementDictionary.Add(System.Xml.Linq.XName.Get("simpleType", "http://www.w3.org/2001/XMLSchema"), typeof(W3C.XSD.localSimpleType));
         }
         
         ContentModelEntity IXMetaData.GetContentModel() {
@@ -4111,10 +4111,10 @@ namespace W3C.XSD {
         /// Regular expression: (annotation?)
         /// </para>
         /// </summary>
-        public virtual annotation annotation {
+        public virtual W3C.XSD.annotation annotation {
             get {
                 XElement x = this.GetElement(System.Xml.Linq.XName.Get("annotation", "http://www.w3.org/2001/XMLSchema"));
-                return ((annotation)(x));
+                return ((W3C.XSD.annotation)(x));
             }
             set {
                 this.SetElement(System.Xml.Linq.XName.Get("annotation", "http://www.w3.org/2001/XMLSchema"), value);
@@ -4169,7 +4169,7 @@ namespace W3C.XSD {
         }
         
         private static void BuildElementDictionary() {
-            localElementDictionary.Add(System.Xml.Linq.XName.Get("annotation", "http://www.w3.org/2001/XMLSchema"), typeof(annotation));
+            localElementDictionary.Add(System.Xml.Linq.XName.Get("annotation", "http://www.w3.org/2001/XMLSchema"), typeof(W3C.XSD.annotation));
         }
         
         ContentModelEntity IXMetaData.GetContentModel() {
@@ -4323,10 +4323,10 @@ namespace W3C.XSD {
         /// Regular expression: (annotation?, simpleType?)
         /// </para>
         /// </summary>
-        public virtual localSimpleType simpleType {
+        public virtual W3C.XSD.localSimpleType simpleType {
             get {
                 XElement x = this.GetElement(System.Xml.Linq.XName.Get("simpleType", "http://www.w3.org/2001/XMLSchema"));
-                return ((localSimpleType)(x));
+                return ((W3C.XSD.localSimpleType)(x));
             }
             set {
                 this.SetElement(System.Xml.Linq.XName.Get("simpleType", "http://www.w3.org/2001/XMLSchema"), value);
@@ -4471,8 +4471,8 @@ namespace W3C.XSD {
         }
         
         private static void BuildElementDictionary() {
-            localElementDictionary.Add(System.Xml.Linq.XName.Get("annotation", "http://www.w3.org/2001/XMLSchema"), typeof(annotation));
-            localElementDictionary.Add(System.Xml.Linq.XName.Get("simpleType", "http://www.w3.org/2001/XMLSchema"), typeof(localSimpleType));
+            localElementDictionary.Add(System.Xml.Linq.XName.Get("annotation", "http://www.w3.org/2001/XMLSchema"), typeof(W3C.XSD.annotation));
+            localElementDictionary.Add(System.Xml.Linq.XName.Get("simpleType", "http://www.w3.org/2001/XMLSchema"), typeof(W3C.XSD.localSimpleType));
         }
         
         ContentModelEntity IXMetaData.GetContentModel() {
@@ -4525,10 +4525,10 @@ namespace W3C.XSD {
     public abstract partial class complexTypeType : global::W3C.XSD.annotated, IXMetaData {
         
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
-        private XTypedList<attributeType> attributeField;
+        private XTypedList<W3C.XSD.attributeType> attributeField;
         
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
-        private XTypedList<attributeGroupRef> attributeGroupField;
+        private XTypedList<W3C.XSD.attributeGroupRef> attributeGroupField;
         
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         private static bool mixedDefaultValue = System.Xml.XmlConvert.ToBoolean("false");
@@ -4564,10 +4564,10 @@ namespace W3C.XSD {
         /// Regular expression: (annotation?, (simpleContent | complexContent | ((group | all | choice | sequence)?, (attribute | attributeGroup)*, anyAttribute?)))
         /// </para>
         /// </summary>
-        public virtual simpleContent simpleContent {
+        public virtual W3C.XSD.simpleContent simpleContent {
             get {
                 XElement x = this.GetElement(System.Xml.Linq.XName.Get("simpleContent", "http://www.w3.org/2001/XMLSchema"));
-                return ((simpleContent)(x));
+                return ((W3C.XSD.simpleContent)(x));
             }
             set {
                 this.SetElement(System.Xml.Linq.XName.Get("simpleContent", "http://www.w3.org/2001/XMLSchema"), value);
@@ -4585,10 +4585,10 @@ namespace W3C.XSD {
         /// Regular expression: (annotation?, (simpleContent | complexContent | ((group | all | choice | sequence)?, (attribute | attributeGroup)*, anyAttribute?)))
         /// </para>
         /// </summary>
-        public virtual complexContent complexContent {
+        public virtual W3C.XSD.complexContent complexContent {
             get {
                 XElement x = this.GetElement(System.Xml.Linq.XName.Get("complexContent", "http://www.w3.org/2001/XMLSchema"));
-                return ((complexContent)(x));
+                return ((W3C.XSD.complexContent)(x));
             }
             set {
                 this.SetElement(System.Xml.Linq.XName.Get("complexContent", "http://www.w3.org/2001/XMLSchema"), value);
@@ -4606,10 +4606,10 @@ namespace W3C.XSD {
         /// Regular expression: (annotation?, (simpleContent | complexContent | ((group | all | choice | sequence)?, (attribute | attributeGroup)*, anyAttribute?)))
         /// </para>
         /// </summary>
-        public virtual groupRef group {
+        public virtual W3C.XSD.groupRef group {
             get {
                 XElement x = this.GetElement(System.Xml.Linq.XName.Get("group", "http://www.w3.org/2001/XMLSchema"));
-                return ((groupRef)(x));
+                return ((W3C.XSD.groupRef)(x));
             }
             set {
                 this.SetElement(System.Xml.Linq.XName.Get("group", "http://www.w3.org/2001/XMLSchema"), value);
@@ -4627,10 +4627,10 @@ namespace W3C.XSD {
         /// Regular expression: (annotation?, (simpleContent | complexContent | ((group | all | choice | sequence)?, (attribute | attributeGroup)*, anyAttribute?)))
         /// </para>
         /// </summary>
-        public virtual all all {
+        public virtual W3C.XSD.all all {
             get {
                 XElement x = this.GetElement(System.Xml.Linq.XName.Get("all", "http://www.w3.org/2001/XMLSchema"));
-                return ((all)(x));
+                return ((W3C.XSD.all)(x));
             }
             set {
                 this.SetElement(System.Xml.Linq.XName.Get("all", "http://www.w3.org/2001/XMLSchema"), value);
@@ -4648,10 +4648,10 @@ namespace W3C.XSD {
         /// Regular expression: (annotation?, (simpleContent | complexContent | ((group | all | choice | sequence)?, (attribute | attributeGroup)*, anyAttribute?)))
         /// </para>
         /// </summary>
-        public virtual choice choice {
+        public virtual W3C.XSD.choice choice {
             get {
                 XElement x = this.GetElement(System.Xml.Linq.XName.Get("choice", "http://www.w3.org/2001/XMLSchema"));
-                return ((choice)(x));
+                return ((W3C.XSD.choice)(x));
             }
             set {
                 this.SetElement(System.Xml.Linq.XName.Get("choice", "http://www.w3.org/2001/XMLSchema"), value);
@@ -4669,10 +4669,10 @@ namespace W3C.XSD {
         /// Regular expression: (annotation?, (simpleContent | complexContent | ((group | all | choice | sequence)?, (attribute | attributeGroup)*, anyAttribute?)))
         /// </para>
         /// </summary>
-        public virtual sequence sequence {
+        public virtual W3C.XSD.sequence sequence {
             get {
                 XElement x = this.GetElement(System.Xml.Linq.XName.Get("sequence", "http://www.w3.org/2001/XMLSchema"));
-                return ((sequence)(x));
+                return ((W3C.XSD.sequence)(x));
             }
             set {
                 this.SetElement(System.Xml.Linq.XName.Get("sequence", "http://www.w3.org/2001/XMLSchema"), value);
@@ -4690,10 +4690,10 @@ namespace W3C.XSD {
         /// Regular expression: (annotation?, (simpleContent | complexContent | ((group | all | choice | sequence)?, (attribute | attributeGroup)*, anyAttribute?)))
         /// </para>
         /// </summary>
-        public virtual IList<attributeType> attribute {
+        public virtual IList<W3C.XSD.attributeType> attribute {
             get {
                 if ((this.attributeField == null)) {
-                    this.attributeField = new XTypedList<attributeType>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("attribute", "http://www.w3.org/2001/XMLSchema"));
+                    this.attributeField = new XTypedList<W3C.XSD.attributeType>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("attribute", "http://www.w3.org/2001/XMLSchema"));
                 }
                 return this.attributeField;
             }
@@ -4703,10 +4703,10 @@ namespace W3C.XSD {
                 }
                 else {
                     if ((this.attributeField == null)) {
-                        this.attributeField = XTypedList<attributeType>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("attribute", "http://www.w3.org/2001/XMLSchema"));
+                        this.attributeField = XTypedList<W3C.XSD.attributeType>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("attribute", "http://www.w3.org/2001/XMLSchema"));
                     }
                     else {
-                        XTypedServices.SetList<attributeType>(this.attributeField, value);
+                        XTypedServices.SetList<W3C.XSD.attributeType>(this.attributeField, value);
                     }
                 }
             }
@@ -4723,10 +4723,10 @@ namespace W3C.XSD {
         /// Regular expression: (annotation?, (simpleContent | complexContent | ((group | all | choice | sequence)?, (attribute | attributeGroup)*, anyAttribute?)))
         /// </para>
         /// </summary>
-        public virtual IList<attributeGroupRef> attributeGroup {
+        public virtual IList<W3C.XSD.attributeGroupRef> attributeGroup {
             get {
                 if ((this.attributeGroupField == null)) {
-                    this.attributeGroupField = new XTypedList<attributeGroupRef>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("attributeGroup", "http://www.w3.org/2001/XMLSchema"));
+                    this.attributeGroupField = new XTypedList<W3C.XSD.attributeGroupRef>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("attributeGroup", "http://www.w3.org/2001/XMLSchema"));
                 }
                 return this.attributeGroupField;
             }
@@ -4736,10 +4736,10 @@ namespace W3C.XSD {
                 }
                 else {
                     if ((this.attributeGroupField == null)) {
-                        this.attributeGroupField = XTypedList<attributeGroupRef>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("attributeGroup", "http://www.w3.org/2001/XMLSchema"));
+                        this.attributeGroupField = XTypedList<W3C.XSD.attributeGroupRef>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("attributeGroup", "http://www.w3.org/2001/XMLSchema"));
                     }
                     else {
-                        XTypedServices.SetList<attributeGroupRef>(this.attributeGroupField, value);
+                        XTypedServices.SetList<W3C.XSD.attributeGroupRef>(this.attributeGroupField, value);
                     }
                 }
             }
@@ -4756,10 +4756,10 @@ namespace W3C.XSD {
         /// Regular expression: (annotation?, (simpleContent | complexContent | ((group | all | choice | sequence)?, (attribute | attributeGroup)*, anyAttribute?)))
         /// </para>
         /// </summary>
-        public virtual anyAttribute anyAttribute {
+        public virtual W3C.XSD.anyAttribute anyAttribute {
             get {
                 XElement x = this.GetElement(System.Xml.Linq.XName.Get("anyAttribute", "http://www.w3.org/2001/XMLSchema"));
-                return ((anyAttribute)(x));
+                return ((W3C.XSD.anyAttribute)(x));
             }
             set {
                 this.SetElement(System.Xml.Linq.XName.Get("anyAttribute", "http://www.w3.org/2001/XMLSchema"), value);
@@ -4879,16 +4879,16 @@ namespace W3C.XSD {
         }
         
         private static void BuildElementDictionary() {
-            localElementDictionary.Add(System.Xml.Linq.XName.Get("annotation", "http://www.w3.org/2001/XMLSchema"), typeof(annotation));
-            localElementDictionary.Add(System.Xml.Linq.XName.Get("simpleContent", "http://www.w3.org/2001/XMLSchema"), typeof(simpleContent));
-            localElementDictionary.Add(System.Xml.Linq.XName.Get("complexContent", "http://www.w3.org/2001/XMLSchema"), typeof(complexContent));
-            localElementDictionary.Add(System.Xml.Linq.XName.Get("group", "http://www.w3.org/2001/XMLSchema"), typeof(groupRef));
-            localElementDictionary.Add(System.Xml.Linq.XName.Get("all", "http://www.w3.org/2001/XMLSchema"), typeof(all));
-            localElementDictionary.Add(System.Xml.Linq.XName.Get("choice", "http://www.w3.org/2001/XMLSchema"), typeof(choice));
-            localElementDictionary.Add(System.Xml.Linq.XName.Get("sequence", "http://www.w3.org/2001/XMLSchema"), typeof(sequence));
-            localElementDictionary.Add(System.Xml.Linq.XName.Get("attribute", "http://www.w3.org/2001/XMLSchema"), typeof(attributeType));
-            localElementDictionary.Add(System.Xml.Linq.XName.Get("attributeGroup", "http://www.w3.org/2001/XMLSchema"), typeof(attributeGroupRef));
-            localElementDictionary.Add(System.Xml.Linq.XName.Get("anyAttribute", "http://www.w3.org/2001/XMLSchema"), typeof(anyAttribute));
+            localElementDictionary.Add(System.Xml.Linq.XName.Get("annotation", "http://www.w3.org/2001/XMLSchema"), typeof(W3C.XSD.annotation));
+            localElementDictionary.Add(System.Xml.Linq.XName.Get("simpleContent", "http://www.w3.org/2001/XMLSchema"), typeof(W3C.XSD.simpleContent));
+            localElementDictionary.Add(System.Xml.Linq.XName.Get("complexContent", "http://www.w3.org/2001/XMLSchema"), typeof(W3C.XSD.complexContent));
+            localElementDictionary.Add(System.Xml.Linq.XName.Get("group", "http://www.w3.org/2001/XMLSchema"), typeof(W3C.XSD.groupRef));
+            localElementDictionary.Add(System.Xml.Linq.XName.Get("all", "http://www.w3.org/2001/XMLSchema"), typeof(W3C.XSD.all));
+            localElementDictionary.Add(System.Xml.Linq.XName.Get("choice", "http://www.w3.org/2001/XMLSchema"), typeof(W3C.XSD.choice));
+            localElementDictionary.Add(System.Xml.Linq.XName.Get("sequence", "http://www.w3.org/2001/XMLSchema"), typeof(W3C.XSD.sequence));
+            localElementDictionary.Add(System.Xml.Linq.XName.Get("attribute", "http://www.w3.org/2001/XMLSchema"), typeof(W3C.XSD.attributeType));
+            localElementDictionary.Add(System.Xml.Linq.XName.Get("attributeGroup", "http://www.w3.org/2001/XMLSchema"), typeof(W3C.XSD.attributeGroupRef));
+            localElementDictionary.Add(System.Xml.Linq.XName.Get("anyAttribute", "http://www.w3.org/2001/XMLSchema"), typeof(W3C.XSD.anyAttribute));
         }
         
         ContentModelEntity IXMetaData.GetContentModel() {
@@ -4978,46 +4978,46 @@ namespace W3C.XSD {
     public partial class restrictionType : global::W3C.XSD.annotated, IXMetaData {
         
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
-        private XTypedList<minExclusive> minExclusiveField;
+        private XTypedList<W3C.XSD.minExclusive> minExclusiveField;
         
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
-        private XTypedList<minInclusive> minInclusiveField;
+        private XTypedList<W3C.XSD.minInclusive> minInclusiveField;
         
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
-        private XTypedList<maxExclusive> maxExclusiveField;
+        private XTypedList<W3C.XSD.maxExclusive> maxExclusiveField;
         
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
-        private XTypedList<maxInclusive> maxInclusiveField;
+        private XTypedList<W3C.XSD.maxInclusive> maxInclusiveField;
         
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
-        private XTypedList<totalDigits> totalDigitsField;
+        private XTypedList<W3C.XSD.totalDigits> totalDigitsField;
         
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
-        private XTypedList<fractionDigits> fractionDigitsField;
+        private XTypedList<W3C.XSD.fractionDigits> fractionDigitsField;
         
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
-        private XTypedList<length> lengthField;
+        private XTypedList<W3C.XSD.length> lengthField;
         
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
-        private XTypedList<minLength> minLengthField;
+        private XTypedList<W3C.XSD.minLength> minLengthField;
         
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
-        private XTypedList<maxLength> maxLengthField;
+        private XTypedList<W3C.XSD.maxLength> maxLengthField;
         
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
-        private XTypedList<enumeration> enumerationField;
+        private XTypedList<W3C.XSD.enumeration> enumerationField;
         
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
-        private XTypedList<whiteSpace> whiteSpaceField;
+        private XTypedList<W3C.XSD.whiteSpace> whiteSpaceField;
         
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
-        private XTypedList<pattern> patternField;
+        private XTypedList<W3C.XSD.pattern> patternField;
         
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
-        private XTypedList<attributeType> attributeField;
+        private XTypedList<W3C.XSD.attributeType> attributeField;
         
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
-        private XTypedList<attributeGroupRef> attributeGroupField;
+        private XTypedList<W3C.XSD.attributeGroupRef> attributeGroupField;
         
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         private static Dictionary<System.Xml.Linq.XName, System.Type> localElementDictionary = new Dictionary<System.Xml.Linq.XName, System.Type>();
@@ -5047,10 +5047,10 @@ namespace W3C.XSD {
         /// Regular expression: (annotation?, (group | all | choice | sequence | (simpleType?, (minExclusive | minInclusive | maxExclusive | maxInclusive | totalDigits | fractionDigits | length | minLength | maxLength | enumeration | whiteSpace | pattern)*))?, (attribute | attributeGroup)*, anyAttribute?)
         /// </para>
         /// </summary>
-        public virtual groupRef group {
+        public virtual W3C.XSD.groupRef group {
             get {
                 XElement x = this.GetElement(System.Xml.Linq.XName.Get("group", "http://www.w3.org/2001/XMLSchema"));
-                return ((groupRef)(x));
+                return ((W3C.XSD.groupRef)(x));
             }
             set {
                 this.SetElement(System.Xml.Linq.XName.Get("group", "http://www.w3.org/2001/XMLSchema"), value);
@@ -5068,10 +5068,10 @@ namespace W3C.XSD {
         /// Regular expression: (annotation?, (group | all | choice | sequence | (simpleType?, (minExclusive | minInclusive | maxExclusive | maxInclusive | totalDigits | fractionDigits | length | minLength | maxLength | enumeration | whiteSpace | pattern)*))?, (attribute | attributeGroup)*, anyAttribute?)
         /// </para>
         /// </summary>
-        public virtual all all {
+        public virtual W3C.XSD.all all {
             get {
                 XElement x = this.GetElement(System.Xml.Linq.XName.Get("all", "http://www.w3.org/2001/XMLSchema"));
-                return ((all)(x));
+                return ((W3C.XSD.all)(x));
             }
             set {
                 this.SetElement(System.Xml.Linq.XName.Get("all", "http://www.w3.org/2001/XMLSchema"), value);
@@ -5089,10 +5089,10 @@ namespace W3C.XSD {
         /// Regular expression: (annotation?, (group | all | choice | sequence | (simpleType?, (minExclusive | minInclusive | maxExclusive | maxInclusive | totalDigits | fractionDigits | length | minLength | maxLength | enumeration | whiteSpace | pattern)*))?, (attribute | attributeGroup)*, anyAttribute?)
         /// </para>
         /// </summary>
-        public virtual choice choice {
+        public virtual W3C.XSD.choice choice {
             get {
                 XElement x = this.GetElement(System.Xml.Linq.XName.Get("choice", "http://www.w3.org/2001/XMLSchema"));
-                return ((choice)(x));
+                return ((W3C.XSD.choice)(x));
             }
             set {
                 this.SetElement(System.Xml.Linq.XName.Get("choice", "http://www.w3.org/2001/XMLSchema"), value);
@@ -5110,10 +5110,10 @@ namespace W3C.XSD {
         /// Regular expression: (annotation?, (group | all | choice | sequence | (simpleType?, (minExclusive | minInclusive | maxExclusive | maxInclusive | totalDigits | fractionDigits | length | minLength | maxLength | enumeration | whiteSpace | pattern)*))?, (attribute | attributeGroup)*, anyAttribute?)
         /// </para>
         /// </summary>
-        public virtual sequence sequence {
+        public virtual W3C.XSD.sequence sequence {
             get {
                 XElement x = this.GetElement(System.Xml.Linq.XName.Get("sequence", "http://www.w3.org/2001/XMLSchema"));
-                return ((sequence)(x));
+                return ((W3C.XSD.sequence)(x));
             }
             set {
                 this.SetElement(System.Xml.Linq.XName.Get("sequence", "http://www.w3.org/2001/XMLSchema"), value);
@@ -5131,10 +5131,10 @@ namespace W3C.XSD {
         /// Regular expression: (annotation?, (group | all | choice | sequence | (simpleType?, (minExclusive | minInclusive | maxExclusive | maxInclusive | totalDigits | fractionDigits | length | minLength | maxLength | enumeration | whiteSpace | pattern)*))?, (attribute | attributeGroup)*, anyAttribute?)
         /// </para>
         /// </summary>
-        public virtual localSimpleType simpleType {
+        public virtual W3C.XSD.localSimpleType simpleType {
             get {
                 XElement x = this.GetElement(System.Xml.Linq.XName.Get("simpleType", "http://www.w3.org/2001/XMLSchema"));
-                return ((localSimpleType)(x));
+                return ((W3C.XSD.localSimpleType)(x));
             }
             set {
                 this.SetElement(System.Xml.Linq.XName.Get("simpleType", "http://www.w3.org/2001/XMLSchema"), value);
@@ -5152,10 +5152,10 @@ namespace W3C.XSD {
         /// Regular expression: (annotation?, (group | all | choice | sequence | (simpleType?, (minExclusive | minInclusive | maxExclusive | maxInclusive | totalDigits | fractionDigits | length | minLength | maxLength | enumeration | whiteSpace | pattern)*))?, (attribute | attributeGroup)*, anyAttribute?)
         /// </para>
         /// </summary>
-        public virtual IList<minExclusive> minExclusive {
+        public virtual IList<W3C.XSD.minExclusive> minExclusive {
             get {
                 if ((this.minExclusiveField == null)) {
-                    this.minExclusiveField = new XTypedList<minExclusive>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("minExclusive", "http://www.w3.org/2001/XMLSchema"));
+                    this.minExclusiveField = new XTypedList<W3C.XSD.minExclusive>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("minExclusive", "http://www.w3.org/2001/XMLSchema"));
                 }
                 return this.minExclusiveField;
             }
@@ -5165,10 +5165,10 @@ namespace W3C.XSD {
                 }
                 else {
                     if ((this.minExclusiveField == null)) {
-                        this.minExclusiveField = XTypedList<minExclusive>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("minExclusive", "http://www.w3.org/2001/XMLSchema"));
+                        this.minExclusiveField = XTypedList<W3C.XSD.minExclusive>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("minExclusive", "http://www.w3.org/2001/XMLSchema"));
                     }
                     else {
-                        XTypedServices.SetList<minExclusive>(this.minExclusiveField, value);
+                        XTypedServices.SetList<W3C.XSD.minExclusive>(this.minExclusiveField, value);
                     }
                 }
             }
@@ -5185,10 +5185,10 @@ namespace W3C.XSD {
         /// Regular expression: (annotation?, (group | all | choice | sequence | (simpleType?, (minExclusive | minInclusive | maxExclusive | maxInclusive | totalDigits | fractionDigits | length | minLength | maxLength | enumeration | whiteSpace | pattern)*))?, (attribute | attributeGroup)*, anyAttribute?)
         /// </para>
         /// </summary>
-        public virtual IList<minInclusive> minInclusive {
+        public virtual IList<W3C.XSD.minInclusive> minInclusive {
             get {
                 if ((this.minInclusiveField == null)) {
-                    this.minInclusiveField = new XTypedList<minInclusive>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("minInclusive", "http://www.w3.org/2001/XMLSchema"));
+                    this.minInclusiveField = new XTypedList<W3C.XSD.minInclusive>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("minInclusive", "http://www.w3.org/2001/XMLSchema"));
                 }
                 return this.minInclusiveField;
             }
@@ -5198,10 +5198,10 @@ namespace W3C.XSD {
                 }
                 else {
                     if ((this.minInclusiveField == null)) {
-                        this.minInclusiveField = XTypedList<minInclusive>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("minInclusive", "http://www.w3.org/2001/XMLSchema"));
+                        this.minInclusiveField = XTypedList<W3C.XSD.minInclusive>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("minInclusive", "http://www.w3.org/2001/XMLSchema"));
                     }
                     else {
-                        XTypedServices.SetList<minInclusive>(this.minInclusiveField, value);
+                        XTypedServices.SetList<W3C.XSD.minInclusive>(this.minInclusiveField, value);
                     }
                 }
             }
@@ -5218,10 +5218,10 @@ namespace W3C.XSD {
         /// Regular expression: (annotation?, (group | all | choice | sequence | (simpleType?, (minExclusive | minInclusive | maxExclusive | maxInclusive | totalDigits | fractionDigits | length | minLength | maxLength | enumeration | whiteSpace | pattern)*))?, (attribute | attributeGroup)*, anyAttribute?)
         /// </para>
         /// </summary>
-        public virtual IList<maxExclusive> maxExclusive {
+        public virtual IList<W3C.XSD.maxExclusive> maxExclusive {
             get {
                 if ((this.maxExclusiveField == null)) {
-                    this.maxExclusiveField = new XTypedList<maxExclusive>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("maxExclusive", "http://www.w3.org/2001/XMLSchema"));
+                    this.maxExclusiveField = new XTypedList<W3C.XSD.maxExclusive>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("maxExclusive", "http://www.w3.org/2001/XMLSchema"));
                 }
                 return this.maxExclusiveField;
             }
@@ -5231,10 +5231,10 @@ namespace W3C.XSD {
                 }
                 else {
                     if ((this.maxExclusiveField == null)) {
-                        this.maxExclusiveField = XTypedList<maxExclusive>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("maxExclusive", "http://www.w3.org/2001/XMLSchema"));
+                        this.maxExclusiveField = XTypedList<W3C.XSD.maxExclusive>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("maxExclusive", "http://www.w3.org/2001/XMLSchema"));
                     }
                     else {
-                        XTypedServices.SetList<maxExclusive>(this.maxExclusiveField, value);
+                        XTypedServices.SetList<W3C.XSD.maxExclusive>(this.maxExclusiveField, value);
                     }
                 }
             }
@@ -5251,10 +5251,10 @@ namespace W3C.XSD {
         /// Regular expression: (annotation?, (group | all | choice | sequence | (simpleType?, (minExclusive | minInclusive | maxExclusive | maxInclusive | totalDigits | fractionDigits | length | minLength | maxLength | enumeration | whiteSpace | pattern)*))?, (attribute | attributeGroup)*, anyAttribute?)
         /// </para>
         /// </summary>
-        public virtual IList<maxInclusive> maxInclusive {
+        public virtual IList<W3C.XSD.maxInclusive> maxInclusive {
             get {
                 if ((this.maxInclusiveField == null)) {
-                    this.maxInclusiveField = new XTypedList<maxInclusive>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("maxInclusive", "http://www.w3.org/2001/XMLSchema"));
+                    this.maxInclusiveField = new XTypedList<W3C.XSD.maxInclusive>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("maxInclusive", "http://www.w3.org/2001/XMLSchema"));
                 }
                 return this.maxInclusiveField;
             }
@@ -5264,10 +5264,10 @@ namespace W3C.XSD {
                 }
                 else {
                     if ((this.maxInclusiveField == null)) {
-                        this.maxInclusiveField = XTypedList<maxInclusive>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("maxInclusive", "http://www.w3.org/2001/XMLSchema"));
+                        this.maxInclusiveField = XTypedList<W3C.XSD.maxInclusive>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("maxInclusive", "http://www.w3.org/2001/XMLSchema"));
                     }
                     else {
-                        XTypedServices.SetList<maxInclusive>(this.maxInclusiveField, value);
+                        XTypedServices.SetList<W3C.XSD.maxInclusive>(this.maxInclusiveField, value);
                     }
                 }
             }
@@ -5284,10 +5284,10 @@ namespace W3C.XSD {
         /// Regular expression: (annotation?, (group | all | choice | sequence | (simpleType?, (minExclusive | minInclusive | maxExclusive | maxInclusive | totalDigits | fractionDigits | length | minLength | maxLength | enumeration | whiteSpace | pattern)*))?, (attribute | attributeGroup)*, anyAttribute?)
         /// </para>
         /// </summary>
-        public virtual IList<totalDigits> totalDigits {
+        public virtual IList<W3C.XSD.totalDigits> totalDigits {
             get {
                 if ((this.totalDigitsField == null)) {
-                    this.totalDigitsField = new XTypedList<totalDigits>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("totalDigits", "http://www.w3.org/2001/XMLSchema"));
+                    this.totalDigitsField = new XTypedList<W3C.XSD.totalDigits>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("totalDigits", "http://www.w3.org/2001/XMLSchema"));
                 }
                 return this.totalDigitsField;
             }
@@ -5297,10 +5297,10 @@ namespace W3C.XSD {
                 }
                 else {
                     if ((this.totalDigitsField == null)) {
-                        this.totalDigitsField = XTypedList<totalDigits>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("totalDigits", "http://www.w3.org/2001/XMLSchema"));
+                        this.totalDigitsField = XTypedList<W3C.XSD.totalDigits>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("totalDigits", "http://www.w3.org/2001/XMLSchema"));
                     }
                     else {
-                        XTypedServices.SetList<totalDigits>(this.totalDigitsField, value);
+                        XTypedServices.SetList<W3C.XSD.totalDigits>(this.totalDigitsField, value);
                     }
                 }
             }
@@ -5317,10 +5317,10 @@ namespace W3C.XSD {
         /// Regular expression: (annotation?, (group | all | choice | sequence | (simpleType?, (minExclusive | minInclusive | maxExclusive | maxInclusive | totalDigits | fractionDigits | length | minLength | maxLength | enumeration | whiteSpace | pattern)*))?, (attribute | attributeGroup)*, anyAttribute?)
         /// </para>
         /// </summary>
-        public virtual IList<fractionDigits> fractionDigits {
+        public virtual IList<W3C.XSD.fractionDigits> fractionDigits {
             get {
                 if ((this.fractionDigitsField == null)) {
-                    this.fractionDigitsField = new XTypedList<fractionDigits>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("fractionDigits", "http://www.w3.org/2001/XMLSchema"));
+                    this.fractionDigitsField = new XTypedList<W3C.XSD.fractionDigits>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("fractionDigits", "http://www.w3.org/2001/XMLSchema"));
                 }
                 return this.fractionDigitsField;
             }
@@ -5330,10 +5330,10 @@ namespace W3C.XSD {
                 }
                 else {
                     if ((this.fractionDigitsField == null)) {
-                        this.fractionDigitsField = XTypedList<fractionDigits>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("fractionDigits", "http://www.w3.org/2001/XMLSchema"));
+                        this.fractionDigitsField = XTypedList<W3C.XSD.fractionDigits>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("fractionDigits", "http://www.w3.org/2001/XMLSchema"));
                     }
                     else {
-                        XTypedServices.SetList<fractionDigits>(this.fractionDigitsField, value);
+                        XTypedServices.SetList<W3C.XSD.fractionDigits>(this.fractionDigitsField, value);
                     }
                 }
             }
@@ -5350,10 +5350,10 @@ namespace W3C.XSD {
         /// Regular expression: (annotation?, (group | all | choice | sequence | (simpleType?, (minExclusive | minInclusive | maxExclusive | maxInclusive | totalDigits | fractionDigits | length | minLength | maxLength | enumeration | whiteSpace | pattern)*))?, (attribute | attributeGroup)*, anyAttribute?)
         /// </para>
         /// </summary>
-        public virtual IList<length> length {
+        public virtual IList<W3C.XSD.length> length {
             get {
                 if ((this.lengthField == null)) {
-                    this.lengthField = new XTypedList<length>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("length", "http://www.w3.org/2001/XMLSchema"));
+                    this.lengthField = new XTypedList<W3C.XSD.length>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("length", "http://www.w3.org/2001/XMLSchema"));
                 }
                 return this.lengthField;
             }
@@ -5363,10 +5363,10 @@ namespace W3C.XSD {
                 }
                 else {
                     if ((this.lengthField == null)) {
-                        this.lengthField = XTypedList<length>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("length", "http://www.w3.org/2001/XMLSchema"));
+                        this.lengthField = XTypedList<W3C.XSD.length>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("length", "http://www.w3.org/2001/XMLSchema"));
                     }
                     else {
-                        XTypedServices.SetList<length>(this.lengthField, value);
+                        XTypedServices.SetList<W3C.XSD.length>(this.lengthField, value);
                     }
                 }
             }
@@ -5383,10 +5383,10 @@ namespace W3C.XSD {
         /// Regular expression: (annotation?, (group | all | choice | sequence | (simpleType?, (minExclusive | minInclusive | maxExclusive | maxInclusive | totalDigits | fractionDigits | length | minLength | maxLength | enumeration | whiteSpace | pattern)*))?, (attribute | attributeGroup)*, anyAttribute?)
         /// </para>
         /// </summary>
-        public virtual IList<minLength> minLength {
+        public virtual IList<W3C.XSD.minLength> minLength {
             get {
                 if ((this.minLengthField == null)) {
-                    this.minLengthField = new XTypedList<minLength>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("minLength", "http://www.w3.org/2001/XMLSchema"));
+                    this.minLengthField = new XTypedList<W3C.XSD.minLength>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("minLength", "http://www.w3.org/2001/XMLSchema"));
                 }
                 return this.minLengthField;
             }
@@ -5396,10 +5396,10 @@ namespace W3C.XSD {
                 }
                 else {
                     if ((this.minLengthField == null)) {
-                        this.minLengthField = XTypedList<minLength>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("minLength", "http://www.w3.org/2001/XMLSchema"));
+                        this.minLengthField = XTypedList<W3C.XSD.minLength>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("minLength", "http://www.w3.org/2001/XMLSchema"));
                     }
                     else {
-                        XTypedServices.SetList<minLength>(this.minLengthField, value);
+                        XTypedServices.SetList<W3C.XSD.minLength>(this.minLengthField, value);
                     }
                 }
             }
@@ -5416,10 +5416,10 @@ namespace W3C.XSD {
         /// Regular expression: (annotation?, (group | all | choice | sequence | (simpleType?, (minExclusive | minInclusive | maxExclusive | maxInclusive | totalDigits | fractionDigits | length | minLength | maxLength | enumeration | whiteSpace | pattern)*))?, (attribute | attributeGroup)*, anyAttribute?)
         /// </para>
         /// </summary>
-        public virtual IList<maxLength> maxLength {
+        public virtual IList<W3C.XSD.maxLength> maxLength {
             get {
                 if ((this.maxLengthField == null)) {
-                    this.maxLengthField = new XTypedList<maxLength>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("maxLength", "http://www.w3.org/2001/XMLSchema"));
+                    this.maxLengthField = new XTypedList<W3C.XSD.maxLength>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("maxLength", "http://www.w3.org/2001/XMLSchema"));
                 }
                 return this.maxLengthField;
             }
@@ -5429,10 +5429,10 @@ namespace W3C.XSD {
                 }
                 else {
                     if ((this.maxLengthField == null)) {
-                        this.maxLengthField = XTypedList<maxLength>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("maxLength", "http://www.w3.org/2001/XMLSchema"));
+                        this.maxLengthField = XTypedList<W3C.XSD.maxLength>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("maxLength", "http://www.w3.org/2001/XMLSchema"));
                     }
                     else {
-                        XTypedServices.SetList<maxLength>(this.maxLengthField, value);
+                        XTypedServices.SetList<W3C.XSD.maxLength>(this.maxLengthField, value);
                     }
                 }
             }
@@ -5449,10 +5449,10 @@ namespace W3C.XSD {
         /// Regular expression: (annotation?, (group | all | choice | sequence | (simpleType?, (minExclusive | minInclusive | maxExclusive | maxInclusive | totalDigits | fractionDigits | length | minLength | maxLength | enumeration | whiteSpace | pattern)*))?, (attribute | attributeGroup)*, anyAttribute?)
         /// </para>
         /// </summary>
-        public virtual IList<enumeration> enumeration {
+        public virtual IList<W3C.XSD.enumeration> enumeration {
             get {
                 if ((this.enumerationField == null)) {
-                    this.enumerationField = new XTypedList<enumeration>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("enumeration", "http://www.w3.org/2001/XMLSchema"));
+                    this.enumerationField = new XTypedList<W3C.XSD.enumeration>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("enumeration", "http://www.w3.org/2001/XMLSchema"));
                 }
                 return this.enumerationField;
             }
@@ -5462,10 +5462,10 @@ namespace W3C.XSD {
                 }
                 else {
                     if ((this.enumerationField == null)) {
-                        this.enumerationField = XTypedList<enumeration>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("enumeration", "http://www.w3.org/2001/XMLSchema"));
+                        this.enumerationField = XTypedList<W3C.XSD.enumeration>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("enumeration", "http://www.w3.org/2001/XMLSchema"));
                     }
                     else {
-                        XTypedServices.SetList<enumeration>(this.enumerationField, value);
+                        XTypedServices.SetList<W3C.XSD.enumeration>(this.enumerationField, value);
                     }
                 }
             }
@@ -5482,10 +5482,10 @@ namespace W3C.XSD {
         /// Regular expression: (annotation?, (group | all | choice | sequence | (simpleType?, (minExclusive | minInclusive | maxExclusive | maxInclusive | totalDigits | fractionDigits | length | minLength | maxLength | enumeration | whiteSpace | pattern)*))?, (attribute | attributeGroup)*, anyAttribute?)
         /// </para>
         /// </summary>
-        public virtual IList<whiteSpace> whiteSpace {
+        public virtual IList<W3C.XSD.whiteSpace> whiteSpace {
             get {
                 if ((this.whiteSpaceField == null)) {
-                    this.whiteSpaceField = new XTypedList<whiteSpace>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("whiteSpace", "http://www.w3.org/2001/XMLSchema"));
+                    this.whiteSpaceField = new XTypedList<W3C.XSD.whiteSpace>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("whiteSpace", "http://www.w3.org/2001/XMLSchema"));
                 }
                 return this.whiteSpaceField;
             }
@@ -5495,10 +5495,10 @@ namespace W3C.XSD {
                 }
                 else {
                     if ((this.whiteSpaceField == null)) {
-                        this.whiteSpaceField = XTypedList<whiteSpace>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("whiteSpace", "http://www.w3.org/2001/XMLSchema"));
+                        this.whiteSpaceField = XTypedList<W3C.XSD.whiteSpace>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("whiteSpace", "http://www.w3.org/2001/XMLSchema"));
                     }
                     else {
-                        XTypedServices.SetList<whiteSpace>(this.whiteSpaceField, value);
+                        XTypedServices.SetList<W3C.XSD.whiteSpace>(this.whiteSpaceField, value);
                     }
                 }
             }
@@ -5515,10 +5515,10 @@ namespace W3C.XSD {
         /// Regular expression: (annotation?, (group | all | choice | sequence | (simpleType?, (minExclusive | minInclusive | maxExclusive | maxInclusive | totalDigits | fractionDigits | length | minLength | maxLength | enumeration | whiteSpace | pattern)*))?, (attribute | attributeGroup)*, anyAttribute?)
         /// </para>
         /// </summary>
-        public virtual IList<pattern> pattern {
+        public virtual IList<W3C.XSD.pattern> pattern {
             get {
                 if ((this.patternField == null)) {
-                    this.patternField = new XTypedList<pattern>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("pattern", "http://www.w3.org/2001/XMLSchema"));
+                    this.patternField = new XTypedList<W3C.XSD.pattern>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("pattern", "http://www.w3.org/2001/XMLSchema"));
                 }
                 return this.patternField;
             }
@@ -5528,10 +5528,10 @@ namespace W3C.XSD {
                 }
                 else {
                     if ((this.patternField == null)) {
-                        this.patternField = XTypedList<pattern>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("pattern", "http://www.w3.org/2001/XMLSchema"));
+                        this.patternField = XTypedList<W3C.XSD.pattern>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("pattern", "http://www.w3.org/2001/XMLSchema"));
                     }
                     else {
-                        XTypedServices.SetList<pattern>(this.patternField, value);
+                        XTypedServices.SetList<W3C.XSD.pattern>(this.patternField, value);
                     }
                 }
             }
@@ -5548,10 +5548,10 @@ namespace W3C.XSD {
         /// Regular expression: (annotation?, (group | all | choice | sequence | (simpleType?, (minExclusive | minInclusive | maxExclusive | maxInclusive | totalDigits | fractionDigits | length | minLength | maxLength | enumeration | whiteSpace | pattern)*))?, (attribute | attributeGroup)*, anyAttribute?)
         /// </para>
         /// </summary>
-        public virtual IList<attributeType> attribute {
+        public virtual IList<W3C.XSD.attributeType> attribute {
             get {
                 if ((this.attributeField == null)) {
-                    this.attributeField = new XTypedList<attributeType>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("attribute", "http://www.w3.org/2001/XMLSchema"));
+                    this.attributeField = new XTypedList<W3C.XSD.attributeType>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("attribute", "http://www.w3.org/2001/XMLSchema"));
                 }
                 return this.attributeField;
             }
@@ -5561,10 +5561,10 @@ namespace W3C.XSD {
                 }
                 else {
                     if ((this.attributeField == null)) {
-                        this.attributeField = XTypedList<attributeType>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("attribute", "http://www.w3.org/2001/XMLSchema"));
+                        this.attributeField = XTypedList<W3C.XSD.attributeType>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("attribute", "http://www.w3.org/2001/XMLSchema"));
                     }
                     else {
-                        XTypedServices.SetList<attributeType>(this.attributeField, value);
+                        XTypedServices.SetList<W3C.XSD.attributeType>(this.attributeField, value);
                     }
                 }
             }
@@ -5581,10 +5581,10 @@ namespace W3C.XSD {
         /// Regular expression: (annotation?, (group | all | choice | sequence | (simpleType?, (minExclusive | minInclusive | maxExclusive | maxInclusive | totalDigits | fractionDigits | length | minLength | maxLength | enumeration | whiteSpace | pattern)*))?, (attribute | attributeGroup)*, anyAttribute?)
         /// </para>
         /// </summary>
-        public virtual IList<attributeGroupRef> attributeGroup {
+        public virtual IList<W3C.XSD.attributeGroupRef> attributeGroup {
             get {
                 if ((this.attributeGroupField == null)) {
-                    this.attributeGroupField = new XTypedList<attributeGroupRef>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("attributeGroup", "http://www.w3.org/2001/XMLSchema"));
+                    this.attributeGroupField = new XTypedList<W3C.XSD.attributeGroupRef>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("attributeGroup", "http://www.w3.org/2001/XMLSchema"));
                 }
                 return this.attributeGroupField;
             }
@@ -5594,10 +5594,10 @@ namespace W3C.XSD {
                 }
                 else {
                     if ((this.attributeGroupField == null)) {
-                        this.attributeGroupField = XTypedList<attributeGroupRef>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("attributeGroup", "http://www.w3.org/2001/XMLSchema"));
+                        this.attributeGroupField = XTypedList<W3C.XSD.attributeGroupRef>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("attributeGroup", "http://www.w3.org/2001/XMLSchema"));
                     }
                     else {
-                        XTypedServices.SetList<attributeGroupRef>(this.attributeGroupField, value);
+                        XTypedServices.SetList<W3C.XSD.attributeGroupRef>(this.attributeGroupField, value);
                     }
                 }
             }
@@ -5611,10 +5611,10 @@ namespace W3C.XSD {
         /// Regular expression: (annotation?, (group | all | choice | sequence | (simpleType?, (minExclusive | minInclusive | maxExclusive | maxInclusive | totalDigits | fractionDigits | length | minLength | maxLength | enumeration | whiteSpace | pattern)*))?, (attribute | attributeGroup)*, anyAttribute?)
         /// </para>
         /// </summary>
-        public virtual anyAttribute anyAttribute {
+        public virtual W3C.XSD.anyAttribute anyAttribute {
             get {
                 XElement x = this.GetElement(System.Xml.Linq.XName.Get("anyAttribute", "http://www.w3.org/2001/XMLSchema"));
-                return ((anyAttribute)(x));
+                return ((W3C.XSD.anyAttribute)(x));
             }
             set {
                 this.SetElement(System.Xml.Linq.XName.Get("anyAttribute", "http://www.w3.org/2001/XMLSchema"), value);
@@ -5669,27 +5669,27 @@ namespace W3C.XSD {
         }
         
         private static void BuildElementDictionary() {
-            localElementDictionary.Add(System.Xml.Linq.XName.Get("annotation", "http://www.w3.org/2001/XMLSchema"), typeof(annotation));
-            localElementDictionary.Add(System.Xml.Linq.XName.Get("group", "http://www.w3.org/2001/XMLSchema"), typeof(groupRef));
-            localElementDictionary.Add(System.Xml.Linq.XName.Get("all", "http://www.w3.org/2001/XMLSchema"), typeof(all));
-            localElementDictionary.Add(System.Xml.Linq.XName.Get("choice", "http://www.w3.org/2001/XMLSchema"), typeof(choice));
-            localElementDictionary.Add(System.Xml.Linq.XName.Get("sequence", "http://www.w3.org/2001/XMLSchema"), typeof(sequence));
-            localElementDictionary.Add(System.Xml.Linq.XName.Get("simpleType", "http://www.w3.org/2001/XMLSchema"), typeof(localSimpleType));
-            localElementDictionary.Add(System.Xml.Linq.XName.Get("minExclusive", "http://www.w3.org/2001/XMLSchema"), typeof(minExclusive));
-            localElementDictionary.Add(System.Xml.Linq.XName.Get("minInclusive", "http://www.w3.org/2001/XMLSchema"), typeof(minInclusive));
-            localElementDictionary.Add(System.Xml.Linq.XName.Get("maxExclusive", "http://www.w3.org/2001/XMLSchema"), typeof(maxExclusive));
-            localElementDictionary.Add(System.Xml.Linq.XName.Get("maxInclusive", "http://www.w3.org/2001/XMLSchema"), typeof(maxInclusive));
-            localElementDictionary.Add(System.Xml.Linq.XName.Get("totalDigits", "http://www.w3.org/2001/XMLSchema"), typeof(totalDigits));
-            localElementDictionary.Add(System.Xml.Linq.XName.Get("fractionDigits", "http://www.w3.org/2001/XMLSchema"), typeof(fractionDigits));
-            localElementDictionary.Add(System.Xml.Linq.XName.Get("length", "http://www.w3.org/2001/XMLSchema"), typeof(length));
-            localElementDictionary.Add(System.Xml.Linq.XName.Get("minLength", "http://www.w3.org/2001/XMLSchema"), typeof(minLength));
-            localElementDictionary.Add(System.Xml.Linq.XName.Get("maxLength", "http://www.w3.org/2001/XMLSchema"), typeof(maxLength));
-            localElementDictionary.Add(System.Xml.Linq.XName.Get("enumeration", "http://www.w3.org/2001/XMLSchema"), typeof(enumeration));
-            localElementDictionary.Add(System.Xml.Linq.XName.Get("whiteSpace", "http://www.w3.org/2001/XMLSchema"), typeof(whiteSpace));
-            localElementDictionary.Add(System.Xml.Linq.XName.Get("pattern", "http://www.w3.org/2001/XMLSchema"), typeof(pattern));
-            localElementDictionary.Add(System.Xml.Linq.XName.Get("attribute", "http://www.w3.org/2001/XMLSchema"), typeof(attributeType));
-            localElementDictionary.Add(System.Xml.Linq.XName.Get("attributeGroup", "http://www.w3.org/2001/XMLSchema"), typeof(attributeGroupRef));
-            localElementDictionary.Add(System.Xml.Linq.XName.Get("anyAttribute", "http://www.w3.org/2001/XMLSchema"), typeof(anyAttribute));
+            localElementDictionary.Add(System.Xml.Linq.XName.Get("annotation", "http://www.w3.org/2001/XMLSchema"), typeof(W3C.XSD.annotation));
+            localElementDictionary.Add(System.Xml.Linq.XName.Get("group", "http://www.w3.org/2001/XMLSchema"), typeof(W3C.XSD.groupRef));
+            localElementDictionary.Add(System.Xml.Linq.XName.Get("all", "http://www.w3.org/2001/XMLSchema"), typeof(W3C.XSD.all));
+            localElementDictionary.Add(System.Xml.Linq.XName.Get("choice", "http://www.w3.org/2001/XMLSchema"), typeof(W3C.XSD.choice));
+            localElementDictionary.Add(System.Xml.Linq.XName.Get("sequence", "http://www.w3.org/2001/XMLSchema"), typeof(W3C.XSD.sequence));
+            localElementDictionary.Add(System.Xml.Linq.XName.Get("simpleType", "http://www.w3.org/2001/XMLSchema"), typeof(W3C.XSD.localSimpleType));
+            localElementDictionary.Add(System.Xml.Linq.XName.Get("minExclusive", "http://www.w3.org/2001/XMLSchema"), typeof(W3C.XSD.minExclusive));
+            localElementDictionary.Add(System.Xml.Linq.XName.Get("minInclusive", "http://www.w3.org/2001/XMLSchema"), typeof(W3C.XSD.minInclusive));
+            localElementDictionary.Add(System.Xml.Linq.XName.Get("maxExclusive", "http://www.w3.org/2001/XMLSchema"), typeof(W3C.XSD.maxExclusive));
+            localElementDictionary.Add(System.Xml.Linq.XName.Get("maxInclusive", "http://www.w3.org/2001/XMLSchema"), typeof(W3C.XSD.maxInclusive));
+            localElementDictionary.Add(System.Xml.Linq.XName.Get("totalDigits", "http://www.w3.org/2001/XMLSchema"), typeof(W3C.XSD.totalDigits));
+            localElementDictionary.Add(System.Xml.Linq.XName.Get("fractionDigits", "http://www.w3.org/2001/XMLSchema"), typeof(W3C.XSD.fractionDigits));
+            localElementDictionary.Add(System.Xml.Linq.XName.Get("length", "http://www.w3.org/2001/XMLSchema"), typeof(W3C.XSD.length));
+            localElementDictionary.Add(System.Xml.Linq.XName.Get("minLength", "http://www.w3.org/2001/XMLSchema"), typeof(W3C.XSD.minLength));
+            localElementDictionary.Add(System.Xml.Linq.XName.Get("maxLength", "http://www.w3.org/2001/XMLSchema"), typeof(W3C.XSD.maxLength));
+            localElementDictionary.Add(System.Xml.Linq.XName.Get("enumeration", "http://www.w3.org/2001/XMLSchema"), typeof(W3C.XSD.enumeration));
+            localElementDictionary.Add(System.Xml.Linq.XName.Get("whiteSpace", "http://www.w3.org/2001/XMLSchema"), typeof(W3C.XSD.whiteSpace));
+            localElementDictionary.Add(System.Xml.Linq.XName.Get("pattern", "http://www.w3.org/2001/XMLSchema"), typeof(W3C.XSD.pattern));
+            localElementDictionary.Add(System.Xml.Linq.XName.Get("attribute", "http://www.w3.org/2001/XMLSchema"), typeof(W3C.XSD.attributeType));
+            localElementDictionary.Add(System.Xml.Linq.XName.Get("attributeGroup", "http://www.w3.org/2001/XMLSchema"), typeof(W3C.XSD.attributeGroupRef));
+            localElementDictionary.Add(System.Xml.Linq.XName.Get("anyAttribute", "http://www.w3.org/2001/XMLSchema"), typeof(W3C.XSD.anyAttribute));
         }
         
         ContentModelEntity IXMetaData.GetContentModel() {
@@ -5742,10 +5742,10 @@ namespace W3C.XSD {
     public partial class extensionType : global::W3C.XSD.annotated, IXMetaData {
         
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
-        private XTypedList<attributeType> attributeField;
+        private XTypedList<W3C.XSD.attributeType> attributeField;
         
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
-        private XTypedList<attributeGroupRef> attributeGroupField;
+        private XTypedList<W3C.XSD.attributeGroupRef> attributeGroupField;
         
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         private static Dictionary<System.Xml.Linq.XName, System.Type> localElementDictionary = new Dictionary<System.Xml.Linq.XName, System.Type>();
@@ -5775,10 +5775,10 @@ namespace W3C.XSD {
         /// Regular expression: (annotation?, (group | all | choice | sequence)?, (attribute | attributeGroup)*, anyAttribute?)
         /// </para>
         /// </summary>
-        public virtual groupRef group {
+        public virtual W3C.XSD.groupRef group {
             get {
                 XElement x = this.GetElement(System.Xml.Linq.XName.Get("group", "http://www.w3.org/2001/XMLSchema"));
-                return ((groupRef)(x));
+                return ((W3C.XSD.groupRef)(x));
             }
             set {
                 this.SetElement(System.Xml.Linq.XName.Get("group", "http://www.w3.org/2001/XMLSchema"), value);
@@ -5796,10 +5796,10 @@ namespace W3C.XSD {
         /// Regular expression: (annotation?, (group | all | choice | sequence)?, (attribute | attributeGroup)*, anyAttribute?)
         /// </para>
         /// </summary>
-        public virtual all all {
+        public virtual W3C.XSD.all all {
             get {
                 XElement x = this.GetElement(System.Xml.Linq.XName.Get("all", "http://www.w3.org/2001/XMLSchema"));
-                return ((all)(x));
+                return ((W3C.XSD.all)(x));
             }
             set {
                 this.SetElement(System.Xml.Linq.XName.Get("all", "http://www.w3.org/2001/XMLSchema"), value);
@@ -5817,10 +5817,10 @@ namespace W3C.XSD {
         /// Regular expression: (annotation?, (group | all | choice | sequence)?, (attribute | attributeGroup)*, anyAttribute?)
         /// </para>
         /// </summary>
-        public virtual choice choice {
+        public virtual W3C.XSD.choice choice {
             get {
                 XElement x = this.GetElement(System.Xml.Linq.XName.Get("choice", "http://www.w3.org/2001/XMLSchema"));
-                return ((choice)(x));
+                return ((W3C.XSD.choice)(x));
             }
             set {
                 this.SetElement(System.Xml.Linq.XName.Get("choice", "http://www.w3.org/2001/XMLSchema"), value);
@@ -5838,10 +5838,10 @@ namespace W3C.XSD {
         /// Regular expression: (annotation?, (group | all | choice | sequence)?, (attribute | attributeGroup)*, anyAttribute?)
         /// </para>
         /// </summary>
-        public virtual sequence sequence {
+        public virtual W3C.XSD.sequence sequence {
             get {
                 XElement x = this.GetElement(System.Xml.Linq.XName.Get("sequence", "http://www.w3.org/2001/XMLSchema"));
-                return ((sequence)(x));
+                return ((W3C.XSD.sequence)(x));
             }
             set {
                 this.SetElement(System.Xml.Linq.XName.Get("sequence", "http://www.w3.org/2001/XMLSchema"), value);
@@ -5859,10 +5859,10 @@ namespace W3C.XSD {
         /// Regular expression: (annotation?, (group | all | choice | sequence)?, (attribute | attributeGroup)*, anyAttribute?)
         /// </para>
         /// </summary>
-        public virtual IList<attributeType> attribute {
+        public virtual IList<W3C.XSD.attributeType> attribute {
             get {
                 if ((this.attributeField == null)) {
-                    this.attributeField = new XTypedList<attributeType>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("attribute", "http://www.w3.org/2001/XMLSchema"));
+                    this.attributeField = new XTypedList<W3C.XSD.attributeType>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("attribute", "http://www.w3.org/2001/XMLSchema"));
                 }
                 return this.attributeField;
             }
@@ -5872,10 +5872,10 @@ namespace W3C.XSD {
                 }
                 else {
                     if ((this.attributeField == null)) {
-                        this.attributeField = XTypedList<attributeType>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("attribute", "http://www.w3.org/2001/XMLSchema"));
+                        this.attributeField = XTypedList<W3C.XSD.attributeType>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("attribute", "http://www.w3.org/2001/XMLSchema"));
                     }
                     else {
-                        XTypedServices.SetList<attributeType>(this.attributeField, value);
+                        XTypedServices.SetList<W3C.XSD.attributeType>(this.attributeField, value);
                     }
                 }
             }
@@ -5892,10 +5892,10 @@ namespace W3C.XSD {
         /// Regular expression: (annotation?, (group | all | choice | sequence)?, (attribute | attributeGroup)*, anyAttribute?)
         /// </para>
         /// </summary>
-        public virtual IList<attributeGroupRef> attributeGroup {
+        public virtual IList<W3C.XSD.attributeGroupRef> attributeGroup {
             get {
                 if ((this.attributeGroupField == null)) {
-                    this.attributeGroupField = new XTypedList<attributeGroupRef>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("attributeGroup", "http://www.w3.org/2001/XMLSchema"));
+                    this.attributeGroupField = new XTypedList<W3C.XSD.attributeGroupRef>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("attributeGroup", "http://www.w3.org/2001/XMLSchema"));
                 }
                 return this.attributeGroupField;
             }
@@ -5905,10 +5905,10 @@ namespace W3C.XSD {
                 }
                 else {
                     if ((this.attributeGroupField == null)) {
-                        this.attributeGroupField = XTypedList<attributeGroupRef>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("attributeGroup", "http://www.w3.org/2001/XMLSchema"));
+                        this.attributeGroupField = XTypedList<W3C.XSD.attributeGroupRef>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("attributeGroup", "http://www.w3.org/2001/XMLSchema"));
                     }
                     else {
-                        XTypedServices.SetList<attributeGroupRef>(this.attributeGroupField, value);
+                        XTypedServices.SetList<W3C.XSD.attributeGroupRef>(this.attributeGroupField, value);
                     }
                 }
             }
@@ -5922,10 +5922,10 @@ namespace W3C.XSD {
         /// Regular expression: (annotation?, (group | all | choice | sequence)?, (attribute | attributeGroup)*, anyAttribute?)
         /// </para>
         /// </summary>
-        public virtual anyAttribute anyAttribute {
+        public virtual W3C.XSD.anyAttribute anyAttribute {
             get {
                 XElement x = this.GetElement(System.Xml.Linq.XName.Get("anyAttribute", "http://www.w3.org/2001/XMLSchema"));
-                return ((anyAttribute)(x));
+                return ((W3C.XSD.anyAttribute)(x));
             }
             set {
                 this.SetElement(System.Xml.Linq.XName.Get("anyAttribute", "http://www.w3.org/2001/XMLSchema"), value);
@@ -5980,14 +5980,14 @@ namespace W3C.XSD {
         }
         
         private static void BuildElementDictionary() {
-            localElementDictionary.Add(System.Xml.Linq.XName.Get("annotation", "http://www.w3.org/2001/XMLSchema"), typeof(annotation));
-            localElementDictionary.Add(System.Xml.Linq.XName.Get("group", "http://www.w3.org/2001/XMLSchema"), typeof(groupRef));
-            localElementDictionary.Add(System.Xml.Linq.XName.Get("all", "http://www.w3.org/2001/XMLSchema"), typeof(all));
-            localElementDictionary.Add(System.Xml.Linq.XName.Get("choice", "http://www.w3.org/2001/XMLSchema"), typeof(choice));
-            localElementDictionary.Add(System.Xml.Linq.XName.Get("sequence", "http://www.w3.org/2001/XMLSchema"), typeof(sequence));
-            localElementDictionary.Add(System.Xml.Linq.XName.Get("attribute", "http://www.w3.org/2001/XMLSchema"), typeof(attributeType));
-            localElementDictionary.Add(System.Xml.Linq.XName.Get("attributeGroup", "http://www.w3.org/2001/XMLSchema"), typeof(attributeGroupRef));
-            localElementDictionary.Add(System.Xml.Linq.XName.Get("anyAttribute", "http://www.w3.org/2001/XMLSchema"), typeof(anyAttribute));
+            localElementDictionary.Add(System.Xml.Linq.XName.Get("annotation", "http://www.w3.org/2001/XMLSchema"), typeof(W3C.XSD.annotation));
+            localElementDictionary.Add(System.Xml.Linq.XName.Get("group", "http://www.w3.org/2001/XMLSchema"), typeof(W3C.XSD.groupRef));
+            localElementDictionary.Add(System.Xml.Linq.XName.Get("all", "http://www.w3.org/2001/XMLSchema"), typeof(W3C.XSD.all));
+            localElementDictionary.Add(System.Xml.Linq.XName.Get("choice", "http://www.w3.org/2001/XMLSchema"), typeof(W3C.XSD.choice));
+            localElementDictionary.Add(System.Xml.Linq.XName.Get("sequence", "http://www.w3.org/2001/XMLSchema"), typeof(W3C.XSD.sequence));
+            localElementDictionary.Add(System.Xml.Linq.XName.Get("attribute", "http://www.w3.org/2001/XMLSchema"), typeof(W3C.XSD.attributeType));
+            localElementDictionary.Add(System.Xml.Linq.XName.Get("attributeGroup", "http://www.w3.org/2001/XMLSchema"), typeof(W3C.XSD.attributeGroupRef));
+            localElementDictionary.Add(System.Xml.Linq.XName.Get("anyAttribute", "http://www.w3.org/2001/XMLSchema"), typeof(W3C.XSD.anyAttribute));
         }
         
         ContentModelEntity IXMetaData.GetContentModel() {
@@ -6111,13 +6111,13 @@ namespace W3C.XSD {
     public abstract partial class elementType : global::W3C.XSD.annotated, IXMetaData {
         
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
-        private XTypedList<unique> uniqueField;
+        private XTypedList<W3C.XSD.unique> uniqueField;
         
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
-        private XTypedList<key> keyField;
+        private XTypedList<W3C.XSD.key> keyField;
         
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
-        private XTypedList<keyref> keyrefField;
+        private XTypedList<W3C.XSD.keyref> keyrefField;
         
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         private static decimal minOccursDefaultValue = System.Xml.XmlConvert.ToDecimal("1");
@@ -6167,10 +6167,10 @@ namespace W3C.XSD {
         /// Regular expression: (annotation?, (simpleType | complexType)?, (unique | key | keyref)*)
         /// </para>
         /// </summary>
-        public virtual localSimpleType simpleType {
+        public virtual W3C.XSD.localSimpleType simpleType {
             get {
                 XElement x = this.GetElement(System.Xml.Linq.XName.Get("simpleType", "http://www.w3.org/2001/XMLSchema"));
-                return ((localSimpleType)(x));
+                return ((W3C.XSD.localSimpleType)(x));
             }
             set {
                 this.SetElement(System.Xml.Linq.XName.Get("simpleType", "http://www.w3.org/2001/XMLSchema"), value);
@@ -6188,10 +6188,10 @@ namespace W3C.XSD {
         /// Regular expression: (annotation?, (simpleType | complexType)?, (unique | key | keyref)*)
         /// </para>
         /// </summary>
-        public virtual localComplexType complexType {
+        public virtual W3C.XSD.localComplexType complexType {
             get {
                 XElement x = this.GetElement(System.Xml.Linq.XName.Get("complexType", "http://www.w3.org/2001/XMLSchema"));
-                return ((localComplexType)(x));
+                return ((W3C.XSD.localComplexType)(x));
             }
             set {
                 this.SetElement(System.Xml.Linq.XName.Get("complexType", "http://www.w3.org/2001/XMLSchema"), value);
@@ -6209,10 +6209,10 @@ namespace W3C.XSD {
         /// Regular expression: (annotation?, (simpleType | complexType)?, (unique | key | keyref)*)
         /// </para>
         /// </summary>
-        public virtual IList<unique> unique {
+        public virtual IList<W3C.XSD.unique> unique {
             get {
                 if ((this.uniqueField == null)) {
-                    this.uniqueField = new XTypedList<unique>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("unique", "http://www.w3.org/2001/XMLSchema"));
+                    this.uniqueField = new XTypedList<W3C.XSD.unique>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("unique", "http://www.w3.org/2001/XMLSchema"));
                 }
                 return this.uniqueField;
             }
@@ -6222,10 +6222,10 @@ namespace W3C.XSD {
                 }
                 else {
                     if ((this.uniqueField == null)) {
-                        this.uniqueField = XTypedList<unique>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("unique", "http://www.w3.org/2001/XMLSchema"));
+                        this.uniqueField = XTypedList<W3C.XSD.unique>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("unique", "http://www.w3.org/2001/XMLSchema"));
                     }
                     else {
-                        XTypedServices.SetList<unique>(this.uniqueField, value);
+                        XTypedServices.SetList<W3C.XSD.unique>(this.uniqueField, value);
                     }
                 }
             }
@@ -6242,10 +6242,10 @@ namespace W3C.XSD {
         /// Regular expression: (annotation?, (simpleType | complexType)?, (unique | key | keyref)*)
         /// </para>
         /// </summary>
-        public virtual IList<key> key {
+        public virtual IList<W3C.XSD.key> key {
             get {
                 if ((this.keyField == null)) {
-                    this.keyField = new XTypedList<key>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("key", "http://www.w3.org/2001/XMLSchema"));
+                    this.keyField = new XTypedList<W3C.XSD.key>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("key", "http://www.w3.org/2001/XMLSchema"));
                 }
                 return this.keyField;
             }
@@ -6255,10 +6255,10 @@ namespace W3C.XSD {
                 }
                 else {
                     if ((this.keyField == null)) {
-                        this.keyField = XTypedList<key>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("key", "http://www.w3.org/2001/XMLSchema"));
+                        this.keyField = XTypedList<W3C.XSD.key>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("key", "http://www.w3.org/2001/XMLSchema"));
                     }
                     else {
-                        XTypedServices.SetList<key>(this.keyField, value);
+                        XTypedServices.SetList<W3C.XSD.key>(this.keyField, value);
                     }
                 }
             }
@@ -6275,10 +6275,10 @@ namespace W3C.XSD {
         /// Regular expression: (annotation?, (simpleType | complexType)?, (unique | key | keyref)*)
         /// </para>
         /// </summary>
-        public virtual IList<keyref> keyref {
+        public virtual IList<W3C.XSD.keyref> keyref {
             get {
                 if ((this.keyrefField == null)) {
-                    this.keyrefField = new XTypedList<keyref>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("keyref", "http://www.w3.org/2001/XMLSchema"));
+                    this.keyrefField = new XTypedList<W3C.XSD.keyref>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("keyref", "http://www.w3.org/2001/XMLSchema"));
                 }
                 return this.keyrefField;
             }
@@ -6288,10 +6288,10 @@ namespace W3C.XSD {
                 }
                 else {
                     if ((this.keyrefField == null)) {
-                        this.keyrefField = XTypedList<keyref>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("keyref", "http://www.w3.org/2001/XMLSchema"));
+                        this.keyrefField = XTypedList<W3C.XSD.keyref>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("keyref", "http://www.w3.org/2001/XMLSchema"));
                     }
                     else {
-                        XTypedServices.SetList<keyref>(this.keyrefField, value);
+                        XTypedServices.SetList<W3C.XSD.keyref>(this.keyrefField, value);
                     }
                 }
             }
@@ -6521,12 +6521,12 @@ namespace W3C.XSD {
         }
         
         private static void BuildElementDictionary() {
-            localElementDictionary.Add(System.Xml.Linq.XName.Get("annotation", "http://www.w3.org/2001/XMLSchema"), typeof(annotation));
-            localElementDictionary.Add(System.Xml.Linq.XName.Get("simpleType", "http://www.w3.org/2001/XMLSchema"), typeof(localSimpleType));
-            localElementDictionary.Add(System.Xml.Linq.XName.Get("complexType", "http://www.w3.org/2001/XMLSchema"), typeof(localComplexType));
-            localElementDictionary.Add(System.Xml.Linq.XName.Get("unique", "http://www.w3.org/2001/XMLSchema"), typeof(unique));
-            localElementDictionary.Add(System.Xml.Linq.XName.Get("key", "http://www.w3.org/2001/XMLSchema"), typeof(key));
-            localElementDictionary.Add(System.Xml.Linq.XName.Get("keyref", "http://www.w3.org/2001/XMLSchema"), typeof(keyref));
+            localElementDictionary.Add(System.Xml.Linq.XName.Get("annotation", "http://www.w3.org/2001/XMLSchema"), typeof(W3C.XSD.annotation));
+            localElementDictionary.Add(System.Xml.Linq.XName.Get("simpleType", "http://www.w3.org/2001/XMLSchema"), typeof(W3C.XSD.localSimpleType));
+            localElementDictionary.Add(System.Xml.Linq.XName.Get("complexType", "http://www.w3.org/2001/XMLSchema"), typeof(W3C.XSD.localComplexType));
+            localElementDictionary.Add(System.Xml.Linq.XName.Get("unique", "http://www.w3.org/2001/XMLSchema"), typeof(W3C.XSD.unique));
+            localElementDictionary.Add(System.Xml.Linq.XName.Get("key", "http://www.w3.org/2001/XMLSchema"), typeof(W3C.XSD.key));
+            localElementDictionary.Add(System.Xml.Linq.XName.Get("keyref", "http://www.w3.org/2001/XMLSchema"), typeof(W3C.XSD.keyref));
         }
         
         ContentModelEntity IXMetaData.GetContentModel() {
@@ -6621,22 +6621,22 @@ namespace W3C.XSD {
     public abstract partial class groupType : global::W3C.XSD.annotated, IXMetaData {
         
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
-        private XTypedList<localElement> elementField;
+        private XTypedList<W3C.XSD.localElement> elementField;
         
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
-        private XTypedList<groupRef> groupField;
+        private XTypedList<W3C.XSD.groupRef> groupField;
         
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
-        private XTypedList<all> allField;
+        private XTypedList<W3C.XSD.all> allField;
         
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
-        private XTypedList<choice> choiceField;
+        private XTypedList<W3C.XSD.choice> choiceField;
         
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
-        private XTypedList<sequence> sequenceField;
+        private XTypedList<W3C.XSD.sequence> sequenceField;
         
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
-        private XTypedList<any> anyField;
+        private XTypedList<W3C.XSD.any> anyField;
         
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         private static decimal minOccursDefaultValue = System.Xml.XmlConvert.ToDecimal("1");
@@ -6677,10 +6677,10 @@ namespace W3C.XSD {
         /// Regular expression: (annotation?, (element | group | all | choice | sequence | any)*)
         /// </para>
         /// </summary>
-        public virtual IList<localElement> element {
+        public virtual IList<W3C.XSD.localElement> element {
             get {
                 if ((this.elementField == null)) {
-                    this.elementField = new XTypedList<localElement>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("element", "http://www.w3.org/2001/XMLSchema"));
+                    this.elementField = new XTypedList<W3C.XSD.localElement>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("element", "http://www.w3.org/2001/XMLSchema"));
                 }
                 return this.elementField;
             }
@@ -6690,10 +6690,10 @@ namespace W3C.XSD {
                 }
                 else {
                     if ((this.elementField == null)) {
-                        this.elementField = XTypedList<localElement>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("element", "http://www.w3.org/2001/XMLSchema"));
+                        this.elementField = XTypedList<W3C.XSD.localElement>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("element", "http://www.w3.org/2001/XMLSchema"));
                     }
                     else {
-                        XTypedServices.SetList<localElement>(this.elementField, value);
+                        XTypedServices.SetList<W3C.XSD.localElement>(this.elementField, value);
                     }
                 }
             }
@@ -6710,10 +6710,10 @@ namespace W3C.XSD {
         /// Regular expression: (annotation?, (element | group | all | choice | sequence | any)*)
         /// </para>
         /// </summary>
-        public virtual IList<groupRef> group {
+        public virtual IList<W3C.XSD.groupRef> group {
             get {
                 if ((this.groupField == null)) {
-                    this.groupField = new XTypedList<groupRef>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("group", "http://www.w3.org/2001/XMLSchema"));
+                    this.groupField = new XTypedList<W3C.XSD.groupRef>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("group", "http://www.w3.org/2001/XMLSchema"));
                 }
                 return this.groupField;
             }
@@ -6723,10 +6723,10 @@ namespace W3C.XSD {
                 }
                 else {
                     if ((this.groupField == null)) {
-                        this.groupField = XTypedList<groupRef>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("group", "http://www.w3.org/2001/XMLSchema"));
+                        this.groupField = XTypedList<W3C.XSD.groupRef>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("group", "http://www.w3.org/2001/XMLSchema"));
                     }
                     else {
-                        XTypedServices.SetList<groupRef>(this.groupField, value);
+                        XTypedServices.SetList<W3C.XSD.groupRef>(this.groupField, value);
                     }
                 }
             }
@@ -6743,10 +6743,10 @@ namespace W3C.XSD {
         /// Regular expression: (annotation?, (element | group | all | choice | sequence | any)*)
         /// </para>
         /// </summary>
-        public virtual IList<all> all {
+        public virtual IList<W3C.XSD.all> all {
             get {
                 if ((this.allField == null)) {
-                    this.allField = new XTypedList<all>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("all", "http://www.w3.org/2001/XMLSchema"));
+                    this.allField = new XTypedList<W3C.XSD.all>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("all", "http://www.w3.org/2001/XMLSchema"));
                 }
                 return this.allField;
             }
@@ -6756,10 +6756,10 @@ namespace W3C.XSD {
                 }
                 else {
                     if ((this.allField == null)) {
-                        this.allField = XTypedList<all>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("all", "http://www.w3.org/2001/XMLSchema"));
+                        this.allField = XTypedList<W3C.XSD.all>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("all", "http://www.w3.org/2001/XMLSchema"));
                     }
                     else {
-                        XTypedServices.SetList<all>(this.allField, value);
+                        XTypedServices.SetList<W3C.XSD.all>(this.allField, value);
                     }
                 }
             }
@@ -6776,10 +6776,10 @@ namespace W3C.XSD {
         /// Regular expression: (annotation?, (element | group | all | choice | sequence | any)*)
         /// </para>
         /// </summary>
-        public virtual IList<choice> choice {
+        public virtual IList<W3C.XSD.choice> choice {
             get {
                 if ((this.choiceField == null)) {
-                    this.choiceField = new XTypedList<choice>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("choice", "http://www.w3.org/2001/XMLSchema"));
+                    this.choiceField = new XTypedList<W3C.XSD.choice>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("choice", "http://www.w3.org/2001/XMLSchema"));
                 }
                 return this.choiceField;
             }
@@ -6789,10 +6789,10 @@ namespace W3C.XSD {
                 }
                 else {
                     if ((this.choiceField == null)) {
-                        this.choiceField = XTypedList<choice>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("choice", "http://www.w3.org/2001/XMLSchema"));
+                        this.choiceField = XTypedList<W3C.XSD.choice>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("choice", "http://www.w3.org/2001/XMLSchema"));
                     }
                     else {
-                        XTypedServices.SetList<choice>(this.choiceField, value);
+                        XTypedServices.SetList<W3C.XSD.choice>(this.choiceField, value);
                     }
                 }
             }
@@ -6809,10 +6809,10 @@ namespace W3C.XSD {
         /// Regular expression: (annotation?, (element | group | all | choice | sequence | any)*)
         /// </para>
         /// </summary>
-        public virtual IList<sequence> sequence {
+        public virtual IList<W3C.XSD.sequence> sequence {
             get {
                 if ((this.sequenceField == null)) {
-                    this.sequenceField = new XTypedList<sequence>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("sequence", "http://www.w3.org/2001/XMLSchema"));
+                    this.sequenceField = new XTypedList<W3C.XSD.sequence>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("sequence", "http://www.w3.org/2001/XMLSchema"));
                 }
                 return this.sequenceField;
             }
@@ -6822,10 +6822,10 @@ namespace W3C.XSD {
                 }
                 else {
                     if ((this.sequenceField == null)) {
-                        this.sequenceField = XTypedList<sequence>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("sequence", "http://www.w3.org/2001/XMLSchema"));
+                        this.sequenceField = XTypedList<W3C.XSD.sequence>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("sequence", "http://www.w3.org/2001/XMLSchema"));
                     }
                     else {
-                        XTypedServices.SetList<sequence>(this.sequenceField, value);
+                        XTypedServices.SetList<W3C.XSD.sequence>(this.sequenceField, value);
                     }
                 }
             }
@@ -6842,10 +6842,10 @@ namespace W3C.XSD {
         /// Regular expression: (annotation?, (element | group | all | choice | sequence | any)*)
         /// </para>
         /// </summary>
-        public virtual IList<any> any {
+        public virtual IList<W3C.XSD.any> any {
             get {
                 if ((this.anyField == null)) {
-                    this.anyField = new XTypedList<any>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("any", "http://www.w3.org/2001/XMLSchema"));
+                    this.anyField = new XTypedList<W3C.XSD.any>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("any", "http://www.w3.org/2001/XMLSchema"));
                 }
                 return this.anyField;
             }
@@ -6855,10 +6855,10 @@ namespace W3C.XSD {
                 }
                 else {
                     if ((this.anyField == null)) {
-                        this.anyField = XTypedList<any>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("any", "http://www.w3.org/2001/XMLSchema"));
+                        this.anyField = XTypedList<W3C.XSD.any>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("any", "http://www.w3.org/2001/XMLSchema"));
                     }
                     else {
-                        XTypedServices.SetList<any>(this.anyField, value);
+                        XTypedServices.SetList<W3C.XSD.any>(this.anyField, value);
                     }
                 }
             }
@@ -6953,13 +6953,13 @@ namespace W3C.XSD {
         }
         
         private static void BuildElementDictionary() {
-            localElementDictionary.Add(System.Xml.Linq.XName.Get("annotation", "http://www.w3.org/2001/XMLSchema"), typeof(annotation));
-            localElementDictionary.Add(System.Xml.Linq.XName.Get("element", "http://www.w3.org/2001/XMLSchema"), typeof(localElement));
-            localElementDictionary.Add(System.Xml.Linq.XName.Get("group", "http://www.w3.org/2001/XMLSchema"), typeof(groupRef));
-            localElementDictionary.Add(System.Xml.Linq.XName.Get("all", "http://www.w3.org/2001/XMLSchema"), typeof(all));
-            localElementDictionary.Add(System.Xml.Linq.XName.Get("choice", "http://www.w3.org/2001/XMLSchema"), typeof(choice));
-            localElementDictionary.Add(System.Xml.Linq.XName.Get("sequence", "http://www.w3.org/2001/XMLSchema"), typeof(sequence));
-            localElementDictionary.Add(System.Xml.Linq.XName.Get("any", "http://www.w3.org/2001/XMLSchema"), typeof(any));
+            localElementDictionary.Add(System.Xml.Linq.XName.Get("annotation", "http://www.w3.org/2001/XMLSchema"), typeof(W3C.XSD.annotation));
+            localElementDictionary.Add(System.Xml.Linq.XName.Get("element", "http://www.w3.org/2001/XMLSchema"), typeof(W3C.XSD.localElement));
+            localElementDictionary.Add(System.Xml.Linq.XName.Get("group", "http://www.w3.org/2001/XMLSchema"), typeof(W3C.XSD.groupRef));
+            localElementDictionary.Add(System.Xml.Linq.XName.Get("all", "http://www.w3.org/2001/XMLSchema"), typeof(W3C.XSD.all));
+            localElementDictionary.Add(System.Xml.Linq.XName.Get("choice", "http://www.w3.org/2001/XMLSchema"), typeof(W3C.XSD.choice));
+            localElementDictionary.Add(System.Xml.Linq.XName.Get("sequence", "http://www.w3.org/2001/XMLSchema"), typeof(W3C.XSD.sequence));
+            localElementDictionary.Add(System.Xml.Linq.XName.Get("any", "http://www.w3.org/2001/XMLSchema"), typeof(W3C.XSD.any));
         }
         
         ContentModelEntity IXMetaData.GetContentModel() {
@@ -7357,7 +7357,7 @@ namespace W3C.XSD {
         }
         
         private static void BuildElementDictionary() {
-            localElementDictionary.Add(System.Xml.Linq.XName.Get("annotation", "http://www.w3.org/2001/XMLSchema"), typeof(annotation));
+            localElementDictionary.Add(System.Xml.Linq.XName.Get("annotation", "http://www.w3.org/2001/XMLSchema"), typeof(W3C.XSD.annotation));
         }
         
         ContentModelEntity IXMetaData.GetContentModel() {
@@ -7396,10 +7396,10 @@ namespace W3C.XSD {
     public abstract partial class attributeGroupType : global::W3C.XSD.annotated, IXMetaData {
         
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
-        private XTypedList<attributeType> attributeField;
+        private XTypedList<W3C.XSD.attributeType> attributeField;
         
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
-        private XTypedList<attributeGroupRef> attributeGroupField;
+        private XTypedList<W3C.XSD.attributeGroupRef> attributeGroupField;
         
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         private static Dictionary<System.Xml.Linq.XName, System.Type> localElementDictionary = new Dictionary<System.Xml.Linq.XName, System.Type>();
@@ -7429,10 +7429,10 @@ namespace W3C.XSD {
         /// Regular expression: (annotation?, (attribute | attributeGroup)*, anyAttribute?)
         /// </para>
         /// </summary>
-        public virtual IList<attributeType> attribute {
+        public virtual IList<W3C.XSD.attributeType> attribute {
             get {
                 if ((this.attributeField == null)) {
-                    this.attributeField = new XTypedList<attributeType>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("attribute", "http://www.w3.org/2001/XMLSchema"));
+                    this.attributeField = new XTypedList<W3C.XSD.attributeType>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("attribute", "http://www.w3.org/2001/XMLSchema"));
                 }
                 return this.attributeField;
             }
@@ -7442,10 +7442,10 @@ namespace W3C.XSD {
                 }
                 else {
                     if ((this.attributeField == null)) {
-                        this.attributeField = XTypedList<attributeType>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("attribute", "http://www.w3.org/2001/XMLSchema"));
+                        this.attributeField = XTypedList<W3C.XSD.attributeType>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("attribute", "http://www.w3.org/2001/XMLSchema"));
                     }
                     else {
-                        XTypedServices.SetList<attributeType>(this.attributeField, value);
+                        XTypedServices.SetList<W3C.XSD.attributeType>(this.attributeField, value);
                     }
                 }
             }
@@ -7462,10 +7462,10 @@ namespace W3C.XSD {
         /// Regular expression: (annotation?, (attribute | attributeGroup)*, anyAttribute?)
         /// </para>
         /// </summary>
-        public virtual IList<attributeGroupRef> attributeGroup {
+        public virtual IList<W3C.XSD.attributeGroupRef> attributeGroup {
             get {
                 if ((this.attributeGroupField == null)) {
-                    this.attributeGroupField = new XTypedList<attributeGroupRef>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("attributeGroup", "http://www.w3.org/2001/XMLSchema"));
+                    this.attributeGroupField = new XTypedList<W3C.XSD.attributeGroupRef>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("attributeGroup", "http://www.w3.org/2001/XMLSchema"));
                 }
                 return this.attributeGroupField;
             }
@@ -7475,10 +7475,10 @@ namespace W3C.XSD {
                 }
                 else {
                     if ((this.attributeGroupField == null)) {
-                        this.attributeGroupField = XTypedList<attributeGroupRef>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("attributeGroup", "http://www.w3.org/2001/XMLSchema"));
+                        this.attributeGroupField = XTypedList<W3C.XSD.attributeGroupRef>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("attributeGroup", "http://www.w3.org/2001/XMLSchema"));
                     }
                     else {
-                        XTypedServices.SetList<attributeGroupRef>(this.attributeGroupField, value);
+                        XTypedServices.SetList<W3C.XSD.attributeGroupRef>(this.attributeGroupField, value);
                     }
                 }
             }
@@ -7492,10 +7492,10 @@ namespace W3C.XSD {
         /// Regular expression: (annotation?, (attribute | attributeGroup)*, anyAttribute?)
         /// </para>
         /// </summary>
-        public virtual anyAttribute anyAttribute {
+        public virtual W3C.XSD.anyAttribute anyAttribute {
             get {
                 XElement x = this.GetElement(System.Xml.Linq.XName.Get("anyAttribute", "http://www.w3.org/2001/XMLSchema"));
-                return ((anyAttribute)(x));
+                return ((W3C.XSD.anyAttribute)(x));
             }
             set {
                 this.SetElement(System.Xml.Linq.XName.Get("anyAttribute", "http://www.w3.org/2001/XMLSchema"), value);
@@ -7561,10 +7561,10 @@ namespace W3C.XSD {
         }
         
         private static void BuildElementDictionary() {
-            localElementDictionary.Add(System.Xml.Linq.XName.Get("annotation", "http://www.w3.org/2001/XMLSchema"), typeof(annotation));
-            localElementDictionary.Add(System.Xml.Linq.XName.Get("attribute", "http://www.w3.org/2001/XMLSchema"), typeof(attributeType));
-            localElementDictionary.Add(System.Xml.Linq.XName.Get("attributeGroup", "http://www.w3.org/2001/XMLSchema"), typeof(attributeGroupRef));
-            localElementDictionary.Add(System.Xml.Linq.XName.Get("anyAttribute", "http://www.w3.org/2001/XMLSchema"), typeof(anyAttribute));
+            localElementDictionary.Add(System.Xml.Linq.XName.Get("annotation", "http://www.w3.org/2001/XMLSchema"), typeof(W3C.XSD.annotation));
+            localElementDictionary.Add(System.Xml.Linq.XName.Get("attribute", "http://www.w3.org/2001/XMLSchema"), typeof(W3C.XSD.attributeType));
+            localElementDictionary.Add(System.Xml.Linq.XName.Get("attributeGroup", "http://www.w3.org/2001/XMLSchema"), typeof(W3C.XSD.attributeGroupRef));
+            localElementDictionary.Add(System.Xml.Linq.XName.Get("anyAttribute", "http://www.w3.org/2001/XMLSchema"), typeof(W3C.XSD.anyAttribute));
         }
         
         ContentModelEntity IXMetaData.GetContentModel() {
@@ -7654,7 +7654,7 @@ namespace W3C.XSD {
     public partial class keybase : global::W3C.XSD.annotated, IXMetaData {
         
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
-        private XTypedList<field> fieldField;
+        private XTypedList<W3C.XSD.field> fieldField;
         
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         private static Dictionary<System.Xml.Linq.XName, System.Type> localElementDictionary = new Dictionary<System.Xml.Linq.XName, System.Type>();
@@ -7685,10 +7685,10 @@ namespace W3C.XSD {
         /// Regular expression: (annotation?, selector, field+)
         /// </para>
         /// </summary>
-        public virtual selector selector {
+        public virtual W3C.XSD.selector selector {
             get {
                 XElement x = this.GetElement(System.Xml.Linq.XName.Get("selector", "http://www.w3.org/2001/XMLSchema"));
-                return ((selector)(x));
+                return ((W3C.XSD.selector)(x));
             }
             set {
                 this.SetElement(System.Xml.Linq.XName.Get("selector", "http://www.w3.org/2001/XMLSchema"), value);
@@ -7703,10 +7703,10 @@ namespace W3C.XSD {
         /// Regular expression: (annotation?, selector, field+)
         /// </para>
         /// </summary>
-        public virtual IList<field> field {
+        public virtual IList<W3C.XSD.field> field {
             get {
                 if ((this.fieldField == null)) {
-                    this.fieldField = new XTypedList<field>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("field", "http://www.w3.org/2001/XMLSchema"));
+                    this.fieldField = new XTypedList<W3C.XSD.field>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("field", "http://www.w3.org/2001/XMLSchema"));
                 }
                 return this.fieldField;
             }
@@ -7716,10 +7716,10 @@ namespace W3C.XSD {
                 }
                 else {
                     if ((this.fieldField == null)) {
-                        this.fieldField = XTypedList<field>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("field", "http://www.w3.org/2001/XMLSchema"));
+                        this.fieldField = XTypedList<W3C.XSD.field>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("field", "http://www.w3.org/2001/XMLSchema"));
                     }
                     else {
-                        XTypedServices.SetList<field>(this.fieldField, value);
+                        XTypedServices.SetList<W3C.XSD.field>(this.fieldField, value);
                     }
                 }
             }
@@ -7773,9 +7773,9 @@ namespace W3C.XSD {
         }
         
         private static void BuildElementDictionary() {
-            localElementDictionary.Add(System.Xml.Linq.XName.Get("annotation", "http://www.w3.org/2001/XMLSchema"), typeof(annotation));
-            localElementDictionary.Add(System.Xml.Linq.XName.Get("selector", "http://www.w3.org/2001/XMLSchema"), typeof(selector));
-            localElementDictionary.Add(System.Xml.Linq.XName.Get("field", "http://www.w3.org/2001/XMLSchema"), typeof(field));
+            localElementDictionary.Add(System.Xml.Linq.XName.Get("annotation", "http://www.w3.org/2001/XMLSchema"), typeof(W3C.XSD.annotation));
+            localElementDictionary.Add(System.Xml.Linq.XName.Get("selector", "http://www.w3.org/2001/XMLSchema"), typeof(W3C.XSD.selector));
+            localElementDictionary.Add(System.Xml.Linq.XName.Get("field", "http://www.w3.org/2001/XMLSchema"), typeof(W3C.XSD.field));
         }
         
         ContentModelEntity IXMetaData.GetContentModel() {
@@ -7964,12 +7964,12 @@ namespace W3C.XSD {
         }
     }
     
-    public sealed class NOTATIONType {
+    public sealed class NOTATION {
         
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         public static Xml.Schema.Linq.SimpleTypeValidator TypeDefinition = new Xml.Schema.Linq.AtomicSimpleTypeValidator(XmlSchemaType.GetBuiltInSimpleType(XmlTypeCode.Notation), null);
         
-        private NOTATIONType() {
+        private NOTATION() {
         }
     }
     
@@ -8274,10 +8274,10 @@ namespace W3C.XSD {
         /// Regular expression: (annotation?, (restriction | list | union))
         /// </para>
         /// </summary>
-        public virtual restriction restriction {
+        public virtual W3C.XSD.restriction restriction {
             get {
                 XElement x = this.GetElement(System.Xml.Linq.XName.Get("restriction", "http://www.w3.org/2001/XMLSchema"));
-                return ((restriction)(x));
+                return ((W3C.XSD.restriction)(x));
             }
             set {
                 this.SetElement(System.Xml.Linq.XName.Get("restriction", "http://www.w3.org/2001/XMLSchema"), value);
@@ -8295,10 +8295,10 @@ namespace W3C.XSD {
         /// Regular expression: (annotation?, (restriction | list | union))
         /// </para>
         /// </summary>
-        public virtual list list {
+        public virtual W3C.XSD.list list {
             get {
                 XElement x = this.GetElement(System.Xml.Linq.XName.Get("list", "http://www.w3.org/2001/XMLSchema"));
-                return ((list)(x));
+                return ((W3C.XSD.list)(x));
             }
             set {
                 this.SetElement(System.Xml.Linq.XName.Get("list", "http://www.w3.org/2001/XMLSchema"), value);
@@ -8316,10 +8316,10 @@ namespace W3C.XSD {
         /// Regular expression: (annotation?, (restriction | list | union))
         /// </para>
         /// </summary>
-        public virtual union union {
+        public virtual W3C.XSD.union union {
             get {
                 XElement x = this.GetElement(System.Xml.Linq.XName.Get("union", "http://www.w3.org/2001/XMLSchema"));
-                return ((union)(x));
+                return ((W3C.XSD.union)(x));
             }
             set {
                 this.SetElement(System.Xml.Linq.XName.Get("union", "http://www.w3.org/2001/XMLSchema"), value);
@@ -8390,10 +8390,10 @@ namespace W3C.XSD {
         }
         
         private static void BuildElementDictionary() {
-            localElementDictionary.Add(System.Xml.Linq.XName.Get("annotation", "http://www.w3.org/2001/XMLSchema"), typeof(annotation));
-            localElementDictionary.Add(System.Xml.Linq.XName.Get("restriction", "http://www.w3.org/2001/XMLSchema"), typeof(restriction));
-            localElementDictionary.Add(System.Xml.Linq.XName.Get("list", "http://www.w3.org/2001/XMLSchema"), typeof(list));
-            localElementDictionary.Add(System.Xml.Linq.XName.Get("union", "http://www.w3.org/2001/XMLSchema"), typeof(union));
+            localElementDictionary.Add(System.Xml.Linq.XName.Get("annotation", "http://www.w3.org/2001/XMLSchema"), typeof(W3C.XSD.annotation));
+            localElementDictionary.Add(System.Xml.Linq.XName.Get("restriction", "http://www.w3.org/2001/XMLSchema"), typeof(W3C.XSD.restriction));
+            localElementDictionary.Add(System.Xml.Linq.XName.Get("list", "http://www.w3.org/2001/XMLSchema"), typeof(W3C.XSD.list));
+            localElementDictionary.Add(System.Xml.Linq.XName.Get("union", "http://www.w3.org/2001/XMLSchema"), typeof(W3C.XSD.union));
         }
         
         ContentModelEntity IXMetaData.GetContentModel() {
@@ -8569,7 +8569,7 @@ namespace W3C.XSD {
         }
         
         private static void BuildElementDictionary() {
-            localElementDictionary.Add(System.Xml.Linq.XName.Get("annotation", "http://www.w3.org/2001/XMLSchema"), typeof(annotation));
+            localElementDictionary.Add(System.Xml.Linq.XName.Get("annotation", "http://www.w3.org/2001/XMLSchema"), typeof(W3C.XSD.annotation));
         }
         
         ContentModelEntity IXMetaData.GetContentModel() {
@@ -8654,15 +8654,15 @@ namespace W3C.XSD {
     public partial class anyAttribute : XTypedElement, IXMetaData {
         
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
-        private wildcard ContentField;
+        private W3C.XSD.wildcard ContentField;
         
-		public static explicit operator anyAttribute(XElement xe) { return XTypedServices.ToXTypedElement<anyAttribute, wildcard>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+		public static explicit operator anyAttribute(XElement xe) { return XTypedServices.ToXTypedElement<anyAttribute, W3C.XSD.wildcard>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         public anyAttribute() {
-            SetInnerType(new wildcard());
+            SetInnerType(new W3C.XSD.wildcard());
         }
         
-        public anyAttribute(wildcard content) {
+        public anyAttribute(W3C.XSD.wildcard content) {
             SetInnerType(content);
         }
         
@@ -8676,7 +8676,7 @@ namespace W3C.XSD {
             }
         }
         
-        public virtual wildcard Content {
+        public virtual W3C.XSD.wildcard Content {
             get {
                 return ContentField;
             }
@@ -8757,23 +8757,23 @@ namespace W3C.XSD {
         }
         
         public static anyAttribute Load(string xmlFile) {
-            return XTypedServices.Load<anyAttribute, wildcard>(xmlFile, LinqToXsdTypeManager.Instance);
+            return XTypedServices.Load<anyAttribute, W3C.XSD.wildcard>(xmlFile, LinqToXsdTypeManager.Instance);
         }
         
         public static anyAttribute Load(System.IO.TextReader xmlFile) {
-            return XTypedServices.Load<anyAttribute, wildcard>(xmlFile, LinqToXsdTypeManager.Instance);
+            return XTypedServices.Load<anyAttribute, W3C.XSD.wildcard>(xmlFile, LinqToXsdTypeManager.Instance);
         }
         
         public static anyAttribute Parse(string xml) {
-            return XTypedServices.Parse<anyAttribute, wildcard>(xml, LinqToXsdTypeManager.Instance);
+            return XTypedServices.Parse<anyAttribute, W3C.XSD.wildcard>(xml, LinqToXsdTypeManager.Instance);
         }
         
         public override XTypedElement Clone() {
-            return new anyAttribute(((wildcard)(this.Content.Clone())));
+            return new anyAttribute(((W3C.XSD.wildcard)(this.Content.Clone())));
         }
         
-        private void SetInnerType(wildcard ContentField) {
-            this.ContentField = ((wildcard)(XTypedServices.GetCloneIfRooted(ContentField)));
+        private void SetInnerType(W3C.XSD.wildcard ContentField) {
+            this.ContentField = ((W3C.XSD.wildcard)(XTypedServices.GetCloneIfRooted(ContentField)));
             XTypedServices.SetName(this, this.ContentField);
         }
         
@@ -8785,15 +8785,15 @@ namespace W3C.XSD {
     public partial class complexType : XTypedElement, IXMetaData {
         
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
-        private topLevelComplexType ContentField;
+        private W3C.XSD.topLevelComplexType ContentField;
         
-		public static explicit operator complexType(XElement xe) { return XTypedServices.ToXTypedElement<complexType, topLevelComplexType>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+		public static explicit operator complexType(XElement xe) { return XTypedServices.ToXTypedElement<complexType, W3C.XSD.topLevelComplexType>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         public complexType() {
-            SetInnerType(new topLevelComplexType());
+            SetInnerType(new W3C.XSD.topLevelComplexType());
         }
         
-        public complexType(topLevelComplexType content) {
+        public complexType(W3C.XSD.topLevelComplexType content) {
             SetInnerType(content);
         }
         
@@ -8807,7 +8807,7 @@ namespace W3C.XSD {
             }
         }
         
-        public virtual topLevelComplexType Content {
+        public virtual W3C.XSD.topLevelComplexType Content {
             get {
                 return ContentField;
             }
@@ -8860,23 +8860,23 @@ namespace W3C.XSD {
         }
         
         public static complexType Load(string xmlFile) {
-            return XTypedServices.Load<complexType, topLevelComplexType>(xmlFile, LinqToXsdTypeManager.Instance);
+            return XTypedServices.Load<complexType, W3C.XSD.topLevelComplexType>(xmlFile, LinqToXsdTypeManager.Instance);
         }
         
         public static complexType Load(System.IO.TextReader xmlFile) {
-            return XTypedServices.Load<complexType, topLevelComplexType>(xmlFile, LinqToXsdTypeManager.Instance);
+            return XTypedServices.Load<complexType, W3C.XSD.topLevelComplexType>(xmlFile, LinqToXsdTypeManager.Instance);
         }
         
         public static complexType Parse(string xml) {
-            return XTypedServices.Parse<complexType, topLevelComplexType>(xml, LinqToXsdTypeManager.Instance);
+            return XTypedServices.Parse<complexType, W3C.XSD.topLevelComplexType>(xml, LinqToXsdTypeManager.Instance);
         }
         
         public override XTypedElement Clone() {
-            return new complexType(((topLevelComplexType)(this.Content.Clone())));
+            return new complexType(((W3C.XSD.topLevelComplexType)(this.Content.Clone())));
         }
         
-        private void SetInnerType(topLevelComplexType ContentField) {
-            this.ContentField = ((topLevelComplexType)(XTypedServices.GetCloneIfRooted(ContentField)));
+        private void SetInnerType(W3C.XSD.topLevelComplexType ContentField) {
+            this.ContentField = ((W3C.XSD.topLevelComplexType)(XTypedServices.GetCloneIfRooted(ContentField)));
             XTypedServices.SetName(this, this.ContentField);
         }
         
@@ -8888,15 +8888,15 @@ namespace W3C.XSD {
     public partial class element : XTypedElement, IXMetaData {
         
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
-        private topLevelElement ContentField;
+        private W3C.XSD.topLevelElement ContentField;
         
-		public static explicit operator element(XElement xe) { return XTypedServices.ToXTypedElement<element, topLevelElement>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+		public static explicit operator element(XElement xe) { return XTypedServices.ToXTypedElement<element, W3C.XSD.topLevelElement>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         public element() {
-            SetInnerType(new topLevelElement());
+            SetInnerType(new W3C.XSD.topLevelElement());
         }
         
-        public element(topLevelElement content) {
+        public element(W3C.XSD.topLevelElement content) {
             SetInnerType(content);
         }
         
@@ -8910,7 +8910,7 @@ namespace W3C.XSD {
             }
         }
         
-        public virtual topLevelElement Content {
+        public virtual W3C.XSD.topLevelElement Content {
             get {
                 return ContentField;
             }
@@ -8963,23 +8963,23 @@ namespace W3C.XSD {
         }
         
         public static element Load(string xmlFile) {
-            return XTypedServices.Load<element, topLevelElement>(xmlFile, LinqToXsdTypeManager.Instance);
+            return XTypedServices.Load<element, W3C.XSD.topLevelElement>(xmlFile, LinqToXsdTypeManager.Instance);
         }
         
         public static element Load(System.IO.TextReader xmlFile) {
-            return XTypedServices.Load<element, topLevelElement>(xmlFile, LinqToXsdTypeManager.Instance);
+            return XTypedServices.Load<element, W3C.XSD.topLevelElement>(xmlFile, LinqToXsdTypeManager.Instance);
         }
         
         public static element Parse(string xml) {
-            return XTypedServices.Parse<element, topLevelElement>(xml, LinqToXsdTypeManager.Instance);
+            return XTypedServices.Parse<element, W3C.XSD.topLevelElement>(xml, LinqToXsdTypeManager.Instance);
         }
         
         public override XTypedElement Clone() {
-            return new element(((topLevelElement)(this.Content.Clone())));
+            return new element(((W3C.XSD.topLevelElement)(this.Content.Clone())));
         }
         
-        private void SetInnerType(topLevelElement ContentField) {
-            this.ContentField = ((topLevelElement)(XTypedServices.GetCloneIfRooted(ContentField)));
+        private void SetInnerType(W3C.XSD.topLevelElement ContentField) {
+            this.ContentField = ((W3C.XSD.topLevelElement)(XTypedServices.GetCloneIfRooted(ContentField)));
             XTypedServices.SetName(this, this.ContentField);
         }
         
@@ -8997,9 +8997,9 @@ namespace W3C.XSD {
     public partial class all : XTypedElement, IXMetaData {
         
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
-        private allType ContentField;
+        private W3C.XSD.allType ContentField;
         
-		public static explicit operator all(XElement xe) { return XTypedServices.ToXTypedElement<all, allType>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+		public static explicit operator all(XElement xe) { return XTypedServices.ToXTypedElement<all, W3C.XSD.allType>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         /// <summary>
         /// <para>
@@ -9008,7 +9008,7 @@ namespace W3C.XSD {
         /// </para>
         /// </summary>
         public all() {
-            SetInnerType(new allType());
+            SetInnerType(new W3C.XSD.allType());
         }
         
         /// <summary>
@@ -9017,7 +9017,7 @@ namespace W3C.XSD {
         ///   Only elements allowed inside
         /// </para>
         /// </summary>
-        public all(allType content) {
+        public all(W3C.XSD.allType content) {
             SetInnerType(content);
         }
         
@@ -9031,7 +9031,7 @@ namespace W3C.XSD {
             }
         }
         
-        public virtual allType Content {
+        public virtual W3C.XSD.allType Content {
             get {
                 return ContentField;
             }
@@ -9084,23 +9084,23 @@ namespace W3C.XSD {
         }
         
         public static all Load(string xmlFile) {
-            return XTypedServices.Load<all, allType>(xmlFile, LinqToXsdTypeManager.Instance);
+            return XTypedServices.Load<all, W3C.XSD.allType>(xmlFile, LinqToXsdTypeManager.Instance);
         }
         
         public static all Load(System.IO.TextReader xmlFile) {
-            return XTypedServices.Load<all, allType>(xmlFile, LinqToXsdTypeManager.Instance);
+            return XTypedServices.Load<all, W3C.XSD.allType>(xmlFile, LinqToXsdTypeManager.Instance);
         }
         
         public static all Parse(string xml) {
-            return XTypedServices.Parse<all, allType>(xml, LinqToXsdTypeManager.Instance);
+            return XTypedServices.Parse<all, W3C.XSD.allType>(xml, LinqToXsdTypeManager.Instance);
         }
         
         public override XTypedElement Clone() {
-            return new all(((allType)(this.Content.Clone())));
+            return new all(((W3C.XSD.allType)(this.Content.Clone())));
         }
         
-        private void SetInnerType(allType ContentField) {
-            this.ContentField = ((allType)(XTypedServices.GetCloneIfRooted(ContentField)));
+        private void SetInnerType(W3C.XSD.allType ContentField) {
+            this.ContentField = ((W3C.XSD.allType)(XTypedServices.GetCloneIfRooted(ContentField)));
             XTypedServices.SetName(this, this.ContentField);
         }
         
@@ -9118,9 +9118,9 @@ namespace W3C.XSD {
     public partial class choice : XTypedElement, IXMetaData {
         
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
-        private explicitGroup ContentField;
+        private W3C.XSD.explicitGroup ContentField;
         
-		public static explicit operator choice(XElement xe) { return XTypedServices.ToXTypedElement<choice, explicitGroup>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+		public static explicit operator choice(XElement xe) { return XTypedServices.ToXTypedElement<choice, W3C.XSD.explicitGroup>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         /// <summary>
         /// <para>
@@ -9129,7 +9129,7 @@ namespace W3C.XSD {
         /// </para>
         /// </summary>
         public choice() {
-            SetInnerType(new explicitGroup());
+            SetInnerType(new W3C.XSD.explicitGroup());
         }
         
         /// <summary>
@@ -9138,7 +9138,7 @@ namespace W3C.XSD {
         ///   group type for the three kinds of group
         /// </para>
         /// </summary>
-        public choice(explicitGroup content) {
+        public choice(W3C.XSD.explicitGroup content) {
             SetInnerType(content);
         }
         
@@ -9152,7 +9152,7 @@ namespace W3C.XSD {
             }
         }
         
-        public virtual explicitGroup Content {
+        public virtual W3C.XSD.explicitGroup Content {
             get {
                 return ContentField;
             }
@@ -9205,23 +9205,23 @@ namespace W3C.XSD {
         }
         
         public static choice Load(string xmlFile) {
-            return XTypedServices.Load<choice, explicitGroup>(xmlFile, LinqToXsdTypeManager.Instance);
+            return XTypedServices.Load<choice, W3C.XSD.explicitGroup>(xmlFile, LinqToXsdTypeManager.Instance);
         }
         
         public static choice Load(System.IO.TextReader xmlFile) {
-            return XTypedServices.Load<choice, explicitGroup>(xmlFile, LinqToXsdTypeManager.Instance);
+            return XTypedServices.Load<choice, W3C.XSD.explicitGroup>(xmlFile, LinqToXsdTypeManager.Instance);
         }
         
         public static choice Parse(string xml) {
-            return XTypedServices.Parse<choice, explicitGroup>(xml, LinqToXsdTypeManager.Instance);
+            return XTypedServices.Parse<choice, W3C.XSD.explicitGroup>(xml, LinqToXsdTypeManager.Instance);
         }
         
         public override XTypedElement Clone() {
-            return new choice(((explicitGroup)(this.Content.Clone())));
+            return new choice(((W3C.XSD.explicitGroup)(this.Content.Clone())));
         }
         
-        private void SetInnerType(explicitGroup ContentField) {
-            this.ContentField = ((explicitGroup)(XTypedServices.GetCloneIfRooted(ContentField)));
+        private void SetInnerType(W3C.XSD.explicitGroup ContentField) {
+            this.ContentField = ((W3C.XSD.explicitGroup)(XTypedServices.GetCloneIfRooted(ContentField)));
             XTypedServices.SetName(this, this.ContentField);
         }
         
@@ -9239,9 +9239,9 @@ namespace W3C.XSD {
     public partial class sequence : XTypedElement, IXMetaData {
         
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
-        private explicitGroup ContentField;
+        private W3C.XSD.explicitGroup ContentField;
         
-		public static explicit operator sequence(XElement xe) { return XTypedServices.ToXTypedElement<sequence, explicitGroup>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+		public static explicit operator sequence(XElement xe) { return XTypedServices.ToXTypedElement<sequence, W3C.XSD.explicitGroup>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         /// <summary>
         /// <para>
@@ -9250,7 +9250,7 @@ namespace W3C.XSD {
         /// </para>
         /// </summary>
         public sequence() {
-            SetInnerType(new explicitGroup());
+            SetInnerType(new W3C.XSD.explicitGroup());
         }
         
         /// <summary>
@@ -9259,7 +9259,7 @@ namespace W3C.XSD {
         ///   group type for the three kinds of group
         /// </para>
         /// </summary>
-        public sequence(explicitGroup content) {
+        public sequence(W3C.XSD.explicitGroup content) {
             SetInnerType(content);
         }
         
@@ -9273,7 +9273,7 @@ namespace W3C.XSD {
             }
         }
         
-        public virtual explicitGroup Content {
+        public virtual W3C.XSD.explicitGroup Content {
             get {
                 return ContentField;
             }
@@ -9326,23 +9326,23 @@ namespace W3C.XSD {
         }
         
         public static sequence Load(string xmlFile) {
-            return XTypedServices.Load<sequence, explicitGroup>(xmlFile, LinqToXsdTypeManager.Instance);
+            return XTypedServices.Load<sequence, W3C.XSD.explicitGroup>(xmlFile, LinqToXsdTypeManager.Instance);
         }
         
         public static sequence Load(System.IO.TextReader xmlFile) {
-            return XTypedServices.Load<sequence, explicitGroup>(xmlFile, LinqToXsdTypeManager.Instance);
+            return XTypedServices.Load<sequence, W3C.XSD.explicitGroup>(xmlFile, LinqToXsdTypeManager.Instance);
         }
         
         public static sequence Parse(string xml) {
-            return XTypedServices.Parse<sequence, explicitGroup>(xml, LinqToXsdTypeManager.Instance);
+            return XTypedServices.Parse<sequence, W3C.XSD.explicitGroup>(xml, LinqToXsdTypeManager.Instance);
         }
         
         public override XTypedElement Clone() {
-            return new sequence(((explicitGroup)(this.Content.Clone())));
+            return new sequence(((W3C.XSD.explicitGroup)(this.Content.Clone())));
         }
         
-        private void SetInnerType(explicitGroup ContentField) {
-            this.ContentField = ((explicitGroup)(XTypedServices.GetCloneIfRooted(ContentField)));
+        private void SetInnerType(W3C.XSD.explicitGroup ContentField) {
+            this.ContentField = ((W3C.XSD.explicitGroup)(XTypedServices.GetCloneIfRooted(ContentField)));
             XTypedServices.SetName(this, this.ContentField);
         }
         
@@ -9354,15 +9354,15 @@ namespace W3C.XSD {
     public partial class group : XTypedElement, IXMetaData {
         
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
-        private namedGroup ContentField;
+        private W3C.XSD.namedGroup ContentField;
         
-		public static explicit operator group(XElement xe) { return XTypedServices.ToXTypedElement<group, namedGroup>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+		public static explicit operator group(XElement xe) { return XTypedServices.ToXTypedElement<group, W3C.XSD.namedGroup>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         public group() {
-            SetInnerType(new namedGroup());
+            SetInnerType(new W3C.XSD.namedGroup());
         }
         
-        public group(namedGroup content) {
+        public group(W3C.XSD.namedGroup content) {
             SetInnerType(content);
         }
         
@@ -9376,7 +9376,7 @@ namespace W3C.XSD {
             }
         }
         
-        public virtual namedGroup Content {
+        public virtual W3C.XSD.namedGroup Content {
             get {
                 return ContentField;
             }
@@ -9429,23 +9429,23 @@ namespace W3C.XSD {
         }
         
         public static group Load(string xmlFile) {
-            return XTypedServices.Load<group, namedGroup>(xmlFile, LinqToXsdTypeManager.Instance);
+            return XTypedServices.Load<group, W3C.XSD.namedGroup>(xmlFile, LinqToXsdTypeManager.Instance);
         }
         
         public static group Load(System.IO.TextReader xmlFile) {
-            return XTypedServices.Load<group, namedGroup>(xmlFile, LinqToXsdTypeManager.Instance);
+            return XTypedServices.Load<group, W3C.XSD.namedGroup>(xmlFile, LinqToXsdTypeManager.Instance);
         }
         
         public static group Parse(string xml) {
-            return XTypedServices.Parse<group, namedGroup>(xml, LinqToXsdTypeManager.Instance);
+            return XTypedServices.Parse<group, W3C.XSD.namedGroup>(xml, LinqToXsdTypeManager.Instance);
         }
         
         public override XTypedElement Clone() {
-            return new group(((namedGroup)(this.Content.Clone())));
+            return new group(((W3C.XSD.namedGroup)(this.Content.Clone())));
         }
         
-        private void SetInnerType(namedGroup ContentField) {
-            this.ContentField = ((namedGroup)(XTypedServices.GetCloneIfRooted(ContentField)));
+        private void SetInnerType(W3C.XSD.namedGroup ContentField) {
+            this.ContentField = ((W3C.XSD.namedGroup)(XTypedServices.GetCloneIfRooted(ContentField)));
             XTypedServices.SetName(this, this.ContentField);
         }
         
@@ -9457,15 +9457,15 @@ namespace W3C.XSD {
     public partial class attribute : XTypedElement, IXMetaData {
         
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
-        private topLevelAttribute ContentField;
+        private W3C.XSD.topLevelAttribute ContentField;
         
-		public static explicit operator attribute(XElement xe) { return XTypedServices.ToXTypedElement<attribute, topLevelAttribute>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+		public static explicit operator attribute(XElement xe) { return XTypedServices.ToXTypedElement<attribute, W3C.XSD.topLevelAttribute>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         public attribute() {
-            SetInnerType(new topLevelAttribute());
+            SetInnerType(new W3C.XSD.topLevelAttribute());
         }
         
-        public attribute(topLevelAttribute content) {
+        public attribute(W3C.XSD.topLevelAttribute content) {
             SetInnerType(content);
         }
         
@@ -9479,7 +9479,7 @@ namespace W3C.XSD {
             }
         }
         
-        public virtual topLevelAttribute Content {
+        public virtual W3C.XSD.topLevelAttribute Content {
             get {
                 return ContentField;
             }
@@ -9532,23 +9532,23 @@ namespace W3C.XSD {
         }
         
         public static attribute Load(string xmlFile) {
-            return XTypedServices.Load<attribute, topLevelAttribute>(xmlFile, LinqToXsdTypeManager.Instance);
+            return XTypedServices.Load<attribute, W3C.XSD.topLevelAttribute>(xmlFile, LinqToXsdTypeManager.Instance);
         }
         
         public static attribute Load(System.IO.TextReader xmlFile) {
-            return XTypedServices.Load<attribute, topLevelAttribute>(xmlFile, LinqToXsdTypeManager.Instance);
+            return XTypedServices.Load<attribute, W3C.XSD.topLevelAttribute>(xmlFile, LinqToXsdTypeManager.Instance);
         }
         
         public static attribute Parse(string xml) {
-            return XTypedServices.Parse<attribute, topLevelAttribute>(xml, LinqToXsdTypeManager.Instance);
+            return XTypedServices.Parse<attribute, W3C.XSD.topLevelAttribute>(xml, LinqToXsdTypeManager.Instance);
         }
         
         public override XTypedElement Clone() {
-            return new attribute(((topLevelAttribute)(this.Content.Clone())));
+            return new attribute(((W3C.XSD.topLevelAttribute)(this.Content.Clone())));
         }
         
-        private void SetInnerType(topLevelAttribute ContentField) {
-            this.ContentField = ((topLevelAttribute)(XTypedServices.GetCloneIfRooted(ContentField)));
+        private void SetInnerType(W3C.XSD.topLevelAttribute ContentField) {
+            this.ContentField = ((W3C.XSD.topLevelAttribute)(XTypedServices.GetCloneIfRooted(ContentField)));
             XTypedServices.SetName(this, this.ContentField);
         }
         
@@ -9560,15 +9560,15 @@ namespace W3C.XSD {
     public partial class attributeGroup : XTypedElement, IXMetaData {
         
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
-        private namedAttributeGroup ContentField;
+        private W3C.XSD.namedAttributeGroup ContentField;
         
-		public static explicit operator attributeGroup(XElement xe) { return XTypedServices.ToXTypedElement<attributeGroup, namedAttributeGroup>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+		public static explicit operator attributeGroup(XElement xe) { return XTypedServices.ToXTypedElement<attributeGroup, W3C.XSD.namedAttributeGroup>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         public attributeGroup() {
-            SetInnerType(new namedAttributeGroup());
+            SetInnerType(new W3C.XSD.namedAttributeGroup());
         }
         
-        public attributeGroup(namedAttributeGroup content) {
+        public attributeGroup(W3C.XSD.namedAttributeGroup content) {
             SetInnerType(content);
         }
         
@@ -9582,7 +9582,7 @@ namespace W3C.XSD {
             }
         }
         
-        public virtual namedAttributeGroup Content {
+        public virtual W3C.XSD.namedAttributeGroup Content {
             get {
                 return ContentField;
             }
@@ -9635,23 +9635,23 @@ namespace W3C.XSD {
         }
         
         public static attributeGroup Load(string xmlFile) {
-            return XTypedServices.Load<attributeGroup, namedAttributeGroup>(xmlFile, LinqToXsdTypeManager.Instance);
+            return XTypedServices.Load<attributeGroup, W3C.XSD.namedAttributeGroup>(xmlFile, LinqToXsdTypeManager.Instance);
         }
         
         public static attributeGroup Load(System.IO.TextReader xmlFile) {
-            return XTypedServices.Load<attributeGroup, namedAttributeGroup>(xmlFile, LinqToXsdTypeManager.Instance);
+            return XTypedServices.Load<attributeGroup, W3C.XSD.namedAttributeGroup>(xmlFile, LinqToXsdTypeManager.Instance);
         }
         
         public static attributeGroup Parse(string xml) {
-            return XTypedServices.Parse<attributeGroup, namedAttributeGroup>(xml, LinqToXsdTypeManager.Instance);
+            return XTypedServices.Parse<attributeGroup, W3C.XSD.namedAttributeGroup>(xml, LinqToXsdTypeManager.Instance);
         }
         
         public override XTypedElement Clone() {
-            return new attributeGroup(((namedAttributeGroup)(this.Content.Clone())));
+            return new attributeGroup(((W3C.XSD.namedAttributeGroup)(this.Content.Clone())));
         }
         
-        private void SetInnerType(namedAttributeGroup ContentField) {
-            this.ContentField = ((namedAttributeGroup)(XTypedServices.GetCloneIfRooted(ContentField)));
+        private void SetInnerType(W3C.XSD.namedAttributeGroup ContentField) {
+            this.ContentField = ((W3C.XSD.namedAttributeGroup)(XTypedServices.GetCloneIfRooted(ContentField)));
             XTypedServices.SetName(this, this.ContentField);
         }
         
@@ -9663,15 +9663,15 @@ namespace W3C.XSD {
     public partial class unique : XTypedElement, IXMetaData {
         
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
-        private keybase ContentField;
+        private W3C.XSD.keybase ContentField;
         
-		public static explicit operator unique(XElement xe) { return XTypedServices.ToXTypedElement<unique, keybase>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+		public static explicit operator unique(XElement xe) { return XTypedServices.ToXTypedElement<unique, W3C.XSD.keybase>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         public unique() {
-            SetInnerType(new keybase());
+            SetInnerType(new W3C.XSD.keybase());
         }
         
-        public unique(keybase content) {
+        public unique(W3C.XSD.keybase content) {
             SetInnerType(content);
         }
         
@@ -9685,7 +9685,7 @@ namespace W3C.XSD {
             }
         }
         
-        public virtual keybase Content {
+        public virtual W3C.XSD.keybase Content {
             get {
                 return ContentField;
             }
@@ -9699,7 +9699,7 @@ namespace W3C.XSD {
         /// Regular expression: (annotation?, selector, field+)
         /// </para>
         /// </summary>
-        public virtual selector selector {
+        public virtual W3C.XSD.selector selector {
             get {
                 return this.ContentField.selector;
             }
@@ -9716,7 +9716,7 @@ namespace W3C.XSD {
         /// Regular expression: (annotation?, selector, field+)
         /// </para>
         /// </summary>
-        public virtual IList<field> field {
+        public virtual IList<W3C.XSD.field> field {
             get {
                 return this.ContentField.field;
             }
@@ -9786,23 +9786,23 @@ namespace W3C.XSD {
         }
         
         public static unique Load(string xmlFile) {
-            return XTypedServices.Load<unique, keybase>(xmlFile, LinqToXsdTypeManager.Instance);
+            return XTypedServices.Load<unique, W3C.XSD.keybase>(xmlFile, LinqToXsdTypeManager.Instance);
         }
         
         public static unique Load(System.IO.TextReader xmlFile) {
-            return XTypedServices.Load<unique, keybase>(xmlFile, LinqToXsdTypeManager.Instance);
+            return XTypedServices.Load<unique, W3C.XSD.keybase>(xmlFile, LinqToXsdTypeManager.Instance);
         }
         
         public static unique Parse(string xml) {
-            return XTypedServices.Parse<unique, keybase>(xml, LinqToXsdTypeManager.Instance);
+            return XTypedServices.Parse<unique, W3C.XSD.keybase>(xml, LinqToXsdTypeManager.Instance);
         }
         
         public override XTypedElement Clone() {
-            return new unique(((keybase)(this.Content.Clone())));
+            return new unique(((W3C.XSD.keybase)(this.Content.Clone())));
         }
         
-        private void SetInnerType(keybase ContentField) {
-            this.ContentField = ((keybase)(XTypedServices.GetCloneIfRooted(ContentField)));
+        private void SetInnerType(W3C.XSD.keybase ContentField) {
+            this.ContentField = ((W3C.XSD.keybase)(XTypedServices.GetCloneIfRooted(ContentField)));
             XTypedServices.SetName(this, this.ContentField);
         }
         
@@ -9814,15 +9814,15 @@ namespace W3C.XSD {
     public partial class key : XTypedElement, IXMetaData {
         
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
-        private keybase ContentField;
+        private W3C.XSD.keybase ContentField;
         
-		public static explicit operator key(XElement xe) { return XTypedServices.ToXTypedElement<key, keybase>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+		public static explicit operator key(XElement xe) { return XTypedServices.ToXTypedElement<key, W3C.XSD.keybase>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         public key() {
-            SetInnerType(new keybase());
+            SetInnerType(new W3C.XSD.keybase());
         }
         
-        public key(keybase content) {
+        public key(W3C.XSD.keybase content) {
             SetInnerType(content);
         }
         
@@ -9836,7 +9836,7 @@ namespace W3C.XSD {
             }
         }
         
-        public virtual keybase Content {
+        public virtual W3C.XSD.keybase Content {
             get {
                 return ContentField;
             }
@@ -9850,7 +9850,7 @@ namespace W3C.XSD {
         /// Regular expression: (annotation?, selector, field+)
         /// </para>
         /// </summary>
-        public virtual selector selector {
+        public virtual W3C.XSD.selector selector {
             get {
                 return this.ContentField.selector;
             }
@@ -9867,7 +9867,7 @@ namespace W3C.XSD {
         /// Regular expression: (annotation?, selector, field+)
         /// </para>
         /// </summary>
-        public virtual IList<field> field {
+        public virtual IList<W3C.XSD.field> field {
             get {
                 return this.ContentField.field;
             }
@@ -9937,23 +9937,23 @@ namespace W3C.XSD {
         }
         
         public static key Load(string xmlFile) {
-            return XTypedServices.Load<key, keybase>(xmlFile, LinqToXsdTypeManager.Instance);
+            return XTypedServices.Load<key, W3C.XSD.keybase>(xmlFile, LinqToXsdTypeManager.Instance);
         }
         
         public static key Load(System.IO.TextReader xmlFile) {
-            return XTypedServices.Load<key, keybase>(xmlFile, LinqToXsdTypeManager.Instance);
+            return XTypedServices.Load<key, W3C.XSD.keybase>(xmlFile, LinqToXsdTypeManager.Instance);
         }
         
         public static key Parse(string xml) {
-            return XTypedServices.Parse<key, keybase>(xml, LinqToXsdTypeManager.Instance);
+            return XTypedServices.Parse<key, W3C.XSD.keybase>(xml, LinqToXsdTypeManager.Instance);
         }
         
         public override XTypedElement Clone() {
-            return new key(((keybase)(this.Content.Clone())));
+            return new key(((W3C.XSD.keybase)(this.Content.Clone())));
         }
         
-        private void SetInnerType(keybase ContentField) {
-            this.ContentField = ((keybase)(XTypedServices.GetCloneIfRooted(ContentField)));
+        private void SetInnerType(W3C.XSD.keybase ContentField) {
+            this.ContentField = ((W3C.XSD.keybase)(XTypedServices.GetCloneIfRooted(ContentField)));
             XTypedServices.SetName(this, this.ContentField);
         }
         
@@ -9965,15 +9965,15 @@ namespace W3C.XSD {
     public partial class simpleType : XTypedElement, IXMetaData {
         
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
-        private topLevelSimpleType ContentField;
+        private W3C.XSD.topLevelSimpleType ContentField;
         
-		public static explicit operator simpleType(XElement xe) { return XTypedServices.ToXTypedElement<simpleType, topLevelSimpleType>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+		public static explicit operator simpleType(XElement xe) { return XTypedServices.ToXTypedElement<simpleType, W3C.XSD.topLevelSimpleType>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         public simpleType() {
-            SetInnerType(new topLevelSimpleType());
+            SetInnerType(new W3C.XSD.topLevelSimpleType());
         }
         
-        public simpleType(topLevelSimpleType content) {
+        public simpleType(W3C.XSD.topLevelSimpleType content) {
             SetInnerType(content);
         }
         
@@ -9987,7 +9987,7 @@ namespace W3C.XSD {
             }
         }
         
-        public virtual topLevelSimpleType Content {
+        public virtual W3C.XSD.topLevelSimpleType Content {
             get {
                 return ContentField;
             }
@@ -10040,23 +10040,23 @@ namespace W3C.XSD {
         }
         
         public static simpleType Load(string xmlFile) {
-            return XTypedServices.Load<simpleType, topLevelSimpleType>(xmlFile, LinqToXsdTypeManager.Instance);
+            return XTypedServices.Load<simpleType, W3C.XSD.topLevelSimpleType>(xmlFile, LinqToXsdTypeManager.Instance);
         }
         
         public static simpleType Load(System.IO.TextReader xmlFile) {
-            return XTypedServices.Load<simpleType, topLevelSimpleType>(xmlFile, LinqToXsdTypeManager.Instance);
+            return XTypedServices.Load<simpleType, W3C.XSD.topLevelSimpleType>(xmlFile, LinqToXsdTypeManager.Instance);
         }
         
         public static simpleType Parse(string xml) {
-            return XTypedServices.Parse<simpleType, topLevelSimpleType>(xml, LinqToXsdTypeManager.Instance);
+            return XTypedServices.Parse<simpleType, W3C.XSD.topLevelSimpleType>(xml, LinqToXsdTypeManager.Instance);
         }
         
         public override XTypedElement Clone() {
-            return new simpleType(((topLevelSimpleType)(this.Content.Clone())));
+            return new simpleType(((W3C.XSD.topLevelSimpleType)(this.Content.Clone())));
         }
         
-        private void SetInnerType(topLevelSimpleType ContentField) {
-            this.ContentField = ((topLevelSimpleType)(XTypedServices.GetCloneIfRooted(ContentField)));
+        private void SetInnerType(W3C.XSD.topLevelSimpleType ContentField) {
+            this.ContentField = ((W3C.XSD.topLevelSimpleType)(XTypedServices.GetCloneIfRooted(ContentField)));
             XTypedServices.SetName(this, this.ContentField);
         }
         
@@ -10068,15 +10068,15 @@ namespace W3C.XSD {
     public partial class minExclusive : XTypedElement, IXMetaData {
         
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
-        private facet ContentField;
+        private W3C.XSD.facet ContentField;
         
-		public static explicit operator minExclusive(XElement xe) { return XTypedServices.ToXTypedElement<minExclusive, facet>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+		public static explicit operator minExclusive(XElement xe) { return XTypedServices.ToXTypedElement<minExclusive, W3C.XSD.facet>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         public minExclusive() {
-            SetInnerType(new facet());
+            SetInnerType(new W3C.XSD.facet());
         }
         
-        public minExclusive(facet content) {
+        public minExclusive(W3C.XSD.facet content) {
             SetInnerType(content);
         }
         
@@ -10090,7 +10090,7 @@ namespace W3C.XSD {
             }
         }
         
-        public virtual facet Content {
+        public virtual W3C.XSD.facet Content {
             get {
                 return ContentField;
             }
@@ -10171,23 +10171,23 @@ namespace W3C.XSD {
         }
         
         public static minExclusive Load(string xmlFile) {
-            return XTypedServices.Load<minExclusive, facet>(xmlFile, LinqToXsdTypeManager.Instance);
+            return XTypedServices.Load<minExclusive, W3C.XSD.facet>(xmlFile, LinqToXsdTypeManager.Instance);
         }
         
         public static minExclusive Load(System.IO.TextReader xmlFile) {
-            return XTypedServices.Load<minExclusive, facet>(xmlFile, LinqToXsdTypeManager.Instance);
+            return XTypedServices.Load<minExclusive, W3C.XSD.facet>(xmlFile, LinqToXsdTypeManager.Instance);
         }
         
         public static minExclusive Parse(string xml) {
-            return XTypedServices.Parse<minExclusive, facet>(xml, LinqToXsdTypeManager.Instance);
+            return XTypedServices.Parse<minExclusive, W3C.XSD.facet>(xml, LinqToXsdTypeManager.Instance);
         }
         
         public override XTypedElement Clone() {
-            return new minExclusive(((facet)(this.Content.Clone())));
+            return new minExclusive(((W3C.XSD.facet)(this.Content.Clone())));
         }
         
-        private void SetInnerType(facet ContentField) {
-            this.ContentField = ((facet)(XTypedServices.GetCloneIfRooted(ContentField)));
+        private void SetInnerType(W3C.XSD.facet ContentField) {
+            this.ContentField = ((W3C.XSD.facet)(XTypedServices.GetCloneIfRooted(ContentField)));
             XTypedServices.SetName(this, this.ContentField);
         }
         
@@ -10199,15 +10199,15 @@ namespace W3C.XSD {
     public partial class minInclusive : XTypedElement, IXMetaData {
         
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
-        private facet ContentField;
+        private W3C.XSD.facet ContentField;
         
-		public static explicit operator minInclusive(XElement xe) { return XTypedServices.ToXTypedElement<minInclusive, facet>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+		public static explicit operator minInclusive(XElement xe) { return XTypedServices.ToXTypedElement<minInclusive, W3C.XSD.facet>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         public minInclusive() {
-            SetInnerType(new facet());
+            SetInnerType(new W3C.XSD.facet());
         }
         
-        public minInclusive(facet content) {
+        public minInclusive(W3C.XSD.facet content) {
             SetInnerType(content);
         }
         
@@ -10221,7 +10221,7 @@ namespace W3C.XSD {
             }
         }
         
-        public virtual facet Content {
+        public virtual W3C.XSD.facet Content {
             get {
                 return ContentField;
             }
@@ -10302,23 +10302,23 @@ namespace W3C.XSD {
         }
         
         public static minInclusive Load(string xmlFile) {
-            return XTypedServices.Load<minInclusive, facet>(xmlFile, LinqToXsdTypeManager.Instance);
+            return XTypedServices.Load<minInclusive, W3C.XSD.facet>(xmlFile, LinqToXsdTypeManager.Instance);
         }
         
         public static minInclusive Load(System.IO.TextReader xmlFile) {
-            return XTypedServices.Load<minInclusive, facet>(xmlFile, LinqToXsdTypeManager.Instance);
+            return XTypedServices.Load<minInclusive, W3C.XSD.facet>(xmlFile, LinqToXsdTypeManager.Instance);
         }
         
         public static minInclusive Parse(string xml) {
-            return XTypedServices.Parse<minInclusive, facet>(xml, LinqToXsdTypeManager.Instance);
+            return XTypedServices.Parse<minInclusive, W3C.XSD.facet>(xml, LinqToXsdTypeManager.Instance);
         }
         
         public override XTypedElement Clone() {
-            return new minInclusive(((facet)(this.Content.Clone())));
+            return new minInclusive(((W3C.XSD.facet)(this.Content.Clone())));
         }
         
-        private void SetInnerType(facet ContentField) {
-            this.ContentField = ((facet)(XTypedServices.GetCloneIfRooted(ContentField)));
+        private void SetInnerType(W3C.XSD.facet ContentField) {
+            this.ContentField = ((W3C.XSD.facet)(XTypedServices.GetCloneIfRooted(ContentField)));
             XTypedServices.SetName(this, this.ContentField);
         }
         
@@ -10330,15 +10330,15 @@ namespace W3C.XSD {
     public partial class maxExclusive : XTypedElement, IXMetaData {
         
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
-        private facet ContentField;
+        private W3C.XSD.facet ContentField;
         
-		public static explicit operator maxExclusive(XElement xe) { return XTypedServices.ToXTypedElement<maxExclusive, facet>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+		public static explicit operator maxExclusive(XElement xe) { return XTypedServices.ToXTypedElement<maxExclusive, W3C.XSD.facet>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         public maxExclusive() {
-            SetInnerType(new facet());
+            SetInnerType(new W3C.XSD.facet());
         }
         
-        public maxExclusive(facet content) {
+        public maxExclusive(W3C.XSD.facet content) {
             SetInnerType(content);
         }
         
@@ -10352,7 +10352,7 @@ namespace W3C.XSD {
             }
         }
         
-        public virtual facet Content {
+        public virtual W3C.XSD.facet Content {
             get {
                 return ContentField;
             }
@@ -10433,23 +10433,23 @@ namespace W3C.XSD {
         }
         
         public static maxExclusive Load(string xmlFile) {
-            return XTypedServices.Load<maxExclusive, facet>(xmlFile, LinqToXsdTypeManager.Instance);
+            return XTypedServices.Load<maxExclusive, W3C.XSD.facet>(xmlFile, LinqToXsdTypeManager.Instance);
         }
         
         public static maxExclusive Load(System.IO.TextReader xmlFile) {
-            return XTypedServices.Load<maxExclusive, facet>(xmlFile, LinqToXsdTypeManager.Instance);
+            return XTypedServices.Load<maxExclusive, W3C.XSD.facet>(xmlFile, LinqToXsdTypeManager.Instance);
         }
         
         public static maxExclusive Parse(string xml) {
-            return XTypedServices.Parse<maxExclusive, facet>(xml, LinqToXsdTypeManager.Instance);
+            return XTypedServices.Parse<maxExclusive, W3C.XSD.facet>(xml, LinqToXsdTypeManager.Instance);
         }
         
         public override XTypedElement Clone() {
-            return new maxExclusive(((facet)(this.Content.Clone())));
+            return new maxExclusive(((W3C.XSD.facet)(this.Content.Clone())));
         }
         
-        private void SetInnerType(facet ContentField) {
-            this.ContentField = ((facet)(XTypedServices.GetCloneIfRooted(ContentField)));
+        private void SetInnerType(W3C.XSD.facet ContentField) {
+            this.ContentField = ((W3C.XSD.facet)(XTypedServices.GetCloneIfRooted(ContentField)));
             XTypedServices.SetName(this, this.ContentField);
         }
         
@@ -10461,15 +10461,15 @@ namespace W3C.XSD {
     public partial class maxInclusive : XTypedElement, IXMetaData {
         
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
-        private facet ContentField;
+        private W3C.XSD.facet ContentField;
         
-		public static explicit operator maxInclusive(XElement xe) { return XTypedServices.ToXTypedElement<maxInclusive, facet>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+		public static explicit operator maxInclusive(XElement xe) { return XTypedServices.ToXTypedElement<maxInclusive, W3C.XSD.facet>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         public maxInclusive() {
-            SetInnerType(new facet());
+            SetInnerType(new W3C.XSD.facet());
         }
         
-        public maxInclusive(facet content) {
+        public maxInclusive(W3C.XSD.facet content) {
             SetInnerType(content);
         }
         
@@ -10483,7 +10483,7 @@ namespace W3C.XSD {
             }
         }
         
-        public virtual facet Content {
+        public virtual W3C.XSD.facet Content {
             get {
                 return ContentField;
             }
@@ -10564,23 +10564,23 @@ namespace W3C.XSD {
         }
         
         public static maxInclusive Load(string xmlFile) {
-            return XTypedServices.Load<maxInclusive, facet>(xmlFile, LinqToXsdTypeManager.Instance);
+            return XTypedServices.Load<maxInclusive, W3C.XSD.facet>(xmlFile, LinqToXsdTypeManager.Instance);
         }
         
         public static maxInclusive Load(System.IO.TextReader xmlFile) {
-            return XTypedServices.Load<maxInclusive, facet>(xmlFile, LinqToXsdTypeManager.Instance);
+            return XTypedServices.Load<maxInclusive, W3C.XSD.facet>(xmlFile, LinqToXsdTypeManager.Instance);
         }
         
         public static maxInclusive Parse(string xml) {
-            return XTypedServices.Parse<maxInclusive, facet>(xml, LinqToXsdTypeManager.Instance);
+            return XTypedServices.Parse<maxInclusive, W3C.XSD.facet>(xml, LinqToXsdTypeManager.Instance);
         }
         
         public override XTypedElement Clone() {
-            return new maxInclusive(((facet)(this.Content.Clone())));
+            return new maxInclusive(((W3C.XSD.facet)(this.Content.Clone())));
         }
         
-        private void SetInnerType(facet ContentField) {
-            this.ContentField = ((facet)(XTypedServices.GetCloneIfRooted(ContentField)));
+        private void SetInnerType(W3C.XSD.facet ContentField) {
+            this.ContentField = ((W3C.XSD.facet)(XTypedServices.GetCloneIfRooted(ContentField)));
             XTypedServices.SetName(this, this.ContentField);
         }
         
@@ -10592,15 +10592,15 @@ namespace W3C.XSD {
     public partial class fractionDigits : XTypedElement, IXMetaData {
         
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
-        private numFacet ContentField;
+        private W3C.XSD.numFacet ContentField;
         
-		public static explicit operator fractionDigits(XElement xe) { return XTypedServices.ToXTypedElement<fractionDigits, numFacet>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+		public static explicit operator fractionDigits(XElement xe) { return XTypedServices.ToXTypedElement<fractionDigits, W3C.XSD.numFacet>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         public fractionDigits() {
-            SetInnerType(new numFacet());
+            SetInnerType(new W3C.XSD.numFacet());
         }
         
-        public fractionDigits(numFacet content) {
+        public fractionDigits(W3C.XSD.numFacet content) {
             SetInnerType(content);
         }
         
@@ -10614,7 +10614,7 @@ namespace W3C.XSD {
             }
         }
         
-        public virtual numFacet Content {
+        public virtual W3C.XSD.numFacet Content {
             get {
                 return ContentField;
             }
@@ -10667,23 +10667,23 @@ namespace W3C.XSD {
         }
         
         public static fractionDigits Load(string xmlFile) {
-            return XTypedServices.Load<fractionDigits, numFacet>(xmlFile, LinqToXsdTypeManager.Instance);
+            return XTypedServices.Load<fractionDigits, W3C.XSD.numFacet>(xmlFile, LinqToXsdTypeManager.Instance);
         }
         
         public static fractionDigits Load(System.IO.TextReader xmlFile) {
-            return XTypedServices.Load<fractionDigits, numFacet>(xmlFile, LinqToXsdTypeManager.Instance);
+            return XTypedServices.Load<fractionDigits, W3C.XSD.numFacet>(xmlFile, LinqToXsdTypeManager.Instance);
         }
         
         public static fractionDigits Parse(string xml) {
-            return XTypedServices.Parse<fractionDigits, numFacet>(xml, LinqToXsdTypeManager.Instance);
+            return XTypedServices.Parse<fractionDigits, W3C.XSD.numFacet>(xml, LinqToXsdTypeManager.Instance);
         }
         
         public override XTypedElement Clone() {
-            return new fractionDigits(((numFacet)(this.Content.Clone())));
+            return new fractionDigits(((W3C.XSD.numFacet)(this.Content.Clone())));
         }
         
-        private void SetInnerType(numFacet ContentField) {
-            this.ContentField = ((numFacet)(XTypedServices.GetCloneIfRooted(ContentField)));
+        private void SetInnerType(W3C.XSD.numFacet ContentField) {
+            this.ContentField = ((W3C.XSD.numFacet)(XTypedServices.GetCloneIfRooted(ContentField)));
             XTypedServices.SetName(this, this.ContentField);
         }
         
@@ -10695,15 +10695,15 @@ namespace W3C.XSD {
     public partial class length : XTypedElement, IXMetaData {
         
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
-        private numFacet ContentField;
+        private W3C.XSD.numFacet ContentField;
         
-		public static explicit operator length(XElement xe) { return XTypedServices.ToXTypedElement<length, numFacet>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+		public static explicit operator length(XElement xe) { return XTypedServices.ToXTypedElement<length, W3C.XSD.numFacet>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         public length() {
-            SetInnerType(new numFacet());
+            SetInnerType(new W3C.XSD.numFacet());
         }
         
-        public length(numFacet content) {
+        public length(W3C.XSD.numFacet content) {
             SetInnerType(content);
         }
         
@@ -10717,7 +10717,7 @@ namespace W3C.XSD {
             }
         }
         
-        public virtual numFacet Content {
+        public virtual W3C.XSD.numFacet Content {
             get {
                 return ContentField;
             }
@@ -10770,23 +10770,23 @@ namespace W3C.XSD {
         }
         
         public static length Load(string xmlFile) {
-            return XTypedServices.Load<length, numFacet>(xmlFile, LinqToXsdTypeManager.Instance);
+            return XTypedServices.Load<length, W3C.XSD.numFacet>(xmlFile, LinqToXsdTypeManager.Instance);
         }
         
         public static length Load(System.IO.TextReader xmlFile) {
-            return XTypedServices.Load<length, numFacet>(xmlFile, LinqToXsdTypeManager.Instance);
+            return XTypedServices.Load<length, W3C.XSD.numFacet>(xmlFile, LinqToXsdTypeManager.Instance);
         }
         
         public static length Parse(string xml) {
-            return XTypedServices.Parse<length, numFacet>(xml, LinqToXsdTypeManager.Instance);
+            return XTypedServices.Parse<length, W3C.XSD.numFacet>(xml, LinqToXsdTypeManager.Instance);
         }
         
         public override XTypedElement Clone() {
-            return new length(((numFacet)(this.Content.Clone())));
+            return new length(((W3C.XSD.numFacet)(this.Content.Clone())));
         }
         
-        private void SetInnerType(numFacet ContentField) {
-            this.ContentField = ((numFacet)(XTypedServices.GetCloneIfRooted(ContentField)));
+        private void SetInnerType(W3C.XSD.numFacet ContentField) {
+            this.ContentField = ((W3C.XSD.numFacet)(XTypedServices.GetCloneIfRooted(ContentField)));
             XTypedServices.SetName(this, this.ContentField);
         }
         
@@ -10798,15 +10798,15 @@ namespace W3C.XSD {
     public partial class minLength : XTypedElement, IXMetaData {
         
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
-        private numFacet ContentField;
+        private W3C.XSD.numFacet ContentField;
         
-		public static explicit operator minLength(XElement xe) { return XTypedServices.ToXTypedElement<minLength, numFacet>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+		public static explicit operator minLength(XElement xe) { return XTypedServices.ToXTypedElement<minLength, W3C.XSD.numFacet>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         public minLength() {
-            SetInnerType(new numFacet());
+            SetInnerType(new W3C.XSD.numFacet());
         }
         
-        public minLength(numFacet content) {
+        public minLength(W3C.XSD.numFacet content) {
             SetInnerType(content);
         }
         
@@ -10820,7 +10820,7 @@ namespace W3C.XSD {
             }
         }
         
-        public virtual numFacet Content {
+        public virtual W3C.XSD.numFacet Content {
             get {
                 return ContentField;
             }
@@ -10873,23 +10873,23 @@ namespace W3C.XSD {
         }
         
         public static minLength Load(string xmlFile) {
-            return XTypedServices.Load<minLength, numFacet>(xmlFile, LinqToXsdTypeManager.Instance);
+            return XTypedServices.Load<minLength, W3C.XSD.numFacet>(xmlFile, LinqToXsdTypeManager.Instance);
         }
         
         public static minLength Load(System.IO.TextReader xmlFile) {
-            return XTypedServices.Load<minLength, numFacet>(xmlFile, LinqToXsdTypeManager.Instance);
+            return XTypedServices.Load<minLength, W3C.XSD.numFacet>(xmlFile, LinqToXsdTypeManager.Instance);
         }
         
         public static minLength Parse(string xml) {
-            return XTypedServices.Parse<minLength, numFacet>(xml, LinqToXsdTypeManager.Instance);
+            return XTypedServices.Parse<minLength, W3C.XSD.numFacet>(xml, LinqToXsdTypeManager.Instance);
         }
         
         public override XTypedElement Clone() {
-            return new minLength(((numFacet)(this.Content.Clone())));
+            return new minLength(((W3C.XSD.numFacet)(this.Content.Clone())));
         }
         
-        private void SetInnerType(numFacet ContentField) {
-            this.ContentField = ((numFacet)(XTypedServices.GetCloneIfRooted(ContentField)));
+        private void SetInnerType(W3C.XSD.numFacet ContentField) {
+            this.ContentField = ((W3C.XSD.numFacet)(XTypedServices.GetCloneIfRooted(ContentField)));
             XTypedServices.SetName(this, this.ContentField);
         }
         
@@ -10901,15 +10901,15 @@ namespace W3C.XSD {
     public partial class maxLength : XTypedElement, IXMetaData {
         
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
-        private numFacet ContentField;
+        private W3C.XSD.numFacet ContentField;
         
-		public static explicit operator maxLength(XElement xe) { return XTypedServices.ToXTypedElement<maxLength, numFacet>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+		public static explicit operator maxLength(XElement xe) { return XTypedServices.ToXTypedElement<maxLength, W3C.XSD.numFacet>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         public maxLength() {
-            SetInnerType(new numFacet());
+            SetInnerType(new W3C.XSD.numFacet());
         }
         
-        public maxLength(numFacet content) {
+        public maxLength(W3C.XSD.numFacet content) {
             SetInnerType(content);
         }
         
@@ -10923,7 +10923,7 @@ namespace W3C.XSD {
             }
         }
         
-        public virtual numFacet Content {
+        public virtual W3C.XSD.numFacet Content {
             get {
                 return ContentField;
             }
@@ -10976,23 +10976,23 @@ namespace W3C.XSD {
         }
         
         public static maxLength Load(string xmlFile) {
-            return XTypedServices.Load<maxLength, numFacet>(xmlFile, LinqToXsdTypeManager.Instance);
+            return XTypedServices.Load<maxLength, W3C.XSD.numFacet>(xmlFile, LinqToXsdTypeManager.Instance);
         }
         
         public static maxLength Load(System.IO.TextReader xmlFile) {
-            return XTypedServices.Load<maxLength, numFacet>(xmlFile, LinqToXsdTypeManager.Instance);
+            return XTypedServices.Load<maxLength, W3C.XSD.numFacet>(xmlFile, LinqToXsdTypeManager.Instance);
         }
         
         public static maxLength Parse(string xml) {
-            return XTypedServices.Parse<maxLength, numFacet>(xml, LinqToXsdTypeManager.Instance);
+            return XTypedServices.Parse<maxLength, W3C.XSD.numFacet>(xml, LinqToXsdTypeManager.Instance);
         }
         
         public override XTypedElement Clone() {
-            return new maxLength(((numFacet)(this.Content.Clone())));
+            return new maxLength(((W3C.XSD.numFacet)(this.Content.Clone())));
         }
         
-        private void SetInnerType(numFacet ContentField) {
-            this.ContentField = ((numFacet)(XTypedServices.GetCloneIfRooted(ContentField)));
+        private void SetInnerType(W3C.XSD.numFacet ContentField) {
+            this.ContentField = ((W3C.XSD.numFacet)(XTypedServices.GetCloneIfRooted(ContentField)));
             XTypedServices.SetName(this, this.ContentField);
         }
         
@@ -11004,15 +11004,15 @@ namespace W3C.XSD {
     public partial class enumeration : XTypedElement, IXMetaData {
         
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
-        private noFixedFacet ContentField;
+        private W3C.XSD.noFixedFacet ContentField;
         
-		public static explicit operator enumeration(XElement xe) { return XTypedServices.ToXTypedElement<enumeration, noFixedFacet>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+		public static explicit operator enumeration(XElement xe) { return XTypedServices.ToXTypedElement<enumeration, W3C.XSD.noFixedFacet>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         public enumeration() {
-            SetInnerType(new noFixedFacet());
+            SetInnerType(new W3C.XSD.noFixedFacet());
         }
         
-        public enumeration(noFixedFacet content) {
+        public enumeration(W3C.XSD.noFixedFacet content) {
             SetInnerType(content);
         }
         
@@ -11026,7 +11026,7 @@ namespace W3C.XSD {
             }
         }
         
-        public virtual noFixedFacet Content {
+        public virtual W3C.XSD.noFixedFacet Content {
             get {
                 return ContentField;
             }
@@ -11079,23 +11079,23 @@ namespace W3C.XSD {
         }
         
         public static enumeration Load(string xmlFile) {
-            return XTypedServices.Load<enumeration, noFixedFacet>(xmlFile, LinqToXsdTypeManager.Instance);
+            return XTypedServices.Load<enumeration, W3C.XSD.noFixedFacet>(xmlFile, LinqToXsdTypeManager.Instance);
         }
         
         public static enumeration Load(System.IO.TextReader xmlFile) {
-            return XTypedServices.Load<enumeration, noFixedFacet>(xmlFile, LinqToXsdTypeManager.Instance);
+            return XTypedServices.Load<enumeration, W3C.XSD.noFixedFacet>(xmlFile, LinqToXsdTypeManager.Instance);
         }
         
         public static enumeration Parse(string xml) {
-            return XTypedServices.Parse<enumeration, noFixedFacet>(xml, LinqToXsdTypeManager.Instance);
+            return XTypedServices.Parse<enumeration, W3C.XSD.noFixedFacet>(xml, LinqToXsdTypeManager.Instance);
         }
         
         public override XTypedElement Clone() {
-            return new enumeration(((noFixedFacet)(this.Content.Clone())));
+            return new enumeration(((W3C.XSD.noFixedFacet)(this.Content.Clone())));
         }
         
-        private void SetInnerType(noFixedFacet ContentField) {
-            this.ContentField = ((noFixedFacet)(XTypedServices.GetCloneIfRooted(ContentField)));
+        private void SetInnerType(W3C.XSD.noFixedFacet ContentField) {
+            this.ContentField = ((W3C.XSD.noFixedFacet)(XTypedServices.GetCloneIfRooted(ContentField)));
             XTypedServices.SetName(this, this.ContentField);
         }
         
@@ -11242,27 +11242,27 @@ namespace W3C.XSD {
         }
         
         private static void BuildWrapperDictionary() {
-            wrapperDictionary.Add(typeof(W3C.XSD.anyAttribute), typeof(global::W3C.XSD.wildcard));
-            wrapperDictionary.Add(typeof(W3C.XSD.complexType), typeof(global::W3C.XSD.topLevelComplexType));
-            wrapperDictionary.Add(typeof(W3C.XSD.element), typeof(global::W3C.XSD.topLevelElement));
-            wrapperDictionary.Add(typeof(W3C.XSD.all), typeof(global::W3C.XSD.allType));
-            wrapperDictionary.Add(typeof(W3C.XSD.choice), typeof(global::W3C.XSD.explicitGroup));
-            wrapperDictionary.Add(typeof(W3C.XSD.sequence), typeof(global::W3C.XSD.explicitGroup));
-            wrapperDictionary.Add(typeof(W3C.XSD.group), typeof(global::W3C.XSD.namedGroup));
-            wrapperDictionary.Add(typeof(W3C.XSD.attribute), typeof(global::W3C.XSD.topLevelAttribute));
-            wrapperDictionary.Add(typeof(W3C.XSD.attributeGroup), typeof(global::W3C.XSD.namedAttributeGroup));
-            wrapperDictionary.Add(typeof(W3C.XSD.unique), typeof(global::W3C.XSD.keybase));
-            wrapperDictionary.Add(typeof(W3C.XSD.key), typeof(global::W3C.XSD.keybase));
-            wrapperDictionary.Add(typeof(W3C.XSD.simpleType), typeof(global::W3C.XSD.topLevelSimpleType));
-            wrapperDictionary.Add(typeof(W3C.XSD.minExclusive), typeof(global::W3C.XSD.facet));
-            wrapperDictionary.Add(typeof(W3C.XSD.minInclusive), typeof(global::W3C.XSD.facet));
-            wrapperDictionary.Add(typeof(W3C.XSD.maxExclusive), typeof(global::W3C.XSD.facet));
-            wrapperDictionary.Add(typeof(W3C.XSD.maxInclusive), typeof(global::W3C.XSD.facet));
-            wrapperDictionary.Add(typeof(W3C.XSD.fractionDigits), typeof(global::W3C.XSD.numFacet));
-            wrapperDictionary.Add(typeof(W3C.XSD.length), typeof(global::W3C.XSD.numFacet));
-            wrapperDictionary.Add(typeof(W3C.XSD.minLength), typeof(global::W3C.XSD.numFacet));
-            wrapperDictionary.Add(typeof(W3C.XSD.maxLength), typeof(global::W3C.XSD.numFacet));
-            wrapperDictionary.Add(typeof(W3C.XSD.enumeration), typeof(global::W3C.XSD.noFixedFacet));
+            wrapperDictionary.Add(typeof(W3C.XSD.anyAttribute), typeof(void));
+            wrapperDictionary.Add(typeof(W3C.XSD.complexType), typeof(void));
+            wrapperDictionary.Add(typeof(W3C.XSD.element), typeof(void));
+            wrapperDictionary.Add(typeof(W3C.XSD.all), typeof(void));
+            wrapperDictionary.Add(typeof(W3C.XSD.choice), typeof(void));
+            wrapperDictionary.Add(typeof(W3C.XSD.sequence), typeof(void));
+            wrapperDictionary.Add(typeof(W3C.XSD.group), typeof(void));
+            wrapperDictionary.Add(typeof(W3C.XSD.attribute), typeof(void));
+            wrapperDictionary.Add(typeof(W3C.XSD.attributeGroup), typeof(void));
+            wrapperDictionary.Add(typeof(W3C.XSD.unique), typeof(void));
+            wrapperDictionary.Add(typeof(W3C.XSD.key), typeof(void));
+            wrapperDictionary.Add(typeof(W3C.XSD.simpleType), typeof(void));
+            wrapperDictionary.Add(typeof(W3C.XSD.minExclusive), typeof(void));
+            wrapperDictionary.Add(typeof(W3C.XSD.minInclusive), typeof(void));
+            wrapperDictionary.Add(typeof(W3C.XSD.maxExclusive), typeof(void));
+            wrapperDictionary.Add(typeof(W3C.XSD.maxInclusive), typeof(void));
+            wrapperDictionary.Add(typeof(W3C.XSD.fractionDigits), typeof(void));
+            wrapperDictionary.Add(typeof(W3C.XSD.length), typeof(void));
+            wrapperDictionary.Add(typeof(W3C.XSD.minLength), typeof(void));
+            wrapperDictionary.Add(typeof(W3C.XSD.maxLength), typeof(void));
+            wrapperDictionary.Add(typeof(W3C.XSD.enumeration), typeof(void));
         }
         
         protected internal static void AddSchemas(XmlSchemaSet schemas) {
