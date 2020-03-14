@@ -56,10 +56,10 @@ namespace OutlineProcessorML {
         /// Regular expression: (head, body)
         /// </para>
         /// </summary>
-        public virtual OutlineProcessorML.Head head {
+        public virtual Head head {
             get {
                 XElement x = this.GetElement(System.Xml.Linq.XName.Get("head", ""));
-                return ((OutlineProcessorML.Head)(x));
+                return ((Head)(x));
             }
             set {
                 this.SetElement(System.Xml.Linq.XName.Get("head", ""), value);
@@ -74,10 +74,10 @@ namespace OutlineProcessorML {
         /// Regular expression: (head, body)
         /// </para>
         /// </summary>
-        public virtual OutlineProcessorML.Body body {
+        public virtual Body body {
             get {
                 XElement x = this.GetElement(System.Xml.Linq.XName.Get("body", ""));
-                return ((OutlineProcessorML.Body)(x));
+                return ((Body)(x));
             }
             set {
                 this.SetElement(System.Xml.Linq.XName.Get("body", ""), value);
@@ -132,8 +132,8 @@ namespace OutlineProcessorML {
         }
         
         private static void BuildElementDictionary() {
-            localElementDictionary.Add(System.Xml.Linq.XName.Get("head", ""), typeof(OutlineProcessorML.Head));
-            localElementDictionary.Add(System.Xml.Linq.XName.Get("body", ""), typeof(OutlineProcessorML.Body));
+            localElementDictionary.Add(System.Xml.Linq.XName.Get("head", ""), typeof(Head));
+            localElementDictionary.Add(System.Xml.Linq.XName.Get("body", ""), typeof(Body));
         }
         
         ContentModelEntity IXMetaData.GetContentModel() {
@@ -149,7 +149,7 @@ namespace OutlineProcessorML {
     public partial class Body : XTypedElement, IXMetaData {
         
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
-        private XTypedList<OutlineProcessorML.Outline> outlineField;
+        private XTypedList<Outline> outlineField;
         
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         private static Dictionary<System.Xml.Linq.XName, System.Type> localElementDictionary = new Dictionary<System.Xml.Linq.XName, System.Type>();
@@ -180,10 +180,10 @@ namespace OutlineProcessorML {
         /// Regular expression: (outline+)
         /// </para>
         /// </summary>
-        public virtual IList<OutlineProcessorML.Outline> outline {
+        public virtual IList<Outline> outline {
             get {
                 if ((this.outlineField == null)) {
-                    this.outlineField = new XTypedList<OutlineProcessorML.Outline>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("outline", ""));
+                    this.outlineField = new XTypedList<Outline>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("outline", ""));
                 }
                 return this.outlineField;
             }
@@ -193,10 +193,10 @@ namespace OutlineProcessorML {
                 }
                 else {
                     if ((this.outlineField == null)) {
-                        this.outlineField = XTypedList<OutlineProcessorML.Outline>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("outline", ""));
+                        this.outlineField = XTypedList<Outline>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("outline", ""));
                     }
                     else {
-                        XTypedServices.SetList<OutlineProcessorML.Outline>(this.outlineField, value);
+                        XTypedServices.SetList<Outline>(this.outlineField, value);
                     }
                 }
             }
@@ -235,7 +235,7 @@ namespace OutlineProcessorML {
         }
         
         private static void BuildElementDictionary() {
-            localElementDictionary.Add(System.Xml.Linq.XName.Get("outline", ""), typeof(OutlineProcessorML.Outline));
+            localElementDictionary.Add(System.Xml.Linq.XName.Get("outline", ""), typeof(Outline));
         }
         
         ContentModelEntity IXMetaData.GetContentModel() {
@@ -581,7 +581,7 @@ namespace OutlineProcessorML {
     public partial class Outline : XTypedElement, IXMetaData {
         
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
-        private XTypedList<OutlineProcessorML.Outline> outline1Field;
+        private XTypedList<Outline> outline1Field;
         
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         private static bool isCommentDefaultValue = System.Xml.XmlConvert.ToBoolean("false");
@@ -618,10 +618,10 @@ namespace OutlineProcessorML {
         /// Regular expression: (outline1*)
         /// </para>
         /// </summary>
-        public virtual IList<OutlineProcessorML.Outline> outline1 {
+        public virtual IList<Outline> outline1 {
             get {
                 if ((this.outline1Field == null)) {
-                    this.outline1Field = new XTypedList<OutlineProcessorML.Outline>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("outline", ""));
+                    this.outline1Field = new XTypedList<Outline>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("outline", ""));
                 }
                 return this.outline1Field;
             }
@@ -631,10 +631,10 @@ namespace OutlineProcessorML {
                 }
                 else {
                     if ((this.outline1Field == null)) {
-                        this.outline1Field = XTypedList<OutlineProcessorML.Outline>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("outline", ""));
+                        this.outline1Field = XTypedList<Outline>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("outline", ""));
                     }
                     else {
-                        XTypedServices.SetList<OutlineProcessorML.Outline>(this.outline1Field, value);
+                        XTypedServices.SetList<Outline>(this.outline1Field, value);
                     }
                 }
             }
@@ -868,7 +868,7 @@ namespace OutlineProcessorML {
         }
         
         private static void BuildElementDictionary() {
-            localElementDictionary.Add(System.Xml.Linq.XName.Get("outline", ""), typeof(OutlineProcessorML.Outline));
+            localElementDictionary.Add(System.Xml.Linq.XName.Get("outline", ""), typeof(Outline));
         }
         
         ContentModelEntity IXMetaData.GetContentModel() {
@@ -932,15 +932,15 @@ namespace OutlineProcessorML {
     public partial class opml : XTypedElement, IXMetaData {
         
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
-        private OutlineProcessorML.OPML ContentField;
+        private OPML ContentField;
         
-		public static explicit operator opml(XElement xe) { return XTypedServices.ToXTypedElement<opml, OutlineProcessorML.OPML>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+		public static explicit operator opml(XElement xe) { return XTypedServices.ToXTypedElement<opml, OPML>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         public opml() {
-            SetInnerType(new OutlineProcessorML.OPML());
+            SetInnerType(new OPML());
         }
         
-        public opml(OutlineProcessorML.OPML content) {
+        public opml(OPML content) {
             SetInnerType(content);
         }
         
@@ -954,7 +954,7 @@ namespace OutlineProcessorML {
             }
         }
         
-        public virtual OutlineProcessorML.OPML Content {
+        public virtual OPML Content {
             get {
                 return ContentField;
             }
@@ -968,7 +968,7 @@ namespace OutlineProcessorML {
         /// Regular expression: (head, body)
         /// </para>
         /// </summary>
-        public virtual OutlineProcessorML.Head head {
+        public virtual Head head {
             get {
                 return this.ContentField.head;
             }
@@ -985,7 +985,7 @@ namespace OutlineProcessorML {
         /// Regular expression: (head, body)
         /// </para>
         /// </summary>
-        public virtual OutlineProcessorML.Body body {
+        public virtual Body body {
             get {
                 return this.ContentField.body;
             }
@@ -1055,23 +1055,23 @@ namespace OutlineProcessorML {
         }
         
         public static opml Load(string xmlFile) {
-            return XTypedServices.Load<opml, OutlineProcessorML.OPML>(xmlFile, LinqToXsdTypeManager.Instance);
+            return XTypedServices.Load<opml, OPML>(xmlFile, LinqToXsdTypeManager.Instance);
         }
         
         public static opml Load(System.IO.TextReader xmlFile) {
-            return XTypedServices.Load<opml, OutlineProcessorML.OPML>(xmlFile, LinqToXsdTypeManager.Instance);
+            return XTypedServices.Load<opml, OPML>(xmlFile, LinqToXsdTypeManager.Instance);
         }
         
         public static opml Parse(string xml) {
-            return XTypedServices.Parse<opml, OutlineProcessorML.OPML>(xml, LinqToXsdTypeManager.Instance);
+            return XTypedServices.Parse<opml, OPML>(xml, LinqToXsdTypeManager.Instance);
         }
         
         public override XTypedElement Clone() {
-            return new opml(((OutlineProcessorML.OPML)(this.Content.Clone())));
+            return new opml(((OPML)(this.Content.Clone())));
         }
         
-        private void SetInnerType(OutlineProcessorML.OPML ContentField) {
-            this.ContentField = ((OutlineProcessorML.OPML)(XTypedServices.GetCloneIfRooted(ContentField)));
+        private void SetInnerType(OPML ContentField) {
+            this.ContentField = ((OPML)(XTypedServices.GetCloneIfRooted(ContentField)));
             XTypedServices.SetName(this, this.ContentField);
         }
         
@@ -1148,7 +1148,7 @@ namespace OutlineProcessorML {
         }
         
         private static void BuildWrapperDictionary() {
-            wrapperDictionary.Add(typeof(OutlineProcessorML.opml), typeof(void));
+            wrapperDictionary.Add(typeof(OutlineProcessorML.opml), typeof(global::OutlineProcessorML.OPML));
         }
         
         protected internal static void AddSchemas(XmlSchemaSet schemas) {

@@ -164,7 +164,7 @@ namespace W3C.Atom {
         private XSimpleList<string> nameField;
         
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
-        private XTypedList<W3C.Atom.uriType> uriField;
+        private XTypedList<uriType> uriField;
         
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         private XSimpleList<string> emailField;
@@ -233,10 +233,10 @@ namespace W3C.Atom {
         /// Regular expression: (name | uri? | email? | any)+
         /// </para>
         /// </summary>
-        public virtual IList<W3C.Atom.uriType> uri {
+        public virtual IList<uriType> uri {
             get {
                 if ((this.uriField == null)) {
-                    this.uriField = new XTypedList<W3C.Atom.uriType>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("uri", "http://www.w3.org/2005/Atom"));
+                    this.uriField = new XTypedList<uriType>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("uri", "http://www.w3.org/2005/Atom"));
                 }
                 return this.uriField;
             }
@@ -246,10 +246,10 @@ namespace W3C.Atom {
                 }
                 else {
                     if ((this.uriField == null)) {
-                        this.uriField = XTypedList<W3C.Atom.uriType>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("uri", "http://www.w3.org/2005/Atom"));
+                        this.uriField = XTypedList<uriType>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("uri", "http://www.w3.org/2005/Atom"));
                     }
                     else {
-                        XTypedServices.SetList<W3C.Atom.uriType>(this.uriField, value);
+                        XTypedServices.SetList<uriType>(this.uriField, value);
                     }
                 }
             }
@@ -360,7 +360,7 @@ namespace W3C.Atom {
         
         private static void BuildElementDictionary() {
             localElementDictionary.Add(System.Xml.Linq.XName.Get("name", "http://www.w3.org/2005/Atom"), typeof(string));
-            localElementDictionary.Add(System.Xml.Linq.XName.Get("uri", "http://www.w3.org/2005/Atom"), typeof(W3C.Atom.uriType));
+            localElementDictionary.Add(System.Xml.Linq.XName.Get("uri", "http://www.w3.org/2005/Atom"), typeof(uriType));
             localElementDictionary.Add(System.Xml.Linq.XName.Get("email", "http://www.w3.org/2005/Atom"), typeof(string));
         }
         
@@ -414,43 +414,43 @@ namespace W3C.Atom {
     public partial class feedType : XTypedElement, IXMetaData {
         
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
-        private XTypedList<W3C.Atom.personType> authorField;
+        private XTypedList<personType> authorField;
         
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
-        private XTypedList<W3C.Atom.categoryType> categoryField;
+        private XTypedList<categoryType> categoryField;
         
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
-        private XTypedList<W3C.Atom.personType> contributorField;
+        private XTypedList<personType> contributorField;
         
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
-        private XTypedList<W3C.Atom.generatorType> generatorField;
+        private XTypedList<generatorType> generatorField;
         
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
-        private XTypedList<W3C.Atom.iconType> iconField;
+        private XTypedList<iconType> iconField;
         
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
-        private XTypedList<W3C.Atom.idType> idField;
+        private XTypedList<idType> idField;
         
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
-        private XTypedList<W3C.Atom.linkType> linkField;
+        private XTypedList<linkType> linkField;
         
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
-        private XTypedList<W3C.Atom.logoType> logoField;
+        private XTypedList<logoType> logoField;
         
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
-        private XTypedList<W3C.Atom.textType> rightsField;
+        private XTypedList<textType> rightsField;
         
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
-        private XTypedList<W3C.Atom.textType> subtitleField;
+        private XTypedList<textType> subtitleField;
         
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
-        private XTypedList<W3C.Atom.textType> titleField;
+        private XTypedList<textType> titleField;
         
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
-        private XTypedList<W3C.Atom.dateTimeType> updatedField;
+        private XTypedList<dateTimeType> updatedField;
         
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
-        private XTypedList<W3C.Atom.entryType> entryField;
+        private XTypedList<entryType> entryField;
         
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         private static Dictionary<System.Xml.Linq.XName, System.Type> localElementDictionary = new Dictionary<System.Xml.Linq.XName, System.Type>();
@@ -486,10 +486,10 @@ namespace W3C.Atom {
         /// Regular expression: (author* | category* | contributor* | generator? | icon? | id | link* | logo? | rights? | subtitle? | title | updated | entry* | any)+
         /// </para>
         /// </summary>
-        public virtual IList<W3C.Atom.personType> author {
+        public virtual IList<personType> author {
             get {
                 if ((this.authorField == null)) {
-                    this.authorField = new XTypedList<W3C.Atom.personType>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("author", "http://www.w3.org/2005/Atom"));
+                    this.authorField = new XTypedList<personType>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("author", "http://www.w3.org/2005/Atom"));
                 }
                 return this.authorField;
             }
@@ -499,10 +499,10 @@ namespace W3C.Atom {
                 }
                 else {
                     if ((this.authorField == null)) {
-                        this.authorField = XTypedList<W3C.Atom.personType>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("author", "http://www.w3.org/2005/Atom"));
+                        this.authorField = XTypedList<personType>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("author", "http://www.w3.org/2005/Atom"));
                     }
                     else {
-                        XTypedServices.SetList<W3C.Atom.personType>(this.authorField, value);
+                        XTypedServices.SetList<personType>(this.authorField, value);
                     }
                 }
             }
@@ -516,10 +516,10 @@ namespace W3C.Atom {
         /// Regular expression: (author* | category* | contributor* | generator? | icon? | id | link* | logo? | rights? | subtitle? | title | updated | entry* | any)+
         /// </para>
         /// </summary>
-        public virtual IList<W3C.Atom.categoryType> category {
+        public virtual IList<categoryType> category {
             get {
                 if ((this.categoryField == null)) {
-                    this.categoryField = new XTypedList<W3C.Atom.categoryType>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("category", "http://www.w3.org/2005/Atom"));
+                    this.categoryField = new XTypedList<categoryType>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("category", "http://www.w3.org/2005/Atom"));
                 }
                 return this.categoryField;
             }
@@ -529,10 +529,10 @@ namespace W3C.Atom {
                 }
                 else {
                     if ((this.categoryField == null)) {
-                        this.categoryField = XTypedList<W3C.Atom.categoryType>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("category", "http://www.w3.org/2005/Atom"));
+                        this.categoryField = XTypedList<categoryType>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("category", "http://www.w3.org/2005/Atom"));
                     }
                     else {
-                        XTypedServices.SetList<W3C.Atom.categoryType>(this.categoryField, value);
+                        XTypedServices.SetList<categoryType>(this.categoryField, value);
                     }
                 }
             }
@@ -546,10 +546,10 @@ namespace W3C.Atom {
         /// Regular expression: (author* | category* | contributor* | generator? | icon? | id | link* | logo? | rights? | subtitle? | title | updated | entry* | any)+
         /// </para>
         /// </summary>
-        public virtual IList<W3C.Atom.personType> contributor {
+        public virtual IList<personType> contributor {
             get {
                 if ((this.contributorField == null)) {
-                    this.contributorField = new XTypedList<W3C.Atom.personType>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("contributor", "http://www.w3.org/2005/Atom"));
+                    this.contributorField = new XTypedList<personType>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("contributor", "http://www.w3.org/2005/Atom"));
                 }
                 return this.contributorField;
             }
@@ -559,10 +559,10 @@ namespace W3C.Atom {
                 }
                 else {
                     if ((this.contributorField == null)) {
-                        this.contributorField = XTypedList<W3C.Atom.personType>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("contributor", "http://www.w3.org/2005/Atom"));
+                        this.contributorField = XTypedList<personType>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("contributor", "http://www.w3.org/2005/Atom"));
                     }
                     else {
-                        XTypedServices.SetList<W3C.Atom.personType>(this.contributorField, value);
+                        XTypedServices.SetList<personType>(this.contributorField, value);
                     }
                 }
             }
@@ -576,10 +576,10 @@ namespace W3C.Atom {
         /// Regular expression: (author* | category* | contributor* | generator? | icon? | id | link* | logo? | rights? | subtitle? | title | updated | entry* | any)+
         /// </para>
         /// </summary>
-        public virtual IList<W3C.Atom.generatorType> generator {
+        public virtual IList<generatorType> generator {
             get {
                 if ((this.generatorField == null)) {
-                    this.generatorField = new XTypedList<W3C.Atom.generatorType>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("generator", "http://www.w3.org/2005/Atom"));
+                    this.generatorField = new XTypedList<generatorType>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("generator", "http://www.w3.org/2005/Atom"));
                 }
                 return this.generatorField;
             }
@@ -589,10 +589,10 @@ namespace W3C.Atom {
                 }
                 else {
                     if ((this.generatorField == null)) {
-                        this.generatorField = XTypedList<W3C.Atom.generatorType>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("generator", "http://www.w3.org/2005/Atom"));
+                        this.generatorField = XTypedList<generatorType>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("generator", "http://www.w3.org/2005/Atom"));
                     }
                     else {
-                        XTypedServices.SetList<W3C.Atom.generatorType>(this.generatorField, value);
+                        XTypedServices.SetList<generatorType>(this.generatorField, value);
                     }
                 }
             }
@@ -606,10 +606,10 @@ namespace W3C.Atom {
         /// Regular expression: (author* | category* | contributor* | generator? | icon? | id | link* | logo? | rights? | subtitle? | title | updated | entry* | any)+
         /// </para>
         /// </summary>
-        public virtual IList<W3C.Atom.iconType> icon {
+        public virtual IList<iconType> icon {
             get {
                 if ((this.iconField == null)) {
-                    this.iconField = new XTypedList<W3C.Atom.iconType>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("icon", "http://www.w3.org/2005/Atom"));
+                    this.iconField = new XTypedList<iconType>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("icon", "http://www.w3.org/2005/Atom"));
                 }
                 return this.iconField;
             }
@@ -619,10 +619,10 @@ namespace W3C.Atom {
                 }
                 else {
                     if ((this.iconField == null)) {
-                        this.iconField = XTypedList<W3C.Atom.iconType>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("icon", "http://www.w3.org/2005/Atom"));
+                        this.iconField = XTypedList<iconType>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("icon", "http://www.w3.org/2005/Atom"));
                     }
                     else {
-                        XTypedServices.SetList<W3C.Atom.iconType>(this.iconField, value);
+                        XTypedServices.SetList<iconType>(this.iconField, value);
                     }
                 }
             }
@@ -636,10 +636,10 @@ namespace W3C.Atom {
         /// Regular expression: (author* | category* | contributor* | generator? | icon? | id | link* | logo? | rights? | subtitle? | title | updated | entry* | any)+
         /// </para>
         /// </summary>
-        public virtual IList<W3C.Atom.idType> id {
+        public virtual IList<idType> id {
             get {
                 if ((this.idField == null)) {
-                    this.idField = new XTypedList<W3C.Atom.idType>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("id", "http://www.w3.org/2005/Atom"));
+                    this.idField = new XTypedList<idType>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("id", "http://www.w3.org/2005/Atom"));
                 }
                 return this.idField;
             }
@@ -649,10 +649,10 @@ namespace W3C.Atom {
                 }
                 else {
                     if ((this.idField == null)) {
-                        this.idField = XTypedList<W3C.Atom.idType>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("id", "http://www.w3.org/2005/Atom"));
+                        this.idField = XTypedList<idType>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("id", "http://www.w3.org/2005/Atom"));
                     }
                     else {
-                        XTypedServices.SetList<W3C.Atom.idType>(this.idField, value);
+                        XTypedServices.SetList<idType>(this.idField, value);
                     }
                 }
             }
@@ -666,10 +666,10 @@ namespace W3C.Atom {
         /// Regular expression: (author* | category* | contributor* | generator? | icon? | id | link* | logo? | rights? | subtitle? | title | updated | entry* | any)+
         /// </para>
         /// </summary>
-        public virtual IList<W3C.Atom.linkType> link {
+        public virtual IList<linkType> link {
             get {
                 if ((this.linkField == null)) {
-                    this.linkField = new XTypedList<W3C.Atom.linkType>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("link", "http://www.w3.org/2005/Atom"));
+                    this.linkField = new XTypedList<linkType>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("link", "http://www.w3.org/2005/Atom"));
                 }
                 return this.linkField;
             }
@@ -679,10 +679,10 @@ namespace W3C.Atom {
                 }
                 else {
                     if ((this.linkField == null)) {
-                        this.linkField = XTypedList<W3C.Atom.linkType>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("link", "http://www.w3.org/2005/Atom"));
+                        this.linkField = XTypedList<linkType>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("link", "http://www.w3.org/2005/Atom"));
                     }
                     else {
-                        XTypedServices.SetList<W3C.Atom.linkType>(this.linkField, value);
+                        XTypedServices.SetList<linkType>(this.linkField, value);
                     }
                 }
             }
@@ -696,10 +696,10 @@ namespace W3C.Atom {
         /// Regular expression: (author* | category* | contributor* | generator? | icon? | id | link* | logo? | rights? | subtitle? | title | updated | entry* | any)+
         /// </para>
         /// </summary>
-        public virtual IList<W3C.Atom.logoType> logo {
+        public virtual IList<logoType> logo {
             get {
                 if ((this.logoField == null)) {
-                    this.logoField = new XTypedList<W3C.Atom.logoType>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("logo", "http://www.w3.org/2005/Atom"));
+                    this.logoField = new XTypedList<logoType>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("logo", "http://www.w3.org/2005/Atom"));
                 }
                 return this.logoField;
             }
@@ -709,10 +709,10 @@ namespace W3C.Atom {
                 }
                 else {
                     if ((this.logoField == null)) {
-                        this.logoField = XTypedList<W3C.Atom.logoType>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("logo", "http://www.w3.org/2005/Atom"));
+                        this.logoField = XTypedList<logoType>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("logo", "http://www.w3.org/2005/Atom"));
                     }
                     else {
-                        XTypedServices.SetList<W3C.Atom.logoType>(this.logoField, value);
+                        XTypedServices.SetList<logoType>(this.logoField, value);
                     }
                 }
             }
@@ -726,10 +726,10 @@ namespace W3C.Atom {
         /// Regular expression: (author* | category* | contributor* | generator? | icon? | id | link* | logo? | rights? | subtitle? | title | updated | entry* | any)+
         /// </para>
         /// </summary>
-        public virtual IList<W3C.Atom.textType> rights {
+        public virtual IList<textType> rights {
             get {
                 if ((this.rightsField == null)) {
-                    this.rightsField = new XTypedList<W3C.Atom.textType>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("rights", "http://www.w3.org/2005/Atom"));
+                    this.rightsField = new XTypedList<textType>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("rights", "http://www.w3.org/2005/Atom"));
                 }
                 return this.rightsField;
             }
@@ -739,10 +739,10 @@ namespace W3C.Atom {
                 }
                 else {
                     if ((this.rightsField == null)) {
-                        this.rightsField = XTypedList<W3C.Atom.textType>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("rights", "http://www.w3.org/2005/Atom"));
+                        this.rightsField = XTypedList<textType>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("rights", "http://www.w3.org/2005/Atom"));
                     }
                     else {
-                        XTypedServices.SetList<W3C.Atom.textType>(this.rightsField, value);
+                        XTypedServices.SetList<textType>(this.rightsField, value);
                     }
                 }
             }
@@ -756,10 +756,10 @@ namespace W3C.Atom {
         /// Regular expression: (author* | category* | contributor* | generator? | icon? | id | link* | logo? | rights? | subtitle? | title | updated | entry* | any)+
         /// </para>
         /// </summary>
-        public virtual IList<W3C.Atom.textType> subtitle {
+        public virtual IList<textType> subtitle {
             get {
                 if ((this.subtitleField == null)) {
-                    this.subtitleField = new XTypedList<W3C.Atom.textType>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("subtitle", "http://www.w3.org/2005/Atom"));
+                    this.subtitleField = new XTypedList<textType>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("subtitle", "http://www.w3.org/2005/Atom"));
                 }
                 return this.subtitleField;
             }
@@ -769,10 +769,10 @@ namespace W3C.Atom {
                 }
                 else {
                     if ((this.subtitleField == null)) {
-                        this.subtitleField = XTypedList<W3C.Atom.textType>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("subtitle", "http://www.w3.org/2005/Atom"));
+                        this.subtitleField = XTypedList<textType>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("subtitle", "http://www.w3.org/2005/Atom"));
                     }
                     else {
-                        XTypedServices.SetList<W3C.Atom.textType>(this.subtitleField, value);
+                        XTypedServices.SetList<textType>(this.subtitleField, value);
                     }
                 }
             }
@@ -786,10 +786,10 @@ namespace W3C.Atom {
         /// Regular expression: (author* | category* | contributor* | generator? | icon? | id | link* | logo? | rights? | subtitle? | title | updated | entry* | any)+
         /// </para>
         /// </summary>
-        public virtual IList<W3C.Atom.textType> title {
+        public virtual IList<textType> title {
             get {
                 if ((this.titleField == null)) {
-                    this.titleField = new XTypedList<W3C.Atom.textType>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("title", "http://www.w3.org/2005/Atom"));
+                    this.titleField = new XTypedList<textType>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("title", "http://www.w3.org/2005/Atom"));
                 }
                 return this.titleField;
             }
@@ -799,10 +799,10 @@ namespace W3C.Atom {
                 }
                 else {
                     if ((this.titleField == null)) {
-                        this.titleField = XTypedList<W3C.Atom.textType>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("title", "http://www.w3.org/2005/Atom"));
+                        this.titleField = XTypedList<textType>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("title", "http://www.w3.org/2005/Atom"));
                     }
                     else {
-                        XTypedServices.SetList<W3C.Atom.textType>(this.titleField, value);
+                        XTypedServices.SetList<textType>(this.titleField, value);
                     }
                 }
             }
@@ -816,10 +816,10 @@ namespace W3C.Atom {
         /// Regular expression: (author* | category* | contributor* | generator? | icon? | id | link* | logo? | rights? | subtitle? | title | updated | entry* | any)+
         /// </para>
         /// </summary>
-        public virtual IList<W3C.Atom.dateTimeType> updated {
+        public virtual IList<dateTimeType> updated {
             get {
                 if ((this.updatedField == null)) {
-                    this.updatedField = new XTypedList<W3C.Atom.dateTimeType>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("updated", "http://www.w3.org/2005/Atom"));
+                    this.updatedField = new XTypedList<dateTimeType>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("updated", "http://www.w3.org/2005/Atom"));
                 }
                 return this.updatedField;
             }
@@ -829,10 +829,10 @@ namespace W3C.Atom {
                 }
                 else {
                     if ((this.updatedField == null)) {
-                        this.updatedField = XTypedList<W3C.Atom.dateTimeType>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("updated", "http://www.w3.org/2005/Atom"));
+                        this.updatedField = XTypedList<dateTimeType>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("updated", "http://www.w3.org/2005/Atom"));
                     }
                     else {
-                        XTypedServices.SetList<W3C.Atom.dateTimeType>(this.updatedField, value);
+                        XTypedServices.SetList<dateTimeType>(this.updatedField, value);
                     }
                 }
             }
@@ -846,10 +846,10 @@ namespace W3C.Atom {
         /// Regular expression: (author* | category* | contributor* | generator? | icon? | id | link* | logo? | rights? | subtitle? | title | updated | entry* | any)+
         /// </para>
         /// </summary>
-        public virtual IList<W3C.Atom.entryType> entry {
+        public virtual IList<entryType> entry {
             get {
                 if ((this.entryField == null)) {
-                    this.entryField = new XTypedList<W3C.Atom.entryType>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("entry", "http://www.w3.org/2005/Atom"));
+                    this.entryField = new XTypedList<entryType>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("entry", "http://www.w3.org/2005/Atom"));
                 }
                 return this.entryField;
             }
@@ -859,10 +859,10 @@ namespace W3C.Atom {
                 }
                 else {
                     if ((this.entryField == null)) {
-                        this.entryField = XTypedList<W3C.Atom.entryType>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("entry", "http://www.w3.org/2005/Atom"));
+                        this.entryField = XTypedList<entryType>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("entry", "http://www.w3.org/2005/Atom"));
                     }
                     else {
-                        XTypedServices.SetList<W3C.Atom.entryType>(this.entryField, value);
+                        XTypedServices.SetList<entryType>(this.entryField, value);
                     }
                 }
             }
@@ -942,19 +942,19 @@ namespace W3C.Atom {
         }
         
         private static void BuildElementDictionary() {
-            localElementDictionary.Add(System.Xml.Linq.XName.Get("author", "http://www.w3.org/2005/Atom"), typeof(W3C.Atom.personType));
-            localElementDictionary.Add(System.Xml.Linq.XName.Get("category", "http://www.w3.org/2005/Atom"), typeof(W3C.Atom.categoryType));
-            localElementDictionary.Add(System.Xml.Linq.XName.Get("contributor", "http://www.w3.org/2005/Atom"), typeof(W3C.Atom.personType));
-            localElementDictionary.Add(System.Xml.Linq.XName.Get("generator", "http://www.w3.org/2005/Atom"), typeof(W3C.Atom.generatorType));
-            localElementDictionary.Add(System.Xml.Linq.XName.Get("icon", "http://www.w3.org/2005/Atom"), typeof(W3C.Atom.iconType));
-            localElementDictionary.Add(System.Xml.Linq.XName.Get("id", "http://www.w3.org/2005/Atom"), typeof(W3C.Atom.idType));
-            localElementDictionary.Add(System.Xml.Linq.XName.Get("link", "http://www.w3.org/2005/Atom"), typeof(W3C.Atom.linkType));
-            localElementDictionary.Add(System.Xml.Linq.XName.Get("logo", "http://www.w3.org/2005/Atom"), typeof(W3C.Atom.logoType));
-            localElementDictionary.Add(System.Xml.Linq.XName.Get("rights", "http://www.w3.org/2005/Atom"), typeof(W3C.Atom.textType));
-            localElementDictionary.Add(System.Xml.Linq.XName.Get("subtitle", "http://www.w3.org/2005/Atom"), typeof(W3C.Atom.textType));
-            localElementDictionary.Add(System.Xml.Linq.XName.Get("title", "http://www.w3.org/2005/Atom"), typeof(W3C.Atom.textType));
-            localElementDictionary.Add(System.Xml.Linq.XName.Get("updated", "http://www.w3.org/2005/Atom"), typeof(W3C.Atom.dateTimeType));
-            localElementDictionary.Add(System.Xml.Linq.XName.Get("entry", "http://www.w3.org/2005/Atom"), typeof(W3C.Atom.entryType));
+            localElementDictionary.Add(System.Xml.Linq.XName.Get("author", "http://www.w3.org/2005/Atom"), typeof(personType));
+            localElementDictionary.Add(System.Xml.Linq.XName.Get("category", "http://www.w3.org/2005/Atom"), typeof(categoryType));
+            localElementDictionary.Add(System.Xml.Linq.XName.Get("contributor", "http://www.w3.org/2005/Atom"), typeof(personType));
+            localElementDictionary.Add(System.Xml.Linq.XName.Get("generator", "http://www.w3.org/2005/Atom"), typeof(generatorType));
+            localElementDictionary.Add(System.Xml.Linq.XName.Get("icon", "http://www.w3.org/2005/Atom"), typeof(iconType));
+            localElementDictionary.Add(System.Xml.Linq.XName.Get("id", "http://www.w3.org/2005/Atom"), typeof(idType));
+            localElementDictionary.Add(System.Xml.Linq.XName.Get("link", "http://www.w3.org/2005/Atom"), typeof(linkType));
+            localElementDictionary.Add(System.Xml.Linq.XName.Get("logo", "http://www.w3.org/2005/Atom"), typeof(logoType));
+            localElementDictionary.Add(System.Xml.Linq.XName.Get("rights", "http://www.w3.org/2005/Atom"), typeof(textType));
+            localElementDictionary.Add(System.Xml.Linq.XName.Get("subtitle", "http://www.w3.org/2005/Atom"), typeof(textType));
+            localElementDictionary.Add(System.Xml.Linq.XName.Get("title", "http://www.w3.org/2005/Atom"), typeof(textType));
+            localElementDictionary.Add(System.Xml.Linq.XName.Get("updated", "http://www.w3.org/2005/Atom"), typeof(dateTimeType));
+            localElementDictionary.Add(System.Xml.Linq.XName.Get("entry", "http://www.w3.org/2005/Atom"), typeof(entryType));
         }
         
         FSM IXMetaData.GetValidationStates() {
@@ -1008,40 +1008,40 @@ namespace W3C.Atom {
     public partial class entryType : XTypedElement, IXMetaData {
         
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
-        private XTypedList<W3C.Atom.personType> authorField;
+        private XTypedList<personType> authorField;
         
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
-        private XTypedList<W3C.Atom.categoryType> categoryField;
+        private XTypedList<categoryType> categoryField;
         
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
-        private XTypedList<W3C.Atom.contentType> contentField;
+        private XTypedList<contentType> contentField;
         
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
-        private XTypedList<W3C.Atom.personType> contributorField;
+        private XTypedList<personType> contributorField;
         
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
-        private XTypedList<W3C.Atom.idType> idField;
+        private XTypedList<idType> idField;
         
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
-        private XTypedList<W3C.Atom.linkType> linkField;
+        private XTypedList<linkType> linkField;
         
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
-        private XTypedList<W3C.Atom.dateTimeType> publishedField;
+        private XTypedList<dateTimeType> publishedField;
         
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
-        private XTypedList<W3C.Atom.textType> rightsField;
+        private XTypedList<textType> rightsField;
         
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
-        private XTypedList<W3C.Atom.textType> sourceField;
+        private XTypedList<textType> sourceField;
         
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
-        private XTypedList<W3C.Atom.textType> summaryField;
+        private XTypedList<textType> summaryField;
         
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
-        private XTypedList<W3C.Atom.textType> titleField;
+        private XTypedList<textType> titleField;
         
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
-        private XTypedList<W3C.Atom.dateTimeType> updatedField;
+        private XTypedList<dateTimeType> updatedField;
         
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         private static Dictionary<System.Xml.Linq.XName, System.Type> localElementDictionary = new Dictionary<System.Xml.Linq.XName, System.Type>();
@@ -1077,10 +1077,10 @@ namespace W3C.Atom {
         /// Regular expression: (author* | category* | content? | contributor* | id | link* | published? | rights? | source? | summary? | title | updated | any)+
         /// </para>
         /// </summary>
-        public virtual IList<W3C.Atom.personType> author {
+        public virtual IList<personType> author {
             get {
                 if ((this.authorField == null)) {
-                    this.authorField = new XTypedList<W3C.Atom.personType>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("author", "http://www.w3.org/2005/Atom"));
+                    this.authorField = new XTypedList<personType>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("author", "http://www.w3.org/2005/Atom"));
                 }
                 return this.authorField;
             }
@@ -1090,10 +1090,10 @@ namespace W3C.Atom {
                 }
                 else {
                     if ((this.authorField == null)) {
-                        this.authorField = XTypedList<W3C.Atom.personType>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("author", "http://www.w3.org/2005/Atom"));
+                        this.authorField = XTypedList<personType>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("author", "http://www.w3.org/2005/Atom"));
                     }
                     else {
-                        XTypedServices.SetList<W3C.Atom.personType>(this.authorField, value);
+                        XTypedServices.SetList<personType>(this.authorField, value);
                     }
                 }
             }
@@ -1107,10 +1107,10 @@ namespace W3C.Atom {
         /// Regular expression: (author* | category* | content? | contributor* | id | link* | published? | rights? | source? | summary? | title | updated | any)+
         /// </para>
         /// </summary>
-        public virtual IList<W3C.Atom.categoryType> category {
+        public virtual IList<categoryType> category {
             get {
                 if ((this.categoryField == null)) {
-                    this.categoryField = new XTypedList<W3C.Atom.categoryType>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("category", "http://www.w3.org/2005/Atom"));
+                    this.categoryField = new XTypedList<categoryType>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("category", "http://www.w3.org/2005/Atom"));
                 }
                 return this.categoryField;
             }
@@ -1120,10 +1120,10 @@ namespace W3C.Atom {
                 }
                 else {
                     if ((this.categoryField == null)) {
-                        this.categoryField = XTypedList<W3C.Atom.categoryType>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("category", "http://www.w3.org/2005/Atom"));
+                        this.categoryField = XTypedList<categoryType>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("category", "http://www.w3.org/2005/Atom"));
                     }
                     else {
-                        XTypedServices.SetList<W3C.Atom.categoryType>(this.categoryField, value);
+                        XTypedServices.SetList<categoryType>(this.categoryField, value);
                     }
                 }
             }
@@ -1137,10 +1137,10 @@ namespace W3C.Atom {
         /// Regular expression: (author* | category* | content? | contributor* | id | link* | published? | rights? | source? | summary? | title | updated | any)+
         /// </para>
         /// </summary>
-        public virtual IList<W3C.Atom.contentType> content {
+        public virtual IList<contentType> content {
             get {
                 if ((this.contentField == null)) {
-                    this.contentField = new XTypedList<W3C.Atom.contentType>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("content", "http://www.w3.org/2005/Atom"));
+                    this.contentField = new XTypedList<contentType>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("content", "http://www.w3.org/2005/Atom"));
                 }
                 return this.contentField;
             }
@@ -1150,10 +1150,10 @@ namespace W3C.Atom {
                 }
                 else {
                     if ((this.contentField == null)) {
-                        this.contentField = XTypedList<W3C.Atom.contentType>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("content", "http://www.w3.org/2005/Atom"));
+                        this.contentField = XTypedList<contentType>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("content", "http://www.w3.org/2005/Atom"));
                     }
                     else {
-                        XTypedServices.SetList<W3C.Atom.contentType>(this.contentField, value);
+                        XTypedServices.SetList<contentType>(this.contentField, value);
                     }
                 }
             }
@@ -1167,10 +1167,10 @@ namespace W3C.Atom {
         /// Regular expression: (author* | category* | content? | contributor* | id | link* | published? | rights? | source? | summary? | title | updated | any)+
         /// </para>
         /// </summary>
-        public virtual IList<W3C.Atom.personType> contributor {
+        public virtual IList<personType> contributor {
             get {
                 if ((this.contributorField == null)) {
-                    this.contributorField = new XTypedList<W3C.Atom.personType>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("contributor", "http://www.w3.org/2005/Atom"));
+                    this.contributorField = new XTypedList<personType>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("contributor", "http://www.w3.org/2005/Atom"));
                 }
                 return this.contributorField;
             }
@@ -1180,10 +1180,10 @@ namespace W3C.Atom {
                 }
                 else {
                     if ((this.contributorField == null)) {
-                        this.contributorField = XTypedList<W3C.Atom.personType>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("contributor", "http://www.w3.org/2005/Atom"));
+                        this.contributorField = XTypedList<personType>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("contributor", "http://www.w3.org/2005/Atom"));
                     }
                     else {
-                        XTypedServices.SetList<W3C.Atom.personType>(this.contributorField, value);
+                        XTypedServices.SetList<personType>(this.contributorField, value);
                     }
                 }
             }
@@ -1197,10 +1197,10 @@ namespace W3C.Atom {
         /// Regular expression: (author* | category* | content? | contributor* | id | link* | published? | rights? | source? | summary? | title | updated | any)+
         /// </para>
         /// </summary>
-        public virtual IList<W3C.Atom.idType> id {
+        public virtual IList<idType> id {
             get {
                 if ((this.idField == null)) {
-                    this.idField = new XTypedList<W3C.Atom.idType>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("id", "http://www.w3.org/2005/Atom"));
+                    this.idField = new XTypedList<idType>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("id", "http://www.w3.org/2005/Atom"));
                 }
                 return this.idField;
             }
@@ -1210,10 +1210,10 @@ namespace W3C.Atom {
                 }
                 else {
                     if ((this.idField == null)) {
-                        this.idField = XTypedList<W3C.Atom.idType>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("id", "http://www.w3.org/2005/Atom"));
+                        this.idField = XTypedList<idType>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("id", "http://www.w3.org/2005/Atom"));
                     }
                     else {
-                        XTypedServices.SetList<W3C.Atom.idType>(this.idField, value);
+                        XTypedServices.SetList<idType>(this.idField, value);
                     }
                 }
             }
@@ -1227,10 +1227,10 @@ namespace W3C.Atom {
         /// Regular expression: (author* | category* | content? | contributor* | id | link* | published? | rights? | source? | summary? | title | updated | any)+
         /// </para>
         /// </summary>
-        public virtual IList<W3C.Atom.linkType> link {
+        public virtual IList<linkType> link {
             get {
                 if ((this.linkField == null)) {
-                    this.linkField = new XTypedList<W3C.Atom.linkType>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("link", "http://www.w3.org/2005/Atom"));
+                    this.linkField = new XTypedList<linkType>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("link", "http://www.w3.org/2005/Atom"));
                 }
                 return this.linkField;
             }
@@ -1240,10 +1240,10 @@ namespace W3C.Atom {
                 }
                 else {
                     if ((this.linkField == null)) {
-                        this.linkField = XTypedList<W3C.Atom.linkType>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("link", "http://www.w3.org/2005/Atom"));
+                        this.linkField = XTypedList<linkType>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("link", "http://www.w3.org/2005/Atom"));
                     }
                     else {
-                        XTypedServices.SetList<W3C.Atom.linkType>(this.linkField, value);
+                        XTypedServices.SetList<linkType>(this.linkField, value);
                     }
                 }
             }
@@ -1257,10 +1257,10 @@ namespace W3C.Atom {
         /// Regular expression: (author* | category* | content? | contributor* | id | link* | published? | rights? | source? | summary? | title | updated | any)+
         /// </para>
         /// </summary>
-        public virtual IList<W3C.Atom.dateTimeType> published {
+        public virtual IList<dateTimeType> published {
             get {
                 if ((this.publishedField == null)) {
-                    this.publishedField = new XTypedList<W3C.Atom.dateTimeType>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("published", "http://www.w3.org/2005/Atom"));
+                    this.publishedField = new XTypedList<dateTimeType>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("published", "http://www.w3.org/2005/Atom"));
                 }
                 return this.publishedField;
             }
@@ -1270,10 +1270,10 @@ namespace W3C.Atom {
                 }
                 else {
                     if ((this.publishedField == null)) {
-                        this.publishedField = XTypedList<W3C.Atom.dateTimeType>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("published", "http://www.w3.org/2005/Atom"));
+                        this.publishedField = XTypedList<dateTimeType>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("published", "http://www.w3.org/2005/Atom"));
                     }
                     else {
-                        XTypedServices.SetList<W3C.Atom.dateTimeType>(this.publishedField, value);
+                        XTypedServices.SetList<dateTimeType>(this.publishedField, value);
                     }
                 }
             }
@@ -1287,10 +1287,10 @@ namespace W3C.Atom {
         /// Regular expression: (author* | category* | content? | contributor* | id | link* | published? | rights? | source? | summary? | title | updated | any)+
         /// </para>
         /// </summary>
-        public virtual IList<W3C.Atom.textType> rights {
+        public virtual IList<textType> rights {
             get {
                 if ((this.rightsField == null)) {
-                    this.rightsField = new XTypedList<W3C.Atom.textType>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("rights", "http://www.w3.org/2005/Atom"));
+                    this.rightsField = new XTypedList<textType>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("rights", "http://www.w3.org/2005/Atom"));
                 }
                 return this.rightsField;
             }
@@ -1300,10 +1300,10 @@ namespace W3C.Atom {
                 }
                 else {
                     if ((this.rightsField == null)) {
-                        this.rightsField = XTypedList<W3C.Atom.textType>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("rights", "http://www.w3.org/2005/Atom"));
+                        this.rightsField = XTypedList<textType>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("rights", "http://www.w3.org/2005/Atom"));
                     }
                     else {
-                        XTypedServices.SetList<W3C.Atom.textType>(this.rightsField, value);
+                        XTypedServices.SetList<textType>(this.rightsField, value);
                     }
                 }
             }
@@ -1317,10 +1317,10 @@ namespace W3C.Atom {
         /// Regular expression: (author* | category* | content? | contributor* | id | link* | published? | rights? | source? | summary? | title | updated | any)+
         /// </para>
         /// </summary>
-        public virtual IList<W3C.Atom.textType> source {
+        public virtual IList<textType> source {
             get {
                 if ((this.sourceField == null)) {
-                    this.sourceField = new XTypedList<W3C.Atom.textType>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("source", "http://www.w3.org/2005/Atom"));
+                    this.sourceField = new XTypedList<textType>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("source", "http://www.w3.org/2005/Atom"));
                 }
                 return this.sourceField;
             }
@@ -1330,10 +1330,10 @@ namespace W3C.Atom {
                 }
                 else {
                     if ((this.sourceField == null)) {
-                        this.sourceField = XTypedList<W3C.Atom.textType>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("source", "http://www.w3.org/2005/Atom"));
+                        this.sourceField = XTypedList<textType>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("source", "http://www.w3.org/2005/Atom"));
                     }
                     else {
-                        XTypedServices.SetList<W3C.Atom.textType>(this.sourceField, value);
+                        XTypedServices.SetList<textType>(this.sourceField, value);
                     }
                 }
             }
@@ -1347,10 +1347,10 @@ namespace W3C.Atom {
         /// Regular expression: (author* | category* | content? | contributor* | id | link* | published? | rights? | source? | summary? | title | updated | any)+
         /// </para>
         /// </summary>
-        public virtual IList<W3C.Atom.textType> summary {
+        public virtual IList<textType> summary {
             get {
                 if ((this.summaryField == null)) {
-                    this.summaryField = new XTypedList<W3C.Atom.textType>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("summary", "http://www.w3.org/2005/Atom"));
+                    this.summaryField = new XTypedList<textType>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("summary", "http://www.w3.org/2005/Atom"));
                 }
                 return this.summaryField;
             }
@@ -1360,10 +1360,10 @@ namespace W3C.Atom {
                 }
                 else {
                     if ((this.summaryField == null)) {
-                        this.summaryField = XTypedList<W3C.Atom.textType>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("summary", "http://www.w3.org/2005/Atom"));
+                        this.summaryField = XTypedList<textType>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("summary", "http://www.w3.org/2005/Atom"));
                     }
                     else {
-                        XTypedServices.SetList<W3C.Atom.textType>(this.summaryField, value);
+                        XTypedServices.SetList<textType>(this.summaryField, value);
                     }
                 }
             }
@@ -1377,10 +1377,10 @@ namespace W3C.Atom {
         /// Regular expression: (author* | category* | content? | contributor* | id | link* | published? | rights? | source? | summary? | title | updated | any)+
         /// </para>
         /// </summary>
-        public virtual IList<W3C.Atom.textType> title {
+        public virtual IList<textType> title {
             get {
                 if ((this.titleField == null)) {
-                    this.titleField = new XTypedList<W3C.Atom.textType>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("title", "http://www.w3.org/2005/Atom"));
+                    this.titleField = new XTypedList<textType>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("title", "http://www.w3.org/2005/Atom"));
                 }
                 return this.titleField;
             }
@@ -1390,10 +1390,10 @@ namespace W3C.Atom {
                 }
                 else {
                     if ((this.titleField == null)) {
-                        this.titleField = XTypedList<W3C.Atom.textType>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("title", "http://www.w3.org/2005/Atom"));
+                        this.titleField = XTypedList<textType>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("title", "http://www.w3.org/2005/Atom"));
                     }
                     else {
-                        XTypedServices.SetList<W3C.Atom.textType>(this.titleField, value);
+                        XTypedServices.SetList<textType>(this.titleField, value);
                     }
                 }
             }
@@ -1407,10 +1407,10 @@ namespace W3C.Atom {
         /// Regular expression: (author* | category* | content? | contributor* | id | link* | published? | rights? | source? | summary? | title | updated | any)+
         /// </para>
         /// </summary>
-        public virtual IList<W3C.Atom.dateTimeType> updated {
+        public virtual IList<dateTimeType> updated {
             get {
                 if ((this.updatedField == null)) {
-                    this.updatedField = new XTypedList<W3C.Atom.dateTimeType>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("updated", "http://www.w3.org/2005/Atom"));
+                    this.updatedField = new XTypedList<dateTimeType>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("updated", "http://www.w3.org/2005/Atom"));
                 }
                 return this.updatedField;
             }
@@ -1420,10 +1420,10 @@ namespace W3C.Atom {
                 }
                 else {
                     if ((this.updatedField == null)) {
-                        this.updatedField = XTypedList<W3C.Atom.dateTimeType>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("updated", "http://www.w3.org/2005/Atom"));
+                        this.updatedField = XTypedList<dateTimeType>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("updated", "http://www.w3.org/2005/Atom"));
                     }
                     else {
-                        XTypedServices.SetList<W3C.Atom.dateTimeType>(this.updatedField, value);
+                        XTypedServices.SetList<dateTimeType>(this.updatedField, value);
                     }
                 }
             }
@@ -1503,18 +1503,18 @@ namespace W3C.Atom {
         }
         
         private static void BuildElementDictionary() {
-            localElementDictionary.Add(System.Xml.Linq.XName.Get("author", "http://www.w3.org/2005/Atom"), typeof(W3C.Atom.personType));
-            localElementDictionary.Add(System.Xml.Linq.XName.Get("category", "http://www.w3.org/2005/Atom"), typeof(W3C.Atom.categoryType));
-            localElementDictionary.Add(System.Xml.Linq.XName.Get("content", "http://www.w3.org/2005/Atom"), typeof(W3C.Atom.contentType));
-            localElementDictionary.Add(System.Xml.Linq.XName.Get("contributor", "http://www.w3.org/2005/Atom"), typeof(W3C.Atom.personType));
-            localElementDictionary.Add(System.Xml.Linq.XName.Get("id", "http://www.w3.org/2005/Atom"), typeof(W3C.Atom.idType));
-            localElementDictionary.Add(System.Xml.Linq.XName.Get("link", "http://www.w3.org/2005/Atom"), typeof(W3C.Atom.linkType));
-            localElementDictionary.Add(System.Xml.Linq.XName.Get("published", "http://www.w3.org/2005/Atom"), typeof(W3C.Atom.dateTimeType));
-            localElementDictionary.Add(System.Xml.Linq.XName.Get("rights", "http://www.w3.org/2005/Atom"), typeof(W3C.Atom.textType));
-            localElementDictionary.Add(System.Xml.Linq.XName.Get("source", "http://www.w3.org/2005/Atom"), typeof(W3C.Atom.textType));
-            localElementDictionary.Add(System.Xml.Linq.XName.Get("summary", "http://www.w3.org/2005/Atom"), typeof(W3C.Atom.textType));
-            localElementDictionary.Add(System.Xml.Linq.XName.Get("title", "http://www.w3.org/2005/Atom"), typeof(W3C.Atom.textType));
-            localElementDictionary.Add(System.Xml.Linq.XName.Get("updated", "http://www.w3.org/2005/Atom"), typeof(W3C.Atom.dateTimeType));
+            localElementDictionary.Add(System.Xml.Linq.XName.Get("author", "http://www.w3.org/2005/Atom"), typeof(personType));
+            localElementDictionary.Add(System.Xml.Linq.XName.Get("category", "http://www.w3.org/2005/Atom"), typeof(categoryType));
+            localElementDictionary.Add(System.Xml.Linq.XName.Get("content", "http://www.w3.org/2005/Atom"), typeof(contentType));
+            localElementDictionary.Add(System.Xml.Linq.XName.Get("contributor", "http://www.w3.org/2005/Atom"), typeof(personType));
+            localElementDictionary.Add(System.Xml.Linq.XName.Get("id", "http://www.w3.org/2005/Atom"), typeof(idType));
+            localElementDictionary.Add(System.Xml.Linq.XName.Get("link", "http://www.w3.org/2005/Atom"), typeof(linkType));
+            localElementDictionary.Add(System.Xml.Linq.XName.Get("published", "http://www.w3.org/2005/Atom"), typeof(dateTimeType));
+            localElementDictionary.Add(System.Xml.Linq.XName.Get("rights", "http://www.w3.org/2005/Atom"), typeof(textType));
+            localElementDictionary.Add(System.Xml.Linq.XName.Get("source", "http://www.w3.org/2005/Atom"), typeof(textType));
+            localElementDictionary.Add(System.Xml.Linq.XName.Get("summary", "http://www.w3.org/2005/Atom"), typeof(textType));
+            localElementDictionary.Add(System.Xml.Linq.XName.Get("title", "http://www.w3.org/2005/Atom"), typeof(textType));
+            localElementDictionary.Add(System.Xml.Linq.XName.Get("updated", "http://www.w3.org/2005/Atom"), typeof(dateTimeType));
         }
         
         FSM IXMetaData.GetValidationStates() {
@@ -2401,40 +2401,40 @@ namespace W3C.Atom {
     public partial class sourceType : XTypedElement, IXMetaData {
         
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
-        private XTypedList<W3C.Atom.personType> authorField;
+        private XTypedList<personType> authorField;
         
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
-        private XTypedList<W3C.Atom.categoryType> categoryField;
+        private XTypedList<categoryType> categoryField;
         
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
-        private XTypedList<W3C.Atom.personType> contributorField;
+        private XTypedList<personType> contributorField;
         
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
-        private XTypedList<W3C.Atom.generatorType> generatorField;
+        private XTypedList<generatorType> generatorField;
         
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
-        private XTypedList<W3C.Atom.iconType> iconField;
+        private XTypedList<iconType> iconField;
         
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
-        private XTypedList<W3C.Atom.idType> idField;
+        private XTypedList<idType> idField;
         
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
-        private XTypedList<W3C.Atom.linkType> linkField;
+        private XTypedList<linkType> linkField;
         
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
-        private XTypedList<W3C.Atom.logoType> logoField;
+        private XTypedList<logoType> logoField;
         
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
-        private XTypedList<W3C.Atom.textType> rightsField;
+        private XTypedList<textType> rightsField;
         
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
-        private XTypedList<W3C.Atom.textType> subtitleField;
+        private XTypedList<textType> subtitleField;
         
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
-        private XTypedList<W3C.Atom.textType> titleField;
+        private XTypedList<textType> titleField;
         
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
-        private XTypedList<W3C.Atom.dateTimeType> updatedField;
+        private XTypedList<dateTimeType> updatedField;
         
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         private static Dictionary<System.Xml.Linq.XName, System.Type> localElementDictionary = new Dictionary<System.Xml.Linq.XName, System.Type>();
@@ -2470,10 +2470,10 @@ namespace W3C.Atom {
         /// Regular expression: (author* | category* | contributor* | generator? | icon? | id? | link* | logo? | rights? | subtitle? | title? | updated? | any)+
         /// </para>
         /// </summary>
-        public virtual IList<W3C.Atom.personType> author {
+        public virtual IList<personType> author {
             get {
                 if ((this.authorField == null)) {
-                    this.authorField = new XTypedList<W3C.Atom.personType>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("author", "http://www.w3.org/2005/Atom"));
+                    this.authorField = new XTypedList<personType>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("author", "http://www.w3.org/2005/Atom"));
                 }
                 return this.authorField;
             }
@@ -2483,10 +2483,10 @@ namespace W3C.Atom {
                 }
                 else {
                     if ((this.authorField == null)) {
-                        this.authorField = XTypedList<W3C.Atom.personType>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("author", "http://www.w3.org/2005/Atom"));
+                        this.authorField = XTypedList<personType>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("author", "http://www.w3.org/2005/Atom"));
                     }
                     else {
-                        XTypedServices.SetList<W3C.Atom.personType>(this.authorField, value);
+                        XTypedServices.SetList<personType>(this.authorField, value);
                     }
                 }
             }
@@ -2500,10 +2500,10 @@ namespace W3C.Atom {
         /// Regular expression: (author* | category* | contributor* | generator? | icon? | id? | link* | logo? | rights? | subtitle? | title? | updated? | any)+
         /// </para>
         /// </summary>
-        public virtual IList<W3C.Atom.categoryType> category {
+        public virtual IList<categoryType> category {
             get {
                 if ((this.categoryField == null)) {
-                    this.categoryField = new XTypedList<W3C.Atom.categoryType>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("category", "http://www.w3.org/2005/Atom"));
+                    this.categoryField = new XTypedList<categoryType>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("category", "http://www.w3.org/2005/Atom"));
                 }
                 return this.categoryField;
             }
@@ -2513,10 +2513,10 @@ namespace W3C.Atom {
                 }
                 else {
                     if ((this.categoryField == null)) {
-                        this.categoryField = XTypedList<W3C.Atom.categoryType>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("category", "http://www.w3.org/2005/Atom"));
+                        this.categoryField = XTypedList<categoryType>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("category", "http://www.w3.org/2005/Atom"));
                     }
                     else {
-                        XTypedServices.SetList<W3C.Atom.categoryType>(this.categoryField, value);
+                        XTypedServices.SetList<categoryType>(this.categoryField, value);
                     }
                 }
             }
@@ -2530,10 +2530,10 @@ namespace W3C.Atom {
         /// Regular expression: (author* | category* | contributor* | generator? | icon? | id? | link* | logo? | rights? | subtitle? | title? | updated? | any)+
         /// </para>
         /// </summary>
-        public virtual IList<W3C.Atom.personType> contributor {
+        public virtual IList<personType> contributor {
             get {
                 if ((this.contributorField == null)) {
-                    this.contributorField = new XTypedList<W3C.Atom.personType>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("contributor", "http://www.w3.org/2005/Atom"));
+                    this.contributorField = new XTypedList<personType>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("contributor", "http://www.w3.org/2005/Atom"));
                 }
                 return this.contributorField;
             }
@@ -2543,10 +2543,10 @@ namespace W3C.Atom {
                 }
                 else {
                     if ((this.contributorField == null)) {
-                        this.contributorField = XTypedList<W3C.Atom.personType>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("contributor", "http://www.w3.org/2005/Atom"));
+                        this.contributorField = XTypedList<personType>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("contributor", "http://www.w3.org/2005/Atom"));
                     }
                     else {
-                        XTypedServices.SetList<W3C.Atom.personType>(this.contributorField, value);
+                        XTypedServices.SetList<personType>(this.contributorField, value);
                     }
                 }
             }
@@ -2560,10 +2560,10 @@ namespace W3C.Atom {
         /// Regular expression: (author* | category* | contributor* | generator? | icon? | id? | link* | logo? | rights? | subtitle? | title? | updated? | any)+
         /// </para>
         /// </summary>
-        public virtual IList<W3C.Atom.generatorType> generator {
+        public virtual IList<generatorType> generator {
             get {
                 if ((this.generatorField == null)) {
-                    this.generatorField = new XTypedList<W3C.Atom.generatorType>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("generator", "http://www.w3.org/2005/Atom"));
+                    this.generatorField = new XTypedList<generatorType>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("generator", "http://www.w3.org/2005/Atom"));
                 }
                 return this.generatorField;
             }
@@ -2573,10 +2573,10 @@ namespace W3C.Atom {
                 }
                 else {
                     if ((this.generatorField == null)) {
-                        this.generatorField = XTypedList<W3C.Atom.generatorType>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("generator", "http://www.w3.org/2005/Atom"));
+                        this.generatorField = XTypedList<generatorType>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("generator", "http://www.w3.org/2005/Atom"));
                     }
                     else {
-                        XTypedServices.SetList<W3C.Atom.generatorType>(this.generatorField, value);
+                        XTypedServices.SetList<generatorType>(this.generatorField, value);
                     }
                 }
             }
@@ -2590,10 +2590,10 @@ namespace W3C.Atom {
         /// Regular expression: (author* | category* | contributor* | generator? | icon? | id? | link* | logo? | rights? | subtitle? | title? | updated? | any)+
         /// </para>
         /// </summary>
-        public virtual IList<W3C.Atom.iconType> icon {
+        public virtual IList<iconType> icon {
             get {
                 if ((this.iconField == null)) {
-                    this.iconField = new XTypedList<W3C.Atom.iconType>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("icon", "http://www.w3.org/2005/Atom"));
+                    this.iconField = new XTypedList<iconType>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("icon", "http://www.w3.org/2005/Atom"));
                 }
                 return this.iconField;
             }
@@ -2603,10 +2603,10 @@ namespace W3C.Atom {
                 }
                 else {
                     if ((this.iconField == null)) {
-                        this.iconField = XTypedList<W3C.Atom.iconType>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("icon", "http://www.w3.org/2005/Atom"));
+                        this.iconField = XTypedList<iconType>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("icon", "http://www.w3.org/2005/Atom"));
                     }
                     else {
-                        XTypedServices.SetList<W3C.Atom.iconType>(this.iconField, value);
+                        XTypedServices.SetList<iconType>(this.iconField, value);
                     }
                 }
             }
@@ -2620,10 +2620,10 @@ namespace W3C.Atom {
         /// Regular expression: (author* | category* | contributor* | generator? | icon? | id? | link* | logo? | rights? | subtitle? | title? | updated? | any)+
         /// </para>
         /// </summary>
-        public virtual IList<W3C.Atom.idType> id {
+        public virtual IList<idType> id {
             get {
                 if ((this.idField == null)) {
-                    this.idField = new XTypedList<W3C.Atom.idType>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("id", "http://www.w3.org/2005/Atom"));
+                    this.idField = new XTypedList<idType>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("id", "http://www.w3.org/2005/Atom"));
                 }
                 return this.idField;
             }
@@ -2633,10 +2633,10 @@ namespace W3C.Atom {
                 }
                 else {
                     if ((this.idField == null)) {
-                        this.idField = XTypedList<W3C.Atom.idType>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("id", "http://www.w3.org/2005/Atom"));
+                        this.idField = XTypedList<idType>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("id", "http://www.w3.org/2005/Atom"));
                     }
                     else {
-                        XTypedServices.SetList<W3C.Atom.idType>(this.idField, value);
+                        XTypedServices.SetList<idType>(this.idField, value);
                     }
                 }
             }
@@ -2650,10 +2650,10 @@ namespace W3C.Atom {
         /// Regular expression: (author* | category* | contributor* | generator? | icon? | id? | link* | logo? | rights? | subtitle? | title? | updated? | any)+
         /// </para>
         /// </summary>
-        public virtual IList<W3C.Atom.linkType> link {
+        public virtual IList<linkType> link {
             get {
                 if ((this.linkField == null)) {
-                    this.linkField = new XTypedList<W3C.Atom.linkType>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("link", "http://www.w3.org/2005/Atom"));
+                    this.linkField = new XTypedList<linkType>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("link", "http://www.w3.org/2005/Atom"));
                 }
                 return this.linkField;
             }
@@ -2663,10 +2663,10 @@ namespace W3C.Atom {
                 }
                 else {
                     if ((this.linkField == null)) {
-                        this.linkField = XTypedList<W3C.Atom.linkType>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("link", "http://www.w3.org/2005/Atom"));
+                        this.linkField = XTypedList<linkType>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("link", "http://www.w3.org/2005/Atom"));
                     }
                     else {
-                        XTypedServices.SetList<W3C.Atom.linkType>(this.linkField, value);
+                        XTypedServices.SetList<linkType>(this.linkField, value);
                     }
                 }
             }
@@ -2680,10 +2680,10 @@ namespace W3C.Atom {
         /// Regular expression: (author* | category* | contributor* | generator? | icon? | id? | link* | logo? | rights? | subtitle? | title? | updated? | any)+
         /// </para>
         /// </summary>
-        public virtual IList<W3C.Atom.logoType> logo {
+        public virtual IList<logoType> logo {
             get {
                 if ((this.logoField == null)) {
-                    this.logoField = new XTypedList<W3C.Atom.logoType>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("logo", "http://www.w3.org/2005/Atom"));
+                    this.logoField = new XTypedList<logoType>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("logo", "http://www.w3.org/2005/Atom"));
                 }
                 return this.logoField;
             }
@@ -2693,10 +2693,10 @@ namespace W3C.Atom {
                 }
                 else {
                     if ((this.logoField == null)) {
-                        this.logoField = XTypedList<W3C.Atom.logoType>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("logo", "http://www.w3.org/2005/Atom"));
+                        this.logoField = XTypedList<logoType>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("logo", "http://www.w3.org/2005/Atom"));
                     }
                     else {
-                        XTypedServices.SetList<W3C.Atom.logoType>(this.logoField, value);
+                        XTypedServices.SetList<logoType>(this.logoField, value);
                     }
                 }
             }
@@ -2710,10 +2710,10 @@ namespace W3C.Atom {
         /// Regular expression: (author* | category* | contributor* | generator? | icon? | id? | link* | logo? | rights? | subtitle? | title? | updated? | any)+
         /// </para>
         /// </summary>
-        public virtual IList<W3C.Atom.textType> rights {
+        public virtual IList<textType> rights {
             get {
                 if ((this.rightsField == null)) {
-                    this.rightsField = new XTypedList<W3C.Atom.textType>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("rights", "http://www.w3.org/2005/Atom"));
+                    this.rightsField = new XTypedList<textType>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("rights", "http://www.w3.org/2005/Atom"));
                 }
                 return this.rightsField;
             }
@@ -2723,10 +2723,10 @@ namespace W3C.Atom {
                 }
                 else {
                     if ((this.rightsField == null)) {
-                        this.rightsField = XTypedList<W3C.Atom.textType>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("rights", "http://www.w3.org/2005/Atom"));
+                        this.rightsField = XTypedList<textType>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("rights", "http://www.w3.org/2005/Atom"));
                     }
                     else {
-                        XTypedServices.SetList<W3C.Atom.textType>(this.rightsField, value);
+                        XTypedServices.SetList<textType>(this.rightsField, value);
                     }
                 }
             }
@@ -2740,10 +2740,10 @@ namespace W3C.Atom {
         /// Regular expression: (author* | category* | contributor* | generator? | icon? | id? | link* | logo? | rights? | subtitle? | title? | updated? | any)+
         /// </para>
         /// </summary>
-        public virtual IList<W3C.Atom.textType> subtitle {
+        public virtual IList<textType> subtitle {
             get {
                 if ((this.subtitleField == null)) {
-                    this.subtitleField = new XTypedList<W3C.Atom.textType>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("subtitle", "http://www.w3.org/2005/Atom"));
+                    this.subtitleField = new XTypedList<textType>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("subtitle", "http://www.w3.org/2005/Atom"));
                 }
                 return this.subtitleField;
             }
@@ -2753,10 +2753,10 @@ namespace W3C.Atom {
                 }
                 else {
                     if ((this.subtitleField == null)) {
-                        this.subtitleField = XTypedList<W3C.Atom.textType>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("subtitle", "http://www.w3.org/2005/Atom"));
+                        this.subtitleField = XTypedList<textType>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("subtitle", "http://www.w3.org/2005/Atom"));
                     }
                     else {
-                        XTypedServices.SetList<W3C.Atom.textType>(this.subtitleField, value);
+                        XTypedServices.SetList<textType>(this.subtitleField, value);
                     }
                 }
             }
@@ -2770,10 +2770,10 @@ namespace W3C.Atom {
         /// Regular expression: (author* | category* | contributor* | generator? | icon? | id? | link* | logo? | rights? | subtitle? | title? | updated? | any)+
         /// </para>
         /// </summary>
-        public virtual IList<W3C.Atom.textType> title {
+        public virtual IList<textType> title {
             get {
                 if ((this.titleField == null)) {
-                    this.titleField = new XTypedList<W3C.Atom.textType>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("title", "http://www.w3.org/2005/Atom"));
+                    this.titleField = new XTypedList<textType>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("title", "http://www.w3.org/2005/Atom"));
                 }
                 return this.titleField;
             }
@@ -2783,10 +2783,10 @@ namespace W3C.Atom {
                 }
                 else {
                     if ((this.titleField == null)) {
-                        this.titleField = XTypedList<W3C.Atom.textType>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("title", "http://www.w3.org/2005/Atom"));
+                        this.titleField = XTypedList<textType>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("title", "http://www.w3.org/2005/Atom"));
                     }
                     else {
-                        XTypedServices.SetList<W3C.Atom.textType>(this.titleField, value);
+                        XTypedServices.SetList<textType>(this.titleField, value);
                     }
                 }
             }
@@ -2800,10 +2800,10 @@ namespace W3C.Atom {
         /// Regular expression: (author* | category* | contributor* | generator? | icon? | id? | link* | logo? | rights? | subtitle? | title? | updated? | any)+
         /// </para>
         /// </summary>
-        public virtual IList<W3C.Atom.dateTimeType> updated {
+        public virtual IList<dateTimeType> updated {
             get {
                 if ((this.updatedField == null)) {
-                    this.updatedField = new XTypedList<W3C.Atom.dateTimeType>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("updated", "http://www.w3.org/2005/Atom"));
+                    this.updatedField = new XTypedList<dateTimeType>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("updated", "http://www.w3.org/2005/Atom"));
                 }
                 return this.updatedField;
             }
@@ -2813,10 +2813,10 @@ namespace W3C.Atom {
                 }
                 else {
                     if ((this.updatedField == null)) {
-                        this.updatedField = XTypedList<W3C.Atom.dateTimeType>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("updated", "http://www.w3.org/2005/Atom"));
+                        this.updatedField = XTypedList<dateTimeType>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("updated", "http://www.w3.org/2005/Atom"));
                     }
                     else {
-                        XTypedServices.SetList<W3C.Atom.dateTimeType>(this.updatedField, value);
+                        XTypedServices.SetList<dateTimeType>(this.updatedField, value);
                     }
                 }
             }
@@ -2896,18 +2896,18 @@ namespace W3C.Atom {
         }
         
         private static void BuildElementDictionary() {
-            localElementDictionary.Add(System.Xml.Linq.XName.Get("author", "http://www.w3.org/2005/Atom"), typeof(W3C.Atom.personType));
-            localElementDictionary.Add(System.Xml.Linq.XName.Get("category", "http://www.w3.org/2005/Atom"), typeof(W3C.Atom.categoryType));
-            localElementDictionary.Add(System.Xml.Linq.XName.Get("contributor", "http://www.w3.org/2005/Atom"), typeof(W3C.Atom.personType));
-            localElementDictionary.Add(System.Xml.Linq.XName.Get("generator", "http://www.w3.org/2005/Atom"), typeof(W3C.Atom.generatorType));
-            localElementDictionary.Add(System.Xml.Linq.XName.Get("icon", "http://www.w3.org/2005/Atom"), typeof(W3C.Atom.iconType));
-            localElementDictionary.Add(System.Xml.Linq.XName.Get("id", "http://www.w3.org/2005/Atom"), typeof(W3C.Atom.idType));
-            localElementDictionary.Add(System.Xml.Linq.XName.Get("link", "http://www.w3.org/2005/Atom"), typeof(W3C.Atom.linkType));
-            localElementDictionary.Add(System.Xml.Linq.XName.Get("logo", "http://www.w3.org/2005/Atom"), typeof(W3C.Atom.logoType));
-            localElementDictionary.Add(System.Xml.Linq.XName.Get("rights", "http://www.w3.org/2005/Atom"), typeof(W3C.Atom.textType));
-            localElementDictionary.Add(System.Xml.Linq.XName.Get("subtitle", "http://www.w3.org/2005/Atom"), typeof(W3C.Atom.textType));
-            localElementDictionary.Add(System.Xml.Linq.XName.Get("title", "http://www.w3.org/2005/Atom"), typeof(W3C.Atom.textType));
-            localElementDictionary.Add(System.Xml.Linq.XName.Get("updated", "http://www.w3.org/2005/Atom"), typeof(W3C.Atom.dateTimeType));
+            localElementDictionary.Add(System.Xml.Linq.XName.Get("author", "http://www.w3.org/2005/Atom"), typeof(personType));
+            localElementDictionary.Add(System.Xml.Linq.XName.Get("category", "http://www.w3.org/2005/Atom"), typeof(categoryType));
+            localElementDictionary.Add(System.Xml.Linq.XName.Get("contributor", "http://www.w3.org/2005/Atom"), typeof(personType));
+            localElementDictionary.Add(System.Xml.Linq.XName.Get("generator", "http://www.w3.org/2005/Atom"), typeof(generatorType));
+            localElementDictionary.Add(System.Xml.Linq.XName.Get("icon", "http://www.w3.org/2005/Atom"), typeof(iconType));
+            localElementDictionary.Add(System.Xml.Linq.XName.Get("id", "http://www.w3.org/2005/Atom"), typeof(idType));
+            localElementDictionary.Add(System.Xml.Linq.XName.Get("link", "http://www.w3.org/2005/Atom"), typeof(linkType));
+            localElementDictionary.Add(System.Xml.Linq.XName.Get("logo", "http://www.w3.org/2005/Atom"), typeof(logoType));
+            localElementDictionary.Add(System.Xml.Linq.XName.Get("rights", "http://www.w3.org/2005/Atom"), typeof(textType));
+            localElementDictionary.Add(System.Xml.Linq.XName.Get("subtitle", "http://www.w3.org/2005/Atom"), typeof(textType));
+            localElementDictionary.Add(System.Xml.Linq.XName.Get("title", "http://www.w3.org/2005/Atom"), typeof(textType));
+            localElementDictionary.Add(System.Xml.Linq.XName.Get("updated", "http://www.w3.org/2005/Atom"), typeof(dateTimeType));
         }
         
         FSM IXMetaData.GetValidationStates() {
@@ -3110,9 +3110,9 @@ namespace W3C.Atom {
     public partial class feed : XTypedElement, IXMetaData {
         
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
-        private W3C.Atom.feedType ContentField;
+        private feedType ContentField;
         
-		public static explicit operator feed(XElement xe) { return XTypedServices.ToXTypedElement<feed, W3C.Atom.feedType>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+		public static explicit operator feed(XElement xe) { return XTypedServices.ToXTypedElement<feed, feedType>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         /// <summary>
         /// <para>
@@ -3122,7 +3122,7 @@ namespace W3C.Atom {
         /// </para>
         /// </summary>
         public feed() {
-            SetInnerType(new W3C.Atom.feedType());
+            SetInnerType(new feedType());
         }
         
         /// <summary>
@@ -3132,7 +3132,7 @@ namespace W3C.Atom {
         ///            
         /// </para>
         /// </summary>
-        public feed(W3C.Atom.feedType content) {
+        public feed(feedType content) {
             SetInnerType(content);
         }
         
@@ -3146,7 +3146,7 @@ namespace W3C.Atom {
             }
         }
         
-        public virtual W3C.Atom.feedType Content {
+        public virtual feedType Content {
             get {
                 return ContentField;
             }
@@ -3160,7 +3160,7 @@ namespace W3C.Atom {
         /// Regular expression: (author* | category* | contributor* | generator? | icon? | id | link* | logo? | rights? | subtitle? | title | updated | entry* | any)+
         /// </para>
         /// </summary>
-        public virtual IList<W3C.Atom.personType> author {
+        public virtual IList<personType> author {
             get {
                 return this.ContentField.author;
             }
@@ -3177,7 +3177,7 @@ namespace W3C.Atom {
         /// Regular expression: (author* | category* | contributor* | generator? | icon? | id | link* | logo? | rights? | subtitle? | title | updated | entry* | any)+
         /// </para>
         /// </summary>
-        public virtual IList<W3C.Atom.categoryType> category {
+        public virtual IList<categoryType> category {
             get {
                 return this.ContentField.category;
             }
@@ -3194,7 +3194,7 @@ namespace W3C.Atom {
         /// Regular expression: (author* | category* | contributor* | generator? | icon? | id | link* | logo? | rights? | subtitle? | title | updated | entry* | any)+
         /// </para>
         /// </summary>
-        public virtual IList<W3C.Atom.personType> contributor {
+        public virtual IList<personType> contributor {
             get {
                 return this.ContentField.contributor;
             }
@@ -3211,7 +3211,7 @@ namespace W3C.Atom {
         /// Regular expression: (author* | category* | contributor* | generator? | icon? | id | link* | logo? | rights? | subtitle? | title | updated | entry* | any)+
         /// </para>
         /// </summary>
-        public virtual IList<W3C.Atom.generatorType> generator {
+        public virtual IList<generatorType> generator {
             get {
                 return this.ContentField.generator;
             }
@@ -3228,7 +3228,7 @@ namespace W3C.Atom {
         /// Regular expression: (author* | category* | contributor* | generator? | icon? | id | link* | logo? | rights? | subtitle? | title | updated | entry* | any)+
         /// </para>
         /// </summary>
-        public virtual IList<W3C.Atom.iconType> icon {
+        public virtual IList<iconType> icon {
             get {
                 return this.ContentField.icon;
             }
@@ -3245,7 +3245,7 @@ namespace W3C.Atom {
         /// Regular expression: (author* | category* | contributor* | generator? | icon? | id | link* | logo? | rights? | subtitle? | title | updated | entry* | any)+
         /// </para>
         /// </summary>
-        public virtual IList<W3C.Atom.idType> id {
+        public virtual IList<idType> id {
             get {
                 return this.ContentField.id;
             }
@@ -3262,7 +3262,7 @@ namespace W3C.Atom {
         /// Regular expression: (author* | category* | contributor* | generator? | icon? | id | link* | logo? | rights? | subtitle? | title | updated | entry* | any)+
         /// </para>
         /// </summary>
-        public virtual IList<W3C.Atom.linkType> link {
+        public virtual IList<linkType> link {
             get {
                 return this.ContentField.link;
             }
@@ -3279,7 +3279,7 @@ namespace W3C.Atom {
         /// Regular expression: (author* | category* | contributor* | generator? | icon? | id | link* | logo? | rights? | subtitle? | title | updated | entry* | any)+
         /// </para>
         /// </summary>
-        public virtual IList<W3C.Atom.logoType> logo {
+        public virtual IList<logoType> logo {
             get {
                 return this.ContentField.logo;
             }
@@ -3296,7 +3296,7 @@ namespace W3C.Atom {
         /// Regular expression: (author* | category* | contributor* | generator? | icon? | id | link* | logo? | rights? | subtitle? | title | updated | entry* | any)+
         /// </para>
         /// </summary>
-        public virtual IList<W3C.Atom.textType> rights {
+        public virtual IList<textType> rights {
             get {
                 return this.ContentField.rights;
             }
@@ -3313,7 +3313,7 @@ namespace W3C.Atom {
         /// Regular expression: (author* | category* | contributor* | generator? | icon? | id | link* | logo? | rights? | subtitle? | title | updated | entry* | any)+
         /// </para>
         /// </summary>
-        public virtual IList<W3C.Atom.textType> subtitle {
+        public virtual IList<textType> subtitle {
             get {
                 return this.ContentField.subtitle;
             }
@@ -3330,7 +3330,7 @@ namespace W3C.Atom {
         /// Regular expression: (author* | category* | contributor* | generator? | icon? | id | link* | logo? | rights? | subtitle? | title | updated | entry* | any)+
         /// </para>
         /// </summary>
-        public virtual IList<W3C.Atom.textType> title {
+        public virtual IList<textType> title {
             get {
                 return this.ContentField.title;
             }
@@ -3347,7 +3347,7 @@ namespace W3C.Atom {
         /// Regular expression: (author* | category* | contributor* | generator? | icon? | id | link* | logo? | rights? | subtitle? | title | updated | entry* | any)+
         /// </para>
         /// </summary>
-        public virtual IList<W3C.Atom.dateTimeType> updated {
+        public virtual IList<dateTimeType> updated {
             get {
                 return this.ContentField.updated;
             }
@@ -3364,7 +3364,7 @@ namespace W3C.Atom {
         /// Regular expression: (author* | category* | contributor* | generator? | icon? | id | link* | logo? | rights? | subtitle? | title | updated | entry* | any)+
         /// </para>
         /// </summary>
-        public virtual IList<W3C.Atom.entryType> entry {
+        public virtual IList<entryType> entry {
             get {
                 return this.ContentField.entry;
             }
@@ -3459,23 +3459,23 @@ namespace W3C.Atom {
         }
         
         public static feed Load(string xmlFile) {
-            return XTypedServices.Load<feed, W3C.Atom.feedType>(xmlFile, LinqToXsdTypeManager.Instance);
+            return XTypedServices.Load<feed, feedType>(xmlFile, LinqToXsdTypeManager.Instance);
         }
         
         public static feed Load(System.IO.TextReader xmlFile) {
-            return XTypedServices.Load<feed, W3C.Atom.feedType>(xmlFile, LinqToXsdTypeManager.Instance);
+            return XTypedServices.Load<feed, feedType>(xmlFile, LinqToXsdTypeManager.Instance);
         }
         
         public static feed Parse(string xml) {
-            return XTypedServices.Parse<feed, W3C.Atom.feedType>(xml, LinqToXsdTypeManager.Instance);
+            return XTypedServices.Parse<feed, feedType>(xml, LinqToXsdTypeManager.Instance);
         }
         
         public override XTypedElement Clone() {
-            return new feed(((W3C.Atom.feedType)(this.Content.Clone())));
+            return new feed(((feedType)(this.Content.Clone())));
         }
         
-        private void SetInnerType(W3C.Atom.feedType ContentField) {
-            this.ContentField = ((W3C.Atom.feedType)(XTypedServices.GetCloneIfRooted(ContentField)));
+        private void SetInnerType(feedType ContentField) {
+            this.ContentField = ((feedType)(XTypedServices.GetCloneIfRooted(ContentField)));
             XTypedServices.SetName(this, this.ContentField);
         }
         
@@ -3494,9 +3494,9 @@ namespace W3C.Atom {
     public partial class entry : XTypedElement, IXMetaData {
         
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
-        private W3C.Atom.entryType ContentField;
+        private entryType ContentField;
         
-		public static explicit operator entry(XElement xe) { return XTypedServices.ToXTypedElement<entry, W3C.Atom.entryType>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+		public static explicit operator entry(XElement xe) { return XTypedServices.ToXTypedElement<entry, entryType>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         /// <summary>
         /// <para>
@@ -3506,7 +3506,7 @@ namespace W3C.Atom {
         /// </para>
         /// </summary>
         public entry() {
-            SetInnerType(new W3C.Atom.entryType());
+            SetInnerType(new entryType());
         }
         
         /// <summary>
@@ -3516,7 +3516,7 @@ namespace W3C.Atom {
         ///            
         /// </para>
         /// </summary>
-        public entry(W3C.Atom.entryType content) {
+        public entry(entryType content) {
             SetInnerType(content);
         }
         
@@ -3530,7 +3530,7 @@ namespace W3C.Atom {
             }
         }
         
-        public virtual W3C.Atom.entryType Content {
+        public virtual entryType Content {
             get {
                 return ContentField;
             }
@@ -3544,7 +3544,7 @@ namespace W3C.Atom {
         /// Regular expression: (author* | category* | content? | contributor* | id | link* | published? | rights? | source? | summary? | title | updated | any)+
         /// </para>
         /// </summary>
-        public virtual IList<W3C.Atom.personType> author {
+        public virtual IList<personType> author {
             get {
                 return this.ContentField.author;
             }
@@ -3561,7 +3561,7 @@ namespace W3C.Atom {
         /// Regular expression: (author* | category* | content? | contributor* | id | link* | published? | rights? | source? | summary? | title | updated | any)+
         /// </para>
         /// </summary>
-        public virtual IList<W3C.Atom.categoryType> category {
+        public virtual IList<categoryType> category {
             get {
                 return this.ContentField.category;
             }
@@ -3578,7 +3578,7 @@ namespace W3C.Atom {
         /// Regular expression: (author* | category* | content? | contributor* | id | link* | published? | rights? | source? | summary? | title | updated | any)+
         /// </para>
         /// </summary>
-        public virtual IList<W3C.Atom.contentType> content {
+        public virtual IList<contentType> content {
             get {
                 return this.ContentField.content;
             }
@@ -3595,7 +3595,7 @@ namespace W3C.Atom {
         /// Regular expression: (author* | category* | content? | contributor* | id | link* | published? | rights? | source? | summary? | title | updated | any)+
         /// </para>
         /// </summary>
-        public virtual IList<W3C.Atom.personType> contributor {
+        public virtual IList<personType> contributor {
             get {
                 return this.ContentField.contributor;
             }
@@ -3612,7 +3612,7 @@ namespace W3C.Atom {
         /// Regular expression: (author* | category* | content? | contributor* | id | link* | published? | rights? | source? | summary? | title | updated | any)+
         /// </para>
         /// </summary>
-        public virtual IList<W3C.Atom.idType> id {
+        public virtual IList<idType> id {
             get {
                 return this.ContentField.id;
             }
@@ -3629,7 +3629,7 @@ namespace W3C.Atom {
         /// Regular expression: (author* | category* | content? | contributor* | id | link* | published? | rights? | source? | summary? | title | updated | any)+
         /// </para>
         /// </summary>
-        public virtual IList<W3C.Atom.linkType> link {
+        public virtual IList<linkType> link {
             get {
                 return this.ContentField.link;
             }
@@ -3646,7 +3646,7 @@ namespace W3C.Atom {
         /// Regular expression: (author* | category* | content? | contributor* | id | link* | published? | rights? | source? | summary? | title | updated | any)+
         /// </para>
         /// </summary>
-        public virtual IList<W3C.Atom.dateTimeType> published {
+        public virtual IList<dateTimeType> published {
             get {
                 return this.ContentField.published;
             }
@@ -3663,7 +3663,7 @@ namespace W3C.Atom {
         /// Regular expression: (author* | category* | content? | contributor* | id | link* | published? | rights? | source? | summary? | title | updated | any)+
         /// </para>
         /// </summary>
-        public virtual IList<W3C.Atom.textType> rights {
+        public virtual IList<textType> rights {
             get {
                 return this.ContentField.rights;
             }
@@ -3680,7 +3680,7 @@ namespace W3C.Atom {
         /// Regular expression: (author* | category* | content? | contributor* | id | link* | published? | rights? | source? | summary? | title | updated | any)+
         /// </para>
         /// </summary>
-        public virtual IList<W3C.Atom.textType> source {
+        public virtual IList<textType> source {
             get {
                 return this.ContentField.source;
             }
@@ -3697,7 +3697,7 @@ namespace W3C.Atom {
         /// Regular expression: (author* | category* | content? | contributor* | id | link* | published? | rights? | source? | summary? | title | updated | any)+
         /// </para>
         /// </summary>
-        public virtual IList<W3C.Atom.textType> summary {
+        public virtual IList<textType> summary {
             get {
                 return this.ContentField.summary;
             }
@@ -3714,7 +3714,7 @@ namespace W3C.Atom {
         /// Regular expression: (author* | category* | content? | contributor* | id | link* | published? | rights? | source? | summary? | title | updated | any)+
         /// </para>
         /// </summary>
-        public virtual IList<W3C.Atom.textType> title {
+        public virtual IList<textType> title {
             get {
                 return this.ContentField.title;
             }
@@ -3731,7 +3731,7 @@ namespace W3C.Atom {
         /// Regular expression: (author* | category* | content? | contributor* | id | link* | published? | rights? | source? | summary? | title | updated | any)+
         /// </para>
         /// </summary>
-        public virtual IList<W3C.Atom.dateTimeType> updated {
+        public virtual IList<dateTimeType> updated {
             get {
                 return this.ContentField.updated;
             }
@@ -3826,23 +3826,23 @@ namespace W3C.Atom {
         }
         
         public static entry Load(string xmlFile) {
-            return XTypedServices.Load<entry, W3C.Atom.entryType>(xmlFile, LinqToXsdTypeManager.Instance);
+            return XTypedServices.Load<entry, entryType>(xmlFile, LinqToXsdTypeManager.Instance);
         }
         
         public static entry Load(System.IO.TextReader xmlFile) {
-            return XTypedServices.Load<entry, W3C.Atom.entryType>(xmlFile, LinqToXsdTypeManager.Instance);
+            return XTypedServices.Load<entry, entryType>(xmlFile, LinqToXsdTypeManager.Instance);
         }
         
         public static entry Parse(string xml) {
-            return XTypedServices.Parse<entry, W3C.Atom.entryType>(xml, LinqToXsdTypeManager.Instance);
+            return XTypedServices.Parse<entry, entryType>(xml, LinqToXsdTypeManager.Instance);
         }
         
         public override XTypedElement Clone() {
-            return new entry(((W3C.Atom.entryType)(this.Content.Clone())));
+            return new entry(((entryType)(this.Content.Clone())));
         }
         
-        private void SetInnerType(W3C.Atom.entryType ContentField) {
-            this.ContentField = ((W3C.Atom.entryType)(XTypedServices.GetCloneIfRooted(ContentField)));
+        private void SetInnerType(entryType ContentField) {
+            this.ContentField = ((entryType)(XTypedServices.GetCloneIfRooted(ContentField)));
             XTypedServices.SetName(this, this.ContentField);
         }
         
@@ -3930,8 +3930,8 @@ namespace W3C.Atom {
         }
         
         private static void BuildWrapperDictionary() {
-            wrapperDictionary.Add(typeof(W3C.Atom.feed), typeof(void));
-            wrapperDictionary.Add(typeof(W3C.Atom.entry), typeof(void));
+            wrapperDictionary.Add(typeof(W3C.Atom.feed), typeof(global::W3C.Atom.feedType));
+            wrapperDictionary.Add(typeof(W3C.Atom.entry), typeof(global::W3C.Atom.entryType));
         }
         
         protected internal static void AddSchemas(XmlSchemaSet schemas) {
